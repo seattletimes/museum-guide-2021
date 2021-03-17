@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Safari, you're the worst -->
+    <meta name='format-detection' content='telephone=no'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
+    <%= t.include("partials/_head.html", grunt.data.json) %>
+    <% if (json.project.production && !json.project.embedded) { %>
+      <%= t.include("partials/_dataLayer.html") %>
+      <%= t.include("partials/_gtm.html") %>
+    <% } %>
+  </head>
+  <body>
+    <% if (json.project.production && !json.project.embedded) { %>
+      <%= t.include("partials/_gtmNoScript.html") %>
+    <% } %>
+    <responsive-child>
+      <%= t.include("partials/_nav.html") %>  
+      <header class="top">
+        <h1>Winter Guide 2019</h1>
+        <figure>
+          <img class="main-illo-lines" src="./assets/main-illo.png" alt="">
+          <img class="main-illo-lights" src="./assets/main-illo-lights.png" alt="Illustration of pigs with reindeer antlers flying over Seattle. A festive ballerina dances through city with holiday lights.">
+          <figcaption class="illo-byline">GABRIEL CAMPANARIO / SEATTLE TIMES</figcaption>
+        </figure>
+        <div class="chatter">
+          <div class="byline-pubdate">
+            <p class="byline">By Seattle Times staff</p>
+            <p class="pub-date"></p>Published Nov. 17, 2019</p>
+          </div>
+          <p>The holiday season is here — and with it, an abundance of events and activities are coming to the Seattle area. Whether you want to shop for gifts at a holiday market, take the kids to see Santa or hum along to cheery holiday music, there’s no shortage of ways to have festive fun in the coming weeks. Use this guide to help decide where to go and what to do before, after or on the holidays. In case of cancellations or schedule changes, always check times and dates before you go.</p>
+          <p style="font-style:italic; font-size:16px;">Correction: A previous version of this calendar listed the address for the Dec. 21 Northwest Firelight Chorale Concert as University Congregational Church, 4515 Sixth Ave. N.E. This post has been updated to reflect the correct address as University Congregational Church, 4515 Sixteenth Ave. N.E.</p>
+        </div>
+      </header>
+         
+      <main > 
+        <nav class="filters">
+          <h2 class="nav-header">Choose categories</h2>    
+          <% var cats = [
+            { data: "festivals", label: "Festivals" },
+            { data: "lights", label: "Lights"},
+            { data: "markets", label: "Markets" },
+            { data: "parties", label: "Parties" },
+            { data: "runs", label: "Runs" },
+            { data: "special-events", label: "Special Events" } 
+          ] %>
+          <ul class="categories">
+              <li>
+                  <button type="button" class="all-events checked" data-category="all-events">
+                      <img class="filter-icon" src="assets/icons/all-events.jpg">
+                      <span class="cat-label">All Events</span>
+                  </button>
+              </li>
+            <% cats.forEach(function(cat) { %>
+              <li>
+                <button type="button" class="filter-buttons" data-category="<%= cat.data %>">
+                  <img class="filter-icon" src="assets/icons/<%= cat.data %>.jpg">
+                  <span class="cat-label"><%= cat.label %></span>
+                </button>
+              </li>
+            <% }) %>
+          </ul>
+          <div class="advanced">
+            <input type="text" placeholder="Search events" class="search" id="search">
+            <button class="clear-search" type="reset"><img src="assets/x-icon.svg"></button>
+          </div>
+         </nav>
+         <!-- End filters -->   
+           
+          <div class="event-grid">
+          <div class="grid-container">
+            <% var cat = {Lights: "lights", Markets: "markets", Festivals: "festivals", "Special Events": "special-events", Parties: "parties", Runs: "runs"} %>
+              <% json.guide.forEach(function(event) { %>
+                <div  class="event <%= event.category %>" data-category="<%= cat[event.category] %>">
+                  <img class="event-icon" src="assets/icons/<%= cat[event.category] %>.jpg" alt="" title="<%= event.category %>">
+                  <div class="event-header">
+                    <p>
+                      <a href="<%= event.website_online %>"> <%= event.event %></a> <br>
+                      <%= event.dates %>, <%= event.time %>
+                    </p>
+                  </div>
+                  
+                  <div class="event-info">
+                    <p class="details"><%= event.info %> </p>
+                    <p class="event-price"><%= event.price.charAt(0).toUpperCase() + event.price.slice(1) %> </p>
+                  </div>
+               
+                  <div >
+                    <p class="phone-address"><%= event.phone %><br><%= event.location %></p>
+                  </div>
+                </div>
+              <% }) %>
+          </div>
+        </div>
+          <div class="no-results">Start a new search or select a category</div>
+    
+          
+      </responsive-child>
+
+      <div class="credits">
+        Illustrations by Gabriel Campanario
+        <div>Design and Development by Miranda Hardy</div>
+        <div>Research by Yasmeen Wafai</div>
+        <div>Project editing by Emily Eng and Trevor Lenzmeier</div>
+      </div>
+    </main>
+
+    <%= t.include("partials/_dontMiss.html", grunt.data.json) %>
+    <%= t.include("partials/_navBottom.html") %>
+
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>
