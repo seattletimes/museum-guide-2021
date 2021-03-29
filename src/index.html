@@ -4,15 +4,21 @@
     <title><%= json.project.title %></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+        
     <!-- Safari, you're the worst -->
+        
     <meta name='format-detection' content='telephone=no'>
+        
     <link rel="stylesheet" type="text/css" href="style.css">
+        
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
+        
     <%= t.include("partials/_head.html", grunt.data.json) %>
     <% if (json.project.production && !json.project.embedded) { %>
       <%= t.include("partials/_dataLayer.html") %>
       <%= t.include("partials/_gtm.html") %>
     <% } %>
+        <script src="https://kit.fontawesome.com/9d53be7224.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <% if (json.project.production && !json.project.embedded) { %>
@@ -39,11 +45,11 @@
          
       <main > 
         <nav class="filters">
-          <h2 class="nav-header">Choose categories</h2>    
+          <h2 class="nav-header">Filter by location</h2>    
           <% var cats = [
-            { data: "festivals", label: "Festivals" },
-            { data: "lights", label: "Lights"},
-            { data: "markets", label: "Markets" },
+            { data: "king", label: "King" },
+            { data: "pierce", label: "Pierce"},
+            { data: "snohomish", label: "Snohomish" },
             { data: "parties", label: "Parties" },
             { data: "runs", label: "Runs" },
             { data: "special-events", label: "Special Events" } 
@@ -51,14 +57,12 @@
           <ul class="categories">
               <li>
                   <button type="button" class="all-events checked" data-category="all-events">
-                      <img class="filter-icon" src="assets/icons/all-events.jpg">
                       <span class="cat-label">All Events</span>
                   </button>
               </li>
             <% cats.forEach(function(cat) { %>
               <li>
                 <button type="button" class="filter-buttons" data-category="<%= cat.data %>">
-                  <img class="filter-icon" src="assets/icons/<%= cat.data %>.jpg">
                   <span class="cat-label"><%= cat.label %></span>
                 </button>
               </li>
@@ -69,31 +73,207 @@
             <button class="clear-search" type="reset"><img src="assets/x-icon.svg"></button>
           </div>
          </nav>
+              
          <!-- End filters -->   
            
           <div class="event-grid">
           <div class="grid-container">
+              
             <% var cat = {Lights: "lights", Markets: "markets", Festivals: "festivals", "Special Events": "special-events", Parties: "parties", Runs: "runs"} %>
-              <% json.guide.forEach(function(event) { %>
-                <div  class="event <%= event.category %>" data-category="<%= cat[event.category] %>">
-                  <img class="event-icon" src="assets/icons/<%= cat[event.category] %>.jpg" alt="" title="<%= event.category %>">
+                
+                <div class="container" data-set="1">
+                    
+                    
+                    
+                    
+                    <div class="section-header arts" id="arts">
+                        
+                        <div class="header-container">
+                        <div class="section-card">
+                        <div class="section-name">
+                            Visual Arts
+                       </div>
+                        <div class="section-description">
+                            Here is a short description about visual arts museums here and here and here and here it keeps going here.
+                        </div>
+                            </div>
+                        
+                        <img class="section-header-image" src="assets/test.jpeg" alt="" >
+                        
+                        </div>
+                        </div>
+                    
+                  <div class="background-container-1">
+                      
+                      <% json.testarts.forEach(function(item, i) { %>
+                      
+                <div  class="box event <%= item.category %>" data-category="<%= cat[item.category] %>" data-num="<%= i %>">
+                    
+                  <img class="item-icon" src="assets/test.jpeg" alt="" title="<%= item.category %>">
+                    
+                    
                   <div class="event-header">
-                    <p>
-                      <a href="<%= event.website_online %>"> <%= event.event %></a> <br>
-                      <%= event.dates %>, <%= event.time %>
+                    <p class="museum-name"><a href="<%= item.website_online %>"> <%= item.event %></a></p>
+                     <p class="dates"> <%= item.exhibitname %> <span class="name"><%= item.dates %></span>
                     </p>
+                         <p class = "hours"></p>
                   </div>
                   
-                  <div class="event-info">
-                    <p class="details"><%= event.info %> </p>
-                    <p class="event-price"><%= event.price.charAt(0).toUpperCase() + event.price.slice(1) %> </p>
-                  </div>
+                  
                
-                  <div >
-                    <p class="phone-address"><%= event.phone %><br><%= event.location %></p>
+                  <div class="info">
+                    <p class="phone-address"><i class="fas fa-dollar-sign"></i>$11-$14 <i class="fas fa-phone-alt"></i> 1-888-238-4373 <i class="fas fa-map-marker-alt"></i> 1911 Pacific Avenue Tacoma, WA</p>
                   </div>
+                      
+                      <div class="expand-container" data-set="1">
+                    
+                    <div class="expand" data-num="<%= i %>">
+                              <p><%= item.vignette %></p>
+                        <p class="author">– <%= item.author %></p>
+                            </div>
+                    
+                          </div>
+                    
+                <div class="chevs chevs-festivals">
+                    <p class="read">Read more </p>
+                    <p class="close">Close</p>
+              </div>
                 </div>
-              <% }) %>
+                    
+                    <% }) %>
+                      </div>
+               
+                    
+                    
+                    
+                    
+                  
+                  <div class="background-container-2">
+                      
+                      <% json.testcultural.forEach(function(item, i) { %>
+                      
+                <div  class="box event <%= item.category %>" data-category="<%= cat[item.category] %>" data-num="<%= i %>">
+                    
+                  <img class="item-icon" src="assets/test.jpeg" alt="" title="<%= item.category %>">
+                    
+                    
+                  <div class="event-header">
+                    <p class="museum-name"><a href="<%= item.website_online %>"> <%= item.event %></a></p>
+                     <p class="dates"> <%= item.exhibitname %> <span class="name"><%= item.dates %></span>
+                    </p>
+                         <p class = "hours"></p>
+                  </div>
+                  
+                  
+               
+                  <div class="info">
+                    <p class="phone-address"><i class="fas fa-dollar-sign"></i>$11-$14 <i class="fas fa-phone-alt"></i> 1-888-238-4373 <i class="fas fa-map-marker-alt"></i> 1911 Pacific Avenue Tacoma, WA</p>
+                  </div>
+                      
+                      <div class="expand-container" data-set="1">
+                    
+                    <div class="expand" data-num="<%= i %>">
+                              <p><%= item.vignette %></p>
+                        
+                            </div>
+                    
+                          </div>
+                    
+                <div class="chevs chevs-lights">
+                    <p class="read">Read more </p>
+                    <p class="close">Close</p>
+              </div>
+                </div>
+                    <% }) %>
+                      </div>
+               
+                    
+                 
+                  
+                  <div class="background-container-3">
+                      <% json.testhistory.forEach(function(item, i) { %>
+                      
+                <div  class="box event <%= item.category %>" data-category="<%= cat[item.category] %>" data-num="<%= i %>">
+                    
+                  <img class="item-icon" src="assets/test.jpeg" alt="" title="<%= item.category %>">
+                    
+                    
+                  <div class="event-header">
+                    <p class="museum-name"><a href="<%= item.website_online %>"> <%= item.event %></a></p>
+                     <p class="dates"> <%= item.exhibitname %> <span class="name"><%= item.dates %></span>
+                    </p>
+                         <p class = "hours"></p>
+                  </div>
+                  
+                  
+               
+                  <div class="info">
+                    <p class="phone-address"><i class="fas fa-dollar-sign"></i>$11-$14 <i class="fas fa-phone-alt"></i> 1-888-238-4373 <i class="fas fa-map-marker-alt"></i> 1911 Pacific Avenue Tacoma, WA</p>
+                  </div>
+                      
+                      <div class="expand-container" data-set="1">
+                    
+                    <div class="expand" data-num="<%= i %>">
+                              <p><%= item.vignette %></p>
+                        
+                            </div>
+                    
+                          </div>
+                    
+                <div class="chevs chevs-markets">
+                    <p class="read">Read more </p>
+                    <p class="close">Close</p>
+              </div>
+                </div>
+                    <% }) %>
+                      </div>
+             
+                    
+                
+                  
+                  <div class="background-container-4">
+                      
+                      <% json.testother.forEach(function(item, i) { %>
+                      
+                <div  class="box event <%= item.category %>" data-category="<%= cat[item.category] %>" data-num="<%= i %>">
+                    
+                  <img class="item-icon" src="assets/test.jpeg" alt="" title="<%= item.category %>">
+                    
+                    
+                  <div class="event-header">
+                    <p class="museum-name"><a href="<%= item.website_online %>"> <%= item.event %></a></p>
+                     <p class="dates"> <%= item.exhibitname %> <span class="name"><%= item.dates %></span>
+                    </p>
+                         <p class = "hours"></p>
+                  </div>
+                  
+                  
+               
+                  <div class="info">
+                    <p class="phone-address"><i class="fas fa-dollar-sign"></i>$11-$14 <i class="fas fa-phone-alt"></i> 1-888-238-4373 <i class="fas fa-map-marker-alt"></i> 1911 Pacific Avenue Tacoma, WA</p>
+                  </div>
+                      
+                      <div class="expand-container" data-set="1">
+                    
+                    <div class="expand" data-num="<%= i %>">
+                              <p><%= item.vignette %></p>
+                        
+                            </div>
+                    
+                          </div>
+                    
+                <div class="chevs chevs-parties">
+                    <p class="read">Read more </p>
+                    <p class="close">Close</p>
+              </div>
+                </div>
+                    <% }) %>
+                      </div>
+                
+                    
+                    
+                     
+                  </div>
           </div>
         </div>
           <div class="no-results">Start a new search or select a category</div>
@@ -112,10 +292,17 @@
     <%= t.include("partials/_dontMiss.html", grunt.data.json) %>
     <%= t.include("partials/_navBottom.html") %>
 
-    <script src="app.js" async></script>
+    
+    <script src="https://seattle-times.zeustechnology.com/main.js" async></script>
+
+    <script src="https://www.seattletimes.com/wp-content/plugins/st-advertising/dist/st-projects-bundle.js" async></script>
+        
+        <script src="app.js" async></script>
     <% if (json.project.production) { %>
     <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
     <%= t.include("partials/_workHere.html") %>
     <% } %>
+        
+     
   </body>
 </html>

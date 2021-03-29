@@ -149,7 +149,7 @@ header.top {
   padding: 10px 0 20px 0;
 
   .nav-header {
-    color: #12562a;
+    color: black;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -200,8 +200,8 @@ header.top {
     }
     .cat-label{
       display: inline-block;
-      line-height: 48px;
-      height: 48px;
+      line-height: 30px;
+      height: 30px;
     }
     label {
       display: block;
@@ -210,13 +210,13 @@ header.top {
 
   button {
     background-color: white;
-      padding: 2px 8px;
+      padding: 0px 10px;
       border: 1px solid @df-light-gray;
       color: @df-middle-gray;
       border-radius: 10px;
       cursor: pointer;
       margin: 2px;
-      font-size: 18px;
+      font-size: 16px;
       .filter-icon{
         opacity: 40%;
       }
@@ -236,85 +236,330 @@ header.top {
 }             
 
 
-.grid-container{
-  display: flex;
-  flex-flow: row wrap;
-  font-size: 15px;
-  font-family: @df-sans;
-  padding-left: 10px;
-  padding-right: 10px;
 
-  @supports (display: grid){
-    display: -ms-grid;
-    display: grid;
-    @media @mobile {
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    grid-gap: 15px;
-    align-items: stretch;
-  }
+
+.section-header {
+    background: rgb(112,120,172);
+background: linear-gradient(180deg, rgba(112,120,172,1) 0%, rgba(164,177,255,1) 50%, rgba(112,120,172,1) 100%);
+
+  position: relative;
+  
 }
 
-.ie11{
-  background-color: #175d30;
-  .grid-container{
+.header-container {
+    padding-bottom: 150px;
+    padding-top: 150px;
+    width: 100%;
+}
+
+/*
+.header-container {
+    display: flex;
     justify-content: center;
-  }
-  .event{
-    margin: 10px;
-    width: 450px;
-    position: relative;
-    padding: 10px;
-    box-sizing: border-box;
-  }
+    align-items: center;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    width: 70%;
+    margin: auto;
+    @media @mobile, @tablet{
+        display: block;
+        width: 80%;
+        }
+}
+*/
+
+
+.section-header-image {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    width: 30%;
+    
+  
 }
 
-.event-grid{
-  background-color: #eddb85 ;
-  padding: 10px 0;
+/*
+
+.section-header-image {
+    width: 55%;
+    float: right;
+    margin-left: 15px;
+     @media @mobile, @tablet{
+        float: none;
+         width: 100%;
+        margin: auto;
+        }
 }
+
+*/
+
+/*
+.section-card {
+    height: 100%;
+    font-family: @df-sans;
+    text-align: left;
+    padding: 10px 20px 20px 20px;
+    background-color: white;
+    margin: 0px 15px 0px 0px;;
+    box-shadow: 15px 15px;
+    width: 30%;
+    float: left;
+    
+     @media @mobile, @tablet{
+        float: none;
+         width: 100%;
+         margin-bottom: 40px;
+        
+        }
+    
+}
+*/
+
+.section-name {
+    font-weight: bold;
+    font-size: 150px;
+
+}
+
+.section-description {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.arts {
+   
+}
+
+
+
+/*testing background gradient possibility*/
+.background-container-1 {
+    padding-top: 150px;
+    background-image: linear-gradient(#c7cdff, mediumslateblue);
+}
+
+.background-container-2 {
+    background-color: lightgreen;
+}
+
+.background-container-3 {
+    background-color: lavender;
+}
+
+.background-container-4 {
+    background-color: lightyellow;
+}
+
+
 
 .event {
-  background-color: white;
-  @media @mobile{
-    border-radius: 10px;
-  }
-  border-radius: 10px;
-  padding: 0px 20px 0px 30px;
-
-  .details{
-    clear: both;
-    margin: 8px 0 0 0;
-  }
-  .event-icon {
-    margin-top: 15px;
-    width: 20%;
-    float: left;
-  }
+    
+    font-size: 15px;
+    font-family: @df-sans;
+    width: 40%;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 50px;
+ 
+    
+    @media @mobile, @tablet{
+        width: 80%;
+        
+        }
+  
+    
   .event-header{
     font-size: 18px;
-    padding-left: 22%;
+    
+ 
     a {
-      font-size: 20px;
-      color: #12562a;
-      text-decoration: none;
-      font-weight: bold;
+      font-size: 30px;
+      color: black;
+      font-weight: 900;
+        margin-bottom: 0px;
     } 
-    p{
-      margin-bottom: 5px;
-    } 
+   
   }
-  .event-price{
-    margin: 4px 0 4px 0;
-  }
+    
+    .museum-name {
+        
+        margin-bottom: 7px;
+    }
+    
+    .dates {
+        margin-top: 0px;
+       
+    }
+    
+    
+    .name {
+        font-style: italic;
+    }
+    
+    .info {
+        
+        padding-bottom: 0px;
+    }
+    
   .phone-address{
     margin-top: 0;
-    color: #7e838b;
+    color: gray;
     font-style: italic;
   }
+    
+    .details, .event-header, .event-price, .info, .expand, .chevs {
+        width: 90%;
+        margin: auto;
+        
+        
+        
+    }
+    
+    .fa-dollar-sign, .fa-phone-alt, .fa-map-marker-alt {
+        background-color: gray;
+        font-size: 13px;
+        color: white;
+        width: 20px;
+        height: 20px;
+        padding: 2px;
+        margin-right: 2px;
+        border-radius: 50%;
+    }
+    
+    .fa-dollar-sign {
+        padding-top: 4px;
+        padding-left: 6.5px;
+    }
+
+    .fa-phone-alt {
+        margin-left: 8px;
+        padding-left: 4px;
+        padding-top: 3px;
+    }
+    
+    .fa-map-marker-alt {
+        margin-left: 10px;
+        padding-left: 5px;
+        padding-top: 3px;
+    }
+}
+
+.box {
+    transition: box-shadow 0.5s;
+}
+
+.box {
+    
+    
+     &:not(.selected):hover {
+      // border: 2px solid black;
+      cursor: pointer;
+         box-shadow: 15px 15px;
+    }
+}
+
+
+.chevs {
+  font-size: 15px;
+  text-align: left;
+
+  color: black;
+    font-weight: bold;
+    border-top: 1px solid gray;
+    padding: 1px 0px 1px 0px;
+  @media @mobile { bottom: 20px; }
+
+  i {
+    display: block;
+
+  }
+
+  .close {
+    display: none;
+  }
+  .read {
+    display: block;
+  }
+
+  &.selected {
+    .close {
+      display: block;
+    }
+    .read {
+      display: none;
+    }
+  }
+}
+
+.chevs-festivals {
+        background-color: white;
+}
+
+.chevs-lights {
+    
+        background-color: darkgreen;
+}
+
+.chevs-markets {
+    background-color: rebeccapurple;
+}
+
+.chevs-parties {
+    background-color: darkgoldenrod;
+}
+
+.expand {
+    display: none;
+    position: relative;
+    font-size: 18px;
+    max-width: 960px;
+    border-top: 1px solid gray;
+    margin-bottom: 25px;
+
+    &.noPadding {
+      @media @mobile {
+        padding: 0;
+      }
+    }
+  }
+
+.expand::first-letter {
+    font-size: 50px;
+    text-transform: uppercase;
+    float: left;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: -10px;
+    margin-bottom: -30px;
+}
+
+.author {
+    text-align: right;
+    font-style: italic;
+}
+
+.selected:hover { cursor: pointer; }
+
+
+
+.collapse:hover {
+    cursor: pointer;
+}
+
+.collapse {
+
+    background-color: @df-middle-gray;
+    padding: 10px 0 10px 0;
+    color: white;
+    border-radius: 15px;
+
+    &.selected {
+
+
+    }
 
 }
+
 
 .no-results{
   display: none;
