@@ -11,7 +11,7 @@
     "dates": "Nov. 17-Dec. 24",
     "hours": "9 a.m.-6 p.m. Nov. 17-Nov. 28; 9 a.m.-7 p.m. Nov. 29-Dec. 23; 9 a.m.-3 p.m. Dec. 24 ",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "pierce",
+    "region": "North",
     "author": "fistname lastname"
   },
   {
@@ -26,7 +26,7 @@
     "dates": "Nov. 23-Nov. 24",
     "hours": "10 a.m.-5 p.m.",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "king",
+    "region": "South",
     "author": "fistname lastname"
   },
   {
@@ -41,7 +41,7 @@
     "dates": "Nov. 29-Dec. 21",
     "hours": "Times vary",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "king",
+    "region": "East",
     "author": "fistname lastname"
   },
   {
@@ -56,7 +56,7 @@
     "dates": "Nov. 29-Dec. 31",
     "hours": "Times vary",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "king",
+    "region": "West",
     "author": "fistname lastname"
   },
   {
@@ -70,7 +70,7 @@
     "dates": "Nov. 30",
     "hours": "6:30-9:15 p.m.",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "king",
+    "region": "West",
     "author": "fistname lastname"
   },
   {
@@ -85,7 +85,7 @@
     "dates": "Nov. 30-Dec. 31",
     "hours": "4:30-9 p.m. nightly",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "king",
+    "region": "South",
     "author": "fistname lastname"
   },
   {
@@ -100,6 +100,7 @@
     "dates": "Dec. 1",
     "hours": "1-5 p.m.",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
+    "region": "North",
     "author": "fistname lastname"
   },
   {
@@ -114,6 +115,7 @@
     "dates": "Dec. 6-8, 13-15, 20-22",
     "hours": "all day",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
+    "region": "North",
     "author": "fistname lastname"
   },
   {
@@ -127,6 +129,7 @@
     "dates": "Dec. 7",
     "hours": "10 a.m.-4 p.m.",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
+    "region": "South",
     "author": "fistname lastname"
   },
   {
@@ -141,7 +144,7 @@
     "dates": "Dec. 7",
     "hours": "3-7 p.m.",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "snohomish",
+    "region": "East",
     "author": "fistname lastname"
   },
   {
@@ -156,7 +159,7 @@
     "dates": "Dec. 7-8",
     "hours": "10 a.m.-5 p.m.",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "snohomish",
+    "region": "East",
     "author": "fistname lastname"
   },
   {
@@ -170,155 +173,7 @@
     "dates": "Dec. 7-Jan. 1",
     "hours": "4-9:30 p.m. Sundays-Thursdays, 4-11 p.m. Fridays-Saturdays",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "snohomish",
-    "author": "fistname lastname"
-  },
-  {
-    "event": "PhinneyWood Phestivus ",
-    "exhibitname": "Check out 200-plus lighted monkeys while enjoying a holiday version of the monthly Art Up Chow Down Art Walk, filled with a variety of art, music and refreshments, visit Santa Claus Lane in Piper Village in Greenwood where you’ll find pet photos with Santa, holiday lights and children’s art activities, including decorating a giant gingerbread house ",
-    "category": "history",
-    "price": "free event",
-    "location": "Phinney/Greenwood neighborhood  (PhinneyWood)",
-    "website_online": "https://www.phinneycenter.org/",
-    "website_print": "phinneycenter.org",
-    "phone": "206-783-2244",
-    "dates": "Dec. 13",
-    "hours": "6-9 p.m.",
-    "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "snohomish",
-    "author": "fistname lastname"
-  },
-  {
-    "event": "Danish Christmas Fest",
-    "exhibitname": "Taste various Christmas brews, cider and aquavit while you snack on Danish Christmas treats, plus games, prizes and non-alcoholic beverages will also be available, alcohol for 21+ only",
-    "category": "history",
-    "price": "free event",
-    "location": "Seattle Danish Center, 1833 N. 105th St. #205, Seattle",
-    "website_online": "https://northwestdanish.org/danish-christmas-fest/",
-    "website_print": "northwestdanish.org",
-    "phone": "206-523-3263  ",
-    "dates": "Dec. 14",
-    "hours": "7 p.m.",
-    "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "king",
-    "author": "fistname lastname"
-  },
-  {
-    "event": "Hometown Christmas Day",
-    "exhibitname": "Music, sugar-cookie decorating, visit with Santa, Mrs. Claus, and Frosty the Snowman, face painting, and more",
-    "category": "history",
-    "price": "free event",
-    "location": "Along Railroad Ave. in Black Diamond",
-    "website_online": "http://blackdiamondmuseum.org/",
-    "website_print": "http://blackdiamondmuseum.org/",
-    "phone": "360-469-4043",
-    "dates": "Dec. 14",
-    "hours": "10 a.m.-3 p.m.",
-    "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "king",
-    "author": "fistname lastname"
-  },
-  {
-    "event": "Wildlights",
-    "exhibitname": "Lights, faux snowball fights, up-close animal encounters, hot chocolate and more",
-    "category": "history",
-    "price": "$10.95-$16.95",
-    "location": "Woodland Park Zoo, 5500 Phinney Ave., Seattle",
-    "website_online": "https://www.zoo.org/wildlights",
-    "website_print": "zoo.org",
-    "phone": "206-548-2500",
-    "dates": "Nov. 29-Jan. 5 (closed Dec. 2, 3, 9, 10, 24 and 25)",
-    "hours": "5:30-8:30 p.m. all dates",
-    "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "king",
-    "author": "fistname lastname"
-  },
-  {
-    "event": "Zoolights",
-    "exhibitname": "Lights, 3D-animal light displays, aquarium",
-    "category": "history",
-    "price": "$6.50-$11, free/ages 2 and under",
-    "location": "Point Defiance Zoo & Aquarium, 5400 N. Pearl St., Tacoma",
-    "website_online": "https://www.pdza.org/event/zoolights/",
-    "website_print": "pdza.org",
-    "phone": "253-404-3800",
-    "dates": "Nov. 29-Jan. 5 (closed Dec. 24)",
-    "hours": "5-9 p.m. all dates",
-    "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "king",
-    "author": "fistname lastname"
-  },
-  {
-    "event": "Holiday GloCone & Monkey Lighting",
-    "exhibitname": "Watch the Phinney Center air-raid tower glow with lights and monkeys, free refreshments and caroling with the OK Chorale",
-    "category": "history",
-    "price": "free event",
-    "location": "Phinney Center, 6532 Phinney Ave. N., Seattle",
-    "website_online": "https://www.phinneycenter.org/calendar/glocone19/",
-    "website_print": "phinneycenter.org",
-    "phone": "206-783-2244",
-    "dates": "Nov. 30",
-    "hours": "5-5:30 p.m.",
-    "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "king",
-    "author": "fistname lastname"
-  },
-  {
-    "event": "74th Annual Holiday Tree Lighting (Tacoma)",
-    "exhibitname": "Carols, photos with Santa, music, tree lighting",
-    "category": "history",
-    "price": "free event",
-    "location": "Pantages Theater Lobby (901 Broadway, Tacoma) and the corner of Ninth and Broadway in Tacoma",
-    "website_online": "https://www.tacomaartslive.org/events/calendar/eventdetail/1490/-/74th-annual-holiday-tree-lighting",
-    "website_print": "tacomaartslive.org",
-    "phone": "253-591-5890",
-    "dates": "Nov. 30",
-    "hours": "4:30 p.m.",
-    "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "king",
-    "author": "fistname lastname"
-  },
-  {
-    "event": "Light Up the Night \"Lighted People Parade\" and Holiday Beach Party",
-    "exhibitname": "Deck the halls, yourself, your bicycle and more in holiday lights and join the parade, music, beach bonfires, marshmallows and beach chairs welcome, and more",
-    "category": "history",
-    "price": "free event",
-    "location": "Lake Sammamish State Park, 2000 N.W. Sammamish Rd., Issaquah",
-    "website_online": "https://www.lakesammamishfriends.org/events/2019/10/23/light-up-the-night-parade-and-holiday-beach-party",
-    "website_print": "lakesammamishfriends.org",
-    "phone": "425-577-3657",
-    "dates": "Dec. 1",
-    "hours": "4:30-6 p.m.",
-    "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "county": "pierce",
-    "author": "fistname lastname"
-  },
-  {
-    "event": "SAM Lights",
-    "exhibitname": "Sculptures lit with the glow of luminaria, tours, art-making, music, warm drinks and treats",
-    "category": "history",
-    "price": "free event",
-    "location": "Olympic Sculpture Park Grounds and Pavilion, 2901 Western Ave., Seattle 98121",
-    "website_online": "http://seattleartmuseum.org/visit/calendar/events?EventId=65593",
-    "website_print": "seattleartmuseum.org",
-    "phone": "206-654-3151",
-    "dates": "Dec. 5",
-    "hours": " 6-9 p.m.",
-    "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "author": "fistname lastname"
-  },
-  {
-    "event": "Santa Parade and Tree Lighting",
-    "exhibitname": "Lighted parade, drill teams, dancers, childrens groups, cars, a tree lighting and more",
-    "category": "history",
-    "price": "free/families, participants and nonproft groups, $10/commercial businesses",
-    "location": "Main Street from E Street Northeast to A Street Northwest in Auburn",
-    "website_online": "https://www.auburnwa.gov/cms/one.aspx?portalId=11470638&pageId=13102507&objectId.253644=13593698&contextId.253644=13102509&parentId.253644=13102510&ref=mesTP9fg96fVsgzpWYeogDE9eOCSrV4UVz0Om3%2b62YE%3d",
-    "website_print": "auburnwa.gov",
-    "phone": "253-931-3000",
-    "dates": "Dec. 7",
-    "hours": "4:30 p.m.",
-    "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
+    "region": "West",
     "author": "fistname lastname"
   }
 ]

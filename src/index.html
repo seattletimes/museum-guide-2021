@@ -44,15 +44,13 @@
       </header>
          
       <main > 
-        <nav class="filters">
+        <div class="filters">
           <h2 class="nav-header">Filter by location</h2>    
           <% var cats = [
-            { data: "king", label: "King" },
-            { data: "pierce", label: "Pierce"},
-            { data: "snohomish", label: "Snohomish" },
-            { data: "parties", label: "Parties" },
-            { data: "runs", label: "Runs" },
-            { data: "special-events", label: "Special Events" } 
+            { data: "north", label: "North" },
+            { data: "south", label: "South"},
+            { data: "east", label: "East" },
+            { data: "west", label: "West" },
           ] %>
           <ul class="categories">
               <li>
@@ -72,44 +70,61 @@
             <input type="text" placeholder="Search events" class="search" id="search">
             <button class="clear-search" type="reset"><img src="assets/x-icon.svg"></button>
           </div>
-         </nav>
+                 <h2 class="nav-header"><a href="#">Back to top</a></h2> 
+         </div>
+              
+              <!--
+              
+              <nav class="nav-bar">
+              
+              <ul class="sections">
+                  <li><a href="#arts">Visual Arts</a></li>
+                  <li><a href="#cultural">Cultural</a></li>
+                  <li><a href="#historical">Historical</a></li>
+                  <li><a href="#other">Other</a></li>
+                  </ul>
+              
+              </nav>
+              
+              -->
               
          <!-- End filters -->   
            
           <div class="event-grid">
           <div class="grid-container">
               
-            <% var cat = {Lights: "lights", Markets: "markets", Festivals: "festivals", "Special Events": "special-events", Parties: "parties", Runs: "runs"} %>
+            <% var cat = {North: "north", South: "south", East: "east", West: "west"} %>
                 
                 <div class="container" data-set="1">
                     
-                    
-                    
-                    
-                    <div class="section-header arts" id="arts">
+                    <div class="section-header header-arts" id="arts">
                         
                         <div class="header-container">
+                            
+                            <img class="section-header-image section-image-arts" src="assets/frame-3.png" alt="" >
                         <div class="section-card">
                         <div class="section-name">
-                            Visual Arts
+                            Visual <br>Arts
                        </div>
-                        <div class="section-description">
-                            Here is a short description about visual arts museums here and here and here and here it keeps going here.
+                        <div class="section-description arts-description">
+                            Here is a short description about visual arts museums here and here and here and here it keeps going here and here and here and here and here and here.
                         </div>
                             </div>
                         
-                        <img class="section-header-image" src="assets/test.jpeg" alt="" >
+                        
                         
                         </div>
                         </div>
+                    
+                    <div id="democontainer"></div>
                     
                   <div class="background-container-1">
                       
                       <% json.testarts.forEach(function(item, i) { %>
                       
-                <div  class="box event <%= item.category %>" data-category="<%= cat[item.category] %>" data-num="<%= i %>">
+                <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>" >
                     
-                  <img class="item-icon" src="assets/test.jpeg" alt="" title="<%= item.category %>">
+                  <img class="item-icon" src="assets/test.jpeg" alt="" title="<%= item.region %>">
                     
                     
                   <div class="event-header">
@@ -140,6 +155,8 @@
               </div>
                 </div>
                     
+                   
+                    
                     <% }) %>
                       </div>
                
@@ -147,14 +164,33 @@
                     
                     
                     
+                    <div class="section-header header-cultural" id="cultural">
+                        
+                        <div class="header-container">
+                            
+                            <img class="section-header-image section-image-cultural" src="assets/frame-1.png" alt="" >
+                        <div class="section-card">
+                        <div class="section-name">
+                            Cultural
+                       </div>
+                        <div class="section-description cultural-description">
+                            Here is a short description about visual arts museums here and here and here and here it keeps going here and here and here and here and here and here.
+                        </div>
+                            </div>
+                        
+                        
+                        
+                        </div>
+                        </div>
+                    
                   
                   <div class="background-container-2">
                       
                       <% json.testcultural.forEach(function(item, i) { %>
                       
-                <div  class="box event <%= item.category %>" data-category="<%= cat[item.category] %>" data-num="<%= i %>">
+                <div  class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
                     
-                  <img class="item-icon" src="assets/test.jpeg" alt="" title="<%= item.category %>">
+                  <img class="item-icon" src="assets/test.jpeg" alt="" title="<%= item.region %>">
                     
                     
                   <div class="event-header">
@@ -189,13 +225,32 @@
                
                     
                  
+                    <!-- HISTORICAL SECTION -->
+                    
+                    <div class="section-header header-historical" id="historical">
+                        
+                        <div class="header-container">
+                            
+                            <img class="section-header-image section-image-historical" src="assets/frame-4.png" alt="" >
+                        <div class="section-card">
+                        <div class="section-name">
+                            Historical
+                       </div>
+                        <div class="section-description historical-description">
+                            Here is a short description about visual arts museums here and here and here and here it keeps going here and here and here and here and here and here.
+                        </div>
+                            </div>
+                        
+                        </div>
+                        </div>
+                    
                   
                   <div class="background-container-3">
                       <% json.testhistory.forEach(function(item, i) { %>
                       
-                <div  class="box event <%= item.category %>" data-category="<%= cat[item.category] %>" data-num="<%= i %>">
+                <div  class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
                     
-                  <img class="item-icon" src="assets/test.jpeg" alt="" title="<%= item.category %>">
+                  <img class="item-icon" src="assets/test.jpeg" alt="" title="<%= item.region %>">
                     
                     
                   <div class="event-header">
@@ -231,11 +286,32 @@
                     
                 
                   
+                    
+                    <!-- OTHER SECTION -->
+                    
+                    <div class="section-header header-other" id="other">
+                        
+                        <div class="header-container">
+                            
+                            <img class="section-header-image section-image-other" src="assets/frame-2.png" alt="" >
+                        <div class="section-card">
+                        <div class="section-name">
+                            Other
+                       </div>
+                        <div class="section-description other-description">
+                            Here is a short description about visual arts museums here and here and here and here it keeps going here and here and here and here and here and here.
+                        </div>
+                            </div>
+                        
+                        </div>
+                        </div>
+                    
+                    
                   <div class="background-container-4">
                       
                       <% json.testother.forEach(function(item, i) { %>
                       
-                <div  class="box event <%= item.category %>" data-category="<%= cat[item.category] %>" data-num="<%= i %>">
+                <div  class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
                     
                   <img class="item-icon" src="assets/test.jpeg" alt="" title="<%= item.category %>">
                     
@@ -276,7 +352,7 @@
                   </div>
           </div>
         </div>
-          <div class="no-results">Start a new search or select a category</div>
+          <div class="no-results" >Start a new search or select a category</div>
     
           
       </responsive-child>

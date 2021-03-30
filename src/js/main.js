@@ -16,7 +16,7 @@ var eventGrid = document.querySelector(".event-grid");
 var events = document.querySelectorAll(".event");
 var resultBox = document.querySelector(".no-results");
 
-var show = ['festivals', 'lights', 'markets', 'parties', 'runs', 'special-events'];
+var show = ['north', 'south', 'east', 'west'];
 var result; 
 
 
@@ -24,7 +24,7 @@ var result;
 
 
 function filterByCategory(cat){
-  if(show.length == 6){
+  if(show.length == 4){
     show = [];
   }
   if (show.indexOf(cat) > -1){
@@ -49,7 +49,7 @@ function combineFilters(){
     if(searchText.length == 0){
       for(var z = 0; z<events.length; z++){
         if(show.indexOf(events[z].dataset.category) > -1){
-          events[z].style.display="inline";
+          events[z].style.display="block";
           result += 1;
         }
         else{
@@ -62,7 +62,7 @@ function combineFilters(){
       for( var a = 0; a<events.length; a++){
         var eventText = events[a].innerText.toLowerCase();
         if ((eventText.search(searchText) > -1) && (show.indexOf(events[a].dataset.category) > -1)){
-          events[a].style.display="inline";
+          events[a].style.display="block";
           result =+ 1;
         }
         else{
@@ -89,6 +89,7 @@ function noResults(){
   }
 }
 
+
 function fixNav(){
   if(window.pageYOffset > sticky) {
     header.classList.add("sticky");
@@ -98,6 +99,7 @@ function fixNav(){
   }
 }
 
+
 function clearSearchBox(){
   searchBox.value = "";
   clearSearch.style.display="none";
@@ -106,7 +108,7 @@ function clearSearchBox(){
 
 function allEvents(){
   clearSearchBox();
-  show = ['festivals', 'lights', 'markets', 'parties', 'runs', 'special-events'];
+  show = ['north', 'south', 'east', 'west'];
   if (this.classList.length == 1){
     this.classList.add("checked");
   }
@@ -118,7 +120,7 @@ function allEvents(){
     catList[x].classList.remove("checked");
   }
   for(var i = 0; i<events.length; i++){
-    events[i].style.display="inline";
+    events[i].style.display="block";
   }  
 }
 
@@ -151,6 +153,12 @@ function searchListener(){
 }
 
 
+/*
+function selectedCategory(eventType, category) {
+    if ()
+}
+
+*/
 clearSearch.addEventListener("click", clearSearchBox);
 allEventsButton.addEventListener("click", allEvents);
 searchBox.addEventListener("keyup", searchListener);
@@ -211,25 +219,79 @@ $( ".collapse" ).click(function() {
 });
 
 
+var img = document.createElement("img");
+img.src = "assets/people-1.png";
+img.classList.add("people-watch")
+
+var parents = document.getElementsByClassName("event")
+
+for (var i = 0, ii = parents.length; i < ii; i++) {
+    var parent = parents[i]
+     if (i % 5 === 0) {
+            parent.classList.add("people-image");
+            parent.appendChild(img.cloneNode(true));
+        }
+}
+
+
 /*
-function boxExpand () {
-    var number = this.closest('.expand').data("num");
-    var set = this.closest('.container').data("set");
-    var expandCon = this.closest('.container');
-    
-    if (this.hasClass("selected")) {
-        expandCon.
+var addimages;
+addimages = document.getElementsByClassName("people-image");
+
+for (var i = 0, ii = addimages.length; i < ii; i++) {
+    var addimage = addimages[i];
+    addimage.appendChild(img);
         
-    expandCon.find(`.expand[data-num="number"]`).style.display = block;
-    this.classList.remove('selected');
-    this.find('.chevs').removeClass('selected');
-  } else {
-    this.addClass('selected');
-    this.find('.chevs').addClass('selected');
-    expandCon.find(`.expand[data-num="number"]`).show();
-  }
-    
 }
 
 */
+/*
+var container_block;
+
+var img = document.createElement("img");
+img.src = "http://www.google.com/intl/en_com/images/logo_plain.png";
+ 
+container_block = document.getElementsByClassName("people-image");
+container_block[0].appendChild(img);
+
+
+/*
+
+
+
+/*
+var container_block ;
+
+var img = document.createElement("img");
+img.src = "http://www.google.com/intl/en_com/images/logo_plain.png";
+ 
+container_block = document.getElementById( 'imageadd' );
+container_block.appendChild( img );
+
+*/
+
+/*
+var parents = document.getElementsByClassName("event")
+
+for (var i = 0, ii = parents.length; i < ii; i++) {
+    var parent = parents[i],
+        children = parent.children
+
+    for (var j = 0, jj = children.length; j < jj; j++) {
+        var elem = children[j]
+        if (j % 3 === 0) {
+            elem.classList.add("people-image")
+        }
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
 
