@@ -23,6 +23,10 @@ h1 {
   }
 }
 
+ul {
+    padding-inline-start: 0px;
+}
+
 /*-- Animation Keyframes for h1 glow --*/
 @keyframes neon {
   from {
@@ -116,20 +120,16 @@ header.top {
 
 
 /*-- Filter Menu --*/
+
+
 .sticky{
   position: fixed;
   z-index: 1; //for ie11
   top: 0;
   width: 100%;
-    
+    padding: 0;
   
-  @media @mobile{
-   
-    .cat-label{
-      height: 24px !important;
-      line-height: 24px !important;
-    }
-  }
+  
 }
 .sticky + .filters {
   padding-top: 102px;
@@ -137,40 +137,88 @@ header.top {
 
 .filters {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   background-color: black;
   font-family: @df-sans;
-  padding: 0px 100px 0px 100px;
-height: 40px;
+  padding-left: 20px;
+    padding-right: 20px;
+height: 55px;
+    
+    @media @mobile, @tablet{
+        flex-wrap: wrap;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 105px;
+    }
+}
+    
+    .filter-group {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        
+        @media @mobile, @tablet {
+        display: block;
+    }
+    }
     
   .nav-header {
     color: white;
     font-size: 16px;
-      text-transform: uppercase;
+    text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     margin: 0;
+      line-height: 100%;
+      
+      @media @mobile, @tablet {
+          margin-top: 10px;
+          margin-left: 10px;
+          margin-bottom: -15px;
+          text-align: left;
+      }
+  }
+
+.nav-ender {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+      line-height: 100%;
+    
+      a {
+          color: white;
+      }
+      
+      @media @mobile, @tablet {
+          margin-top: 0px;
+          margin-right: 10px;
+          text-align: left;
+      }
   }
 
    .search {
      width:100%;
      border: none;
-     font-size: 16px;
+     font-size: 14px;
      background-color: white;
      
    }
 
   .advanced {
-    margin: auto;
     border: none;
     padding: 3px 3px;
-      border-radius: 2px;
     background-color: white;
     width: 300px;
+    margin-left: 10px;
+      height: 30px;
+      border: 1px solid black;
+    @media @mobile, @tablet{
+      width: 300px;
     
-      
-    @media @mobile{
-      width: 90%;
     }
       
     .display-flex;
@@ -184,84 +232,64 @@ height: 40px;
     }
   }
 
+    
+    
   .categories {
 
-    margin: 0;
     list-style-type: none;
-    display: block;
+    display: flex;
     text-align: center;
-      height: 25px;
+margin-left: 10px;
+      
+      @media @tablet, @mobile {
+          margin-bottom: 5px;
+      }
+      
+}
     
     .cat-label{
       display: inline-block;
-
-    
-    }
-    label {
-      display: block;
-    }
-      
-   
-  button {
-    background-color: white;
-      padding: 0px 20px;
-      color: @df-middle-gray;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-      height: 25px;
-      border: none;
-     
-    }
-      
-    .checked {
-    
-      color: @df-dark-gray;
-     
     }
   
-  }
+  button {
+    background-color: white;
+      width: 60px;
+      padding: 0px 5px;
+      color: @df-middle-gray;
+        border: 1px solid black;
+      cursor: pointer;
+      font-size: 14px;
+      height: 30px;
+    
+     
+      @media @mobile, @tablet {
+          padding: 0px 5px;
+      }
+     
+    }
+      
+      
+    .checked {
+    border: 1px solid black;
+    background-color: gray;
+    color: white;
+    }
+  
+  
   li {
     display: inline-block;
+      margin: 0;
   }
-}             
-
-
-.nav-bar {
     
-    padding: 0px 100px 0px 100px;
-    width: 100%;
-    background-color: rebeccapurple;
-}
+    
+          
+/* end filter nav*/
 
- .sections {
-     display: flex;
-     width: 100%;
-    justify-content: space-between;
-    padding: 8px 0;
-    margin: 0;
-    list-style-type: none;
-    text-align: center;
-     
-     li {
-         font-family: @df-sans;
-         text-transform: uppercase;
-         font-size: 14px;
-         font-weight: bold;
-         color: white;
-     }
-     
-     a {
-         color: white;
-     }
-}
+/*start header sections*/
 
 
 .section-header {
-    
-
   position: relative;
-  
 }
 
 .header-arts {
@@ -289,17 +317,15 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
     align-items: center;
     height: 100%;
     padding: 150px 0px 150px 100px;
-   
     width: 100%;
     
     @media @tablet {
-        padding-bottom: 100px;
-        padding-top: 100px;
+        display: block;
+        padding: 70px 40px;
         }
     
     @media @mobile {
-        padding-bottom: 50px;
-        padding-top: 50px;
+       padding: 50px 20px;
     }
 }
 
@@ -339,12 +365,12 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
     left: 58%;
     @media @tablet {
         width: 70%;
-        margin-left: 20px;
+      
     }
     
     @media @mobile {
         width: 90%;
-        margin-left: 20px;
+       
         }
 }
 
@@ -356,12 +382,12 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
     
     @media @tablet {
         width: 70%;
-        margin-left: 20px;
+      
     }
     
     @media @mobile {
         width: 90%;
-        margin-left: 20px;
+       
         }
 }
 
@@ -371,12 +397,10 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
     left: 63%;
     @media @tablet {
         width: 50%;
-        margin-left: 20px;
     }
     
     @media @mobile {
         width: 60%;
-        margin-left: 20px;
         }
 }
 
@@ -390,22 +414,13 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
     font-weight: bold;
     color: white;
     text-shadow: 3px 3px 10px black;
+    
     @media @mobile, @tablet {
-        width: 90%;
-        margin: auto;
-        margin-top: 40px;
+        width: 100%;
+        margin-top: 20px;
         }
 
 }
-
-.align-right {
-        margin-left: 27%;
-    
-    @media @mobile {
-        margin-left: 0;
-    }
-    }
-
 
 
 .section-description {
@@ -414,8 +429,10 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
     font-family: @df-sans;
     font-weight: bold;
     color: white;
-   @media @mobile {
+    
+   @media @mobile, @tablet {
        font-size: 20px;
+       margin-left: 0;
     }
 
 }
@@ -423,38 +440,31 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
 .arts-description {
     width: 50%;
     
-    
     @media @tablet {
         width: 90%;
-        margin: auto;
          margin-top: 20px;
     }
     
     @media @mobile {
-        width: 60%;
-        margin-left: 5%;
+        width: 90%;
          margin-top: 20px;
         }
 }
 
 .cultural-description {
-  
     width: 50%;
    
    @media @mobile, @tablet {
         width: 90%;
-        margin: auto;
          margin-top: 20px;
         }
 }
 
 .historical-description {
     width: 50%;
-   
     
      @media @mobile, @tablet {
         width: 90%;
-        margin: auto;
          margin-top: 20px;
         }
    
@@ -465,7 +475,6 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
 
     @media @mobile, @tablet {
         width: 90%;
-        margin: auto;
          margin-top: 20px;
         }
   
@@ -476,8 +485,13 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
 /*testing background gradient possibility*/
 
 .background-container-1, .background-container-2, .background-container-3, .background-container-4 {
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 50px;
+    
+    @media @mobile, @tablet {
+        padding-top: 75px;
+    }
+    
 }
 
 .background-container-1 {
@@ -627,15 +641,11 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
     transition: box-shadow 0.5s;
 }
 
-.box {
-    
-    
-     &:not(.selected):hover {
+.box:hover {
       // border: 2px solid black;
       cursor: pointer;
          box-shadow: 15px 15px;
-    }
-}
+    } 
 
 
 .chevs {
@@ -719,7 +729,6 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
 
 .selected:hover { 
     cursor: pointer; 
-    box-shadow: 15px 15px;
 }
 
 
@@ -735,10 +744,7 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
     color: white;
     border-radius: 15px;
 
-    &.selected {
-
-
-    }
+ 
 
 }
 

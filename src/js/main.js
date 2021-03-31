@@ -159,6 +159,7 @@ function selectedCategory(eventType, category) {
 }
 
 */
+
 clearSearch.addEventListener("click", clearSearchBox);
 allEventsButton.addEventListener("click", allEvents);
 searchBox.addEventListener("keyup", searchListener);
@@ -219,6 +220,9 @@ $( ".collapse" ).click(function() {
 });
 
 
+
+
+
 var img = document.createElement("img");
 img.src = "assets/people-1.png";
 img.classList.add("people-watch")
@@ -270,21 +274,6 @@ container_block.appendChild( img );
 
 */
 
-/*
-var parents = document.getElementsByClassName("event")
-
-for (var i = 0, ii = parents.length; i < ii; i++) {
-    var parent = parents[i],
-        children = parent.children
-
-    for (var j = 0, jj = children.length; j < jj; j++) {
-        var elem = children[j]
-        if (j % 3 === 0) {
-            elem.classList.add("people-image")
-        }
-    }
-}
-*/
 
 
 
