@@ -145,11 +145,16 @@ header.top {
     padding-right: 20px;
 height: 55px;
     
-    @media @mobile, @tablet{
+    @media @tablet {
         flex-wrap: wrap;
         padding-left: 10px;
         padding-right: 10px;
         height: 105px;
+    }
+    
+    
+    @media @mobile {
+        height: 130px;
     }
 }
     
@@ -165,7 +170,7 @@ height: 55px;
     
   .nav-header {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -174,7 +179,7 @@ height: 55px;
       
       @media @mobile, @tablet {
           margin-top: 10px;
-          margin-left: 10px;
+          margin-left: 12px;
           margin-bottom: -15px;
           text-align: left;
       }
@@ -182,21 +187,21 @@ height: 55px;
 
 .nav-ender {
     color: white;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 20px;
     text-align: center;
     margin: 0;
       line-height: 100%;
-    
+    margin-left: 10px;
       a {
           color: white;
       }
       
       @media @mobile, @tablet {
-          margin-top: 0px;
+          margin-top: -35px;
           margin-right: 10px;
+          margin-left: 10px;
           text-align: left;
+          font-size: 25px;
       }
   }
 
@@ -212,7 +217,7 @@ height: 55px;
     border: none;
     padding: 3px 3px;
     background-color: white;
-    width: 300px;
+    width: 250px;
     margin-left: 10px;
       height: 30px;
       border: 1px solid black;
@@ -315,12 +320,14 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     height: 100%;
-    padding: 150px 0px 150px 100px;
+    padding: 150px 0px 150px 0px;
     width: 100%;
     
     @media @tablet {
-        display: block;
+        
         padding: 70px 40px;
         }
     
@@ -331,7 +338,7 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
 
 
 .section-header-image {
-    position: absolute;
+    
     
     @media @mobile, @tablet {
         position: static;
@@ -340,49 +347,50 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
 }
 
 .section-image-arts {
-    width: 20%;
-    top: 15%;
-    left: 68%;
+    width: 17%;
+    order: 2;
+    margin-left: 50px;
+    
     @media @tablet {
-        position: absolute;
-        top: 10%;
-    left: 68%;
-        width: 17%;
+        
+       
+        width: 18%;
     }
     
     @media @mobile {
-        position: absolute;
-        top: 10%;
-        left: 68%;
-        width: 30%;
+        
+     
        
         }
 }
 
 .section-image-cultural {
-   width: 30%;
-    top: 58%;
-    left: 58%;
+   width: 40%;
+   margin-bottom: 30px;
+    
+    
     @media @tablet {
         width: 70%;
-      
+        
+      margin-bottom: 0px;
+        
     }
     
     @media @mobile {
         width: 90%;
-       
         }
 }
 
 .section-image-historical {
-    width: 28%;
+    
+    width: 35%;
     top: 57%;
     left: 57%;
-    
+    margin-bottom: 30px;
     
     @media @tablet {
         width: 70%;
-      
+      margin-bottom: 0px;
     }
     
     @media @mobile {
@@ -392,15 +400,21 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
 }
 
 .section-image-other {
+    order: 2;
     width: 30%;
     top: 20%;
     left: 63%;
+    margin-left: 40px;
+    
     @media @tablet {
         width: 50%;
+        margin-left: 0px;
+        order: 0;
     }
     
     @media @mobile {
         width: 60%;
+        
         }
 }
 
@@ -414,7 +428,7 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
     font-weight: bold;
     color: white;
     text-shadow: 3px 3px 10px black;
-    
+    text-align: center;
     @media @mobile, @tablet {
         width: 100%;
         margin-top: 20px;
@@ -517,6 +531,8 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
 
 /* EVENT BOX STYLINGS */
 
+
+
 .event {
     
     font-size: 15px;
@@ -531,6 +547,15 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
         width: 80%;
         
         }
+    
+    .cutline {
+        font-size: 13px;
+        font-style: italic;
+        color: gray;
+        padding-bottom: 15px;
+        
+
+    }
   
     
   .event-header{
@@ -562,52 +587,34 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
     }
     
     .info {
-        
-        padding-bottom: 0px;
+        border-top: 1px solid gray;
+        color: black;
+    font-style: italic;
+      line-height: 150%;
+     
     }
     
   .phone-address{
-    margin-top: 0;
-    color: gray;
-    font-style: italic;
+ 
   }
     
-    .details, .event-header, .event-price, .info, .expand, .chevs {
+    .details, .event-header, .event-price, .info, .expand, .chevs, .cutline {
         width: 90%;
         margin: auto;
         
-        
-        
     }
     
-    .fa-dollar-sign, .fa-phone-alt, .fa-map-marker-alt {
-        background-color: gray;
+    .fa-dollar-sign, .fa-phone-alt, .fa-map-marker-alt, .fa-people-arrows {
+        
         font-size: 13px;
-        color: white;
-        width: 20px;
-        height: 20px;
-        padding: 2px;
-        margin-right: 2px;
-        border-radius: 50%;
-    }
-    
-    .fa-dollar-sign {
-        padding-top: 4px;
-        padding-left: 6.5px;
+        color: black;
+        margin-right: 3px;
+      
     }
 
-    .fa-phone-alt {
-        margin-left: 8px;
-        padding-left: 4px;
-        padding-top: 3px;
+    .fa-dollar-sign {
+        margin-left: 0px;
     }
-    
-    .fa-map-marker-alt {
-        margin-left: 10px;
-        padding-left: 5px;
-        padding-top: 3px;
-    }
-    
     
     .people-watch {
         position: absolute;
@@ -651,7 +658,6 @@ background: linear-gradient(180deg, rgba(160,250,255,1) 0%, rgba(16,149,157,1) 1
 .chevs {
   font-size: 15px;
   text-align: left;
-
   color: black;
     font-weight: bold;
     border-top: 1px solid gray;

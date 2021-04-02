@@ -24,8 +24,9 @@
     <% if (json.project.production && !json.project.embedded) { %>
       <%= t.include("partials/_gtmNoScript.html") %>
     <% } %>
+    <%= t.include("partials/_nav.html") %>
     <responsive-child>
-      <%= t.include("partials/_nav.html") %>  
+       
       <header class="top">
         <h1>Winter Guide 2019</h1>
         <figure>
@@ -46,9 +47,10 @@
       <main > 
         <div class="filters">
             <div class="filter-group">
-          <h2 class="nav-header">Filter by location</h2>    
+          <h2 class="nav-header">Choose locations</h2>    
           <% var cats = [
-            { data: "north", label: "North" },
+            { data: "seattle", label: "Seattle" },
+             { data: "north", label: "North" },
             { data: "south", label: "South"},
             { data: "east", label: "East" },
             { data: "west", label: "West" },
@@ -72,7 +74,7 @@
             <button class="clear-search" type="reset"><img src="assets/x-icon.svg"></button>
           </div>
                   </div>
-                 <h2 class="nav-ender"><a href="#">Back to top</a></h2> 
+                 <h2 class="nav-ender"><a href="#"><i class="fas fa-arrow-circle-up"></i></a></h2> 
          </div>
               
               <!--
@@ -95,7 +97,7 @@
           <div class="event-grid">
           <div class="grid-container">
               
-            <% var cat = {North: "north", South: "south", East: "east", West: "west"} %>
+            <% var cat = {Seattle: "seattle", North: "north", South: "south", East: "east", West: "west"} %>
                 
                 <div class="container" data-set="1">
                     
@@ -108,25 +110,21 @@
                         <div class="section-name">
                             Visual <br>Arts
                        </div>
-                        <div class="section-description arts-description">
-                            Here is a short description about visual arts museums here and here and here and here it keeps going here and here and here and here and here and here.
-                        </div>
+                        
                             </div>
-                        
-                        
                         
                         </div>
                         </div>
                     
                     <div id="democontainer"></div>
                     
-                  <div class="background-container-1">
+                  <div class="background-container-1" id="visual-arts-section">
                       
-                      <% json.testarts.forEach(function(item, i) { %>
+                      <% json.visualarts.forEach(function(item, i) { %>
                       
                 <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>" >
                     
-                  <img class="item-icon" src="assets/test.jpeg" alt="" title="<%= item.region %>">
+                  <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.region %>">
                     
                     
                   <div class="event-header">
@@ -139,9 +137,16 @@
                   
                
                   <div class="info">
-                    <p class="phone-address"><i class="fas fa-dollar-sign"></i>$11-$14 <i class="fas fa-phone-alt"></i> 1-888-238-4373 <i class="fas fa-map-marker-alt"></i> 1911 Pacific Avenue Tacoma, WA</p>
+                      <p class="phone-address"><i class="fas fa-money-bill-wave"></i> <%= item.price %><br>
+                      <i class="fas fa-phone-alt"></i> <%= item.phone %> <br>
+                    <i class="fas fa-map-marker-alt"></i> <%= item.location %> <br>
+                    <i class="fas fa-people-arrows"></i> <%= item.safety %><br>
                   </div>
                       
+                        
+                        <div class="cutline">
+                    Photo above: <%= item.cutline %> (<%= item.photocredit %>)
+                    </div>
                       <div class="expand-container" data-set="1">
                     
                     <div class="expand" data-num="<%= i %>">
@@ -150,11 +155,15 @@
                             </div>
                     
                           </div>
+                        
+                        
                     
                 <div class="chevs chevs-festivals">
                     <p class="read">Read more </p>
                     <p class="close">Close</p>
               </div>
+                          
+                          
                 </div>
                     
                    
@@ -175,9 +184,7 @@
                         <div class="section-name">
                             Cultural
                        </div>
-                        <div class="section-description cultural-description">
-                            Here is a short description about visual arts museums here and here and here and here it keeps going here and here and here and here and here and here.
-                        </div>
+                        
                             </div>
                         
                         
@@ -186,7 +193,7 @@
                         </div>
                     
                   
-                  <div class="background-container-2">
+                  <div class="background-container-2" id="cultural-section">
                       
                       <% json.testcultural.forEach(function(item, i) { %>
                       
@@ -205,7 +212,7 @@
                   
                
                   <div class="info">
-                    <p class="phone-address"><i class="fas fa-dollar-sign"></i>$11-$14 <i class="fas fa-phone-alt"></i> 1-888-238-4373 <i class="fas fa-map-marker-alt"></i> 1911 Pacific Avenue Tacoma, WA</p>
+                    <p class="phone-address"><i class="fas fa-money-bill-wave"></i> <%= item.price %> <i class="fas fa-phone-alt"></i> <%= item.phone %> <i class="fas fa-map-marker-alt"></i> <%= item.location %> <i class="fas fa-people-arrows"></i> Safety precautions go here</p>
                   </div>
                       
                       <div class="expand-container" data-set="1">
@@ -238,16 +245,14 @@
                         <div class="section-name">
                             Historical
                        </div>
-                        <div class="section-description historical-description">
-                            Here is a short description about visual arts museums here and here and here and here it keeps going here and here and here and here and here and here.
-                        </div>
+                       
                             </div>
                         
                         </div>
                         </div>
                     
                   
-                  <div class="background-container-3">
+                  <div class="background-container-3" id="historical-section">
                       <% json.testhistory.forEach(function(item, i) { %>
                       
                 <div  class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
@@ -265,7 +270,7 @@
                   
                
                   <div class="info">
-                    <p class="phone-address"><i class="fas fa-dollar-sign"></i>$11-$14 <i class="fas fa-phone-alt"></i> 1-888-238-4373 <i class="fas fa-map-marker-alt"></i> 1911 Pacific Avenue Tacoma, WA</p>
+                    <p class="phone-address"><i class="fas fa-money-bill-wave"></i> <%= item.price %> <i class="fas fa-phone-alt"></i> <%= item.phone %> <i class="fas fa-map-marker-alt"></i> <%= item.location %> <i class="fas fa-people-arrows"></i> Safety precautions go here</p>
                   </div>
                       
                       <div class="expand-container" data-set="1">
@@ -300,16 +305,14 @@
                         <div class="section-name">
                             Other
                        </div>
-                        <div class="section-description other-description">
-                            Here is a short description about visual arts museums here and here and here and here it keeps going here and here and here and here and here and here.
-                        </div>
+                        
                             </div>
                         
                         </div>
                         </div>
                     
                     
-                  <div class="background-container-4">
+                  <div class="background-container-4" id="other-section">
                       
                       <% json.testother.forEach(function(item, i) { %>
                       

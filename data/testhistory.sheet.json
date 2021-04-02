@@ -12,7 +12,10 @@
     "hours": "9 a.m.-6 p.m. Nov. 17-Nov. 28; 9 a.m.-7 p.m. Nov. 29-Dec. 23; 9 a.m.-3 p.m. Dec. 24 ",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
     "region": "North",
-    "author": "fistname lastname"
+    "author": "fistname lastname",
+    "photo": "assets/test.jpeg",
+    "cutline": "Cutline for photo goes here and here and here and here and here and here and here and here and here",
+    "photo credit": "Courtesy of xxxxx xxxxx xxxxx xxxx"
   },
   {
     "event": "Julefest: A Nordic Christmas Festival",
@@ -27,7 +30,10 @@
     "hours": "10 a.m.-5 p.m.",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
     "region": "South",
-    "author": "fistname lastname"
+    "author": "fistname lastname",
+    "photo": "assets/test.jpeg",
+    "cutline": "Cutline for photo goes here and here and here and here and here and here and here and here and here",
+    "photo credit": "Courtesy of xxxxx xxxxx xxxxx xxxx"
   },
   {
     "event": "Fairhaven Winterfest",
@@ -42,7 +48,10 @@
     "hours": "Times vary",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
     "region": "East",
-    "author": "fistname lastname"
+    "author": "fistname lastname",
+    "photo": "assets/test.jpeg",
+    "cutline": "Cutline for photo goes here and here and here and here and here and here and here and here and here",
+    "photo credit": "Courtesy of xxxxx xxxxx xxxxx xxxx"
   },
   {
     "event": "Winterfest",
@@ -57,7 +66,10 @@
     "hours": "Times vary",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
     "region": "West",
-    "author": "fistname lastname"
+    "author": "fistname lastname",
+    "photo": "assets/test.jpeg",
+    "cutline": "Cutline for photo goes here and here and here and here and here and here and here and here and here",
+    "photo credit": "Courtesy of xxxxx xxxxx xxxxx xxxx"
   },
   {
     "event": "Christmas Ship Festival",
@@ -70,8 +82,11 @@
     "dates": "Nov. 30",
     "hours": "6:30-9:15 p.m.",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
-    "region": "West",
-    "author": "fistname lastname"
+    "region": "Seattle",
+    "author": "fistname lastname",
+    "photo": "assets/test.jpeg",
+    "cutline": "Cutline for photo goes here and here and here and here and here and here and here and here and here",
+    "photo credit": "Courtesy of xxxxx xxxxx xxxxx xxxx"
   },
   {
     "event": "Garden d'Lights",
@@ -86,7 +101,10 @@
     "hours": "4:30-9 p.m. nightly",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
     "region": "South",
-    "author": "fistname lastname"
+    "author": "fistname lastname",
+    "photo": "assets/test.jpeg",
+    "cutline": "Cutline for photo goes here and here and here and here and here and here and here and here and here",
+    "photo credit": "Courtesy of xxxxx xxxxx xxxxx xxxx"
   },
   {
     "event": "Weihnachtsfest Christmas Party",
@@ -101,7 +119,10 @@
     "hours": "1-5 p.m.",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
     "region": "North",
-    "author": "fistname lastname"
+    "author": "fistname lastname",
+    "photo": "assets/test.jpeg",
+    "cutline": "Cutline for photo goes here and here and here and here and here and here and here and here and here",
+    "photo credit": "Courtesy of xxxxx xxxxx xxxxx xxxx"
   },
   {
     "event": "Christmas Lighting Festival",
@@ -116,7 +137,10 @@
     "hours": "all day",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
     "region": "North",
-    "author": "fistname lastname"
+    "author": "fistname lastname",
+    "photo": "assets/test.jpeg",
+    "cutline": "Cutline for photo goes here and here and here and here and here and here and here and here and here",
+    "photo credit": "Courtesy of xxxxx xxxxx xxxxx xxxx"
   },
   {
     "event": "Bow Farmers Market Holiday Festival",
@@ -130,7 +154,10 @@
     "hours": "10 a.m.-4 p.m.",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
     "region": "South",
-    "author": "fistname lastname"
+    "author": "fistname lastname",
+    "photo": "assets/test.jpeg",
+    "cutline": "Cutline for photo goes here and here and here and here and here and here and here and here and here",
+    "photo credit": "Courtesy of xxxxx xxxxx xxxxx xxxx"
   },
   {
     "event": "Hometown Holiday",
@@ -145,7 +172,10 @@
     "hours": "3-7 p.m.",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
     "region": "East",
-    "author": "fistname lastname"
+    "author": "fistname lastname",
+    "photo": "assets/test.jpeg",
+    "cutline": "Cutline for photo goes here and here and here and here and here and here and here and here and here",
+    "photo credit": "Courtesy of xxxxx xxxxx xxxxx xxxx"
   },
   {
     "event": "39th Annual Winter Festival & Crafts Fair",
@@ -160,7 +190,10 @@
     "hours": "10 a.m.-5 p.m.",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
     "region": "East",
-    "author": "fistname lastname"
+    "author": "fistname lastname",
+    "photo": "assets/test.jpeg",
+    "cutline": "Cutline for photo goes here and here and here and here and here and here and here and here and here",
+    "photo credit": "Courtesy of xxxxx xxxxx xxxxx xxxx"
   },
   {
     "event": "Candy Cane Lane",
@@ -174,6 +207,9 @@
     "hours": "4-9:30 p.m. Sundays-Thursdays, 4-11 p.m. Fridays-Saturdays",
     "vignette": "tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer",
     "region": "West",
-    "author": "fistname lastname"
+    "author": "fistname lastname",
+    "photo": "assets/test.jpeg",
+    "cutline": "Cutline for photo goes here and here and here and here and here and here and here and here and here",
+    "photo credit": "Courtesy of xxxxx xxxxx xxxxx xxxx"
   }
 ]
