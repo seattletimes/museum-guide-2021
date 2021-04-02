@@ -17,17 +17,20 @@
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
         
     <%= t.include("partials/_head.html", grunt.data.json) %>
+        
         <% if (json.project.production && !json.project.embedded) { %>
             <%= t.include("partials/_dataLayer.html") %>
                 <%= t.include("partials/_gtm.html") %>
                     <% } %>
+                        
+                        <script src="https://kit.fontawesome.com/9d53be7224.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <% if (json.project.production && !json.project.embedded) { %>
         <%= t.include("partials/_gtmNoScript.html") %>
-            <% } %>
+             <% } %> 
                 <responsive-child>
                     <%= t.include("partials/_nav.html") %>
                         <header class="top">
@@ -67,43 +70,13 @@
                                 </div>
                             </div>
 
-
+                        
                         </header>
-
+            </responsive-child>
+                 
                         <main>
 
-
-
-                </responsive-child>
-
-                <div class="credits">
-                    Illustrations by Gabriel Campanario
-                    <div>Design and Development by Miranda Hardy</div>
-                    <div>Research by Yasmeen Wafai</div>
-                    <div>Project editing by Emily Eng and Trevor Lenzmeier</div>
-                </div>
-                </main>
-
-                <%= t.include("partials/_dontMiss.html", grunt.data.json) %>
-                    <%= t.include("partials/_navBottom.html") %>
-
-                        <script src="app.js" async></script>
-                        <% if (json.project.production) { %>
-                            <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
-                                <%= t.include("partials/_workHere.html") %>
-                                    <% } %>
-</body>
-
-      <%= t.include("partials/_dataLayer.html") %>
-      <%= t.include("partials/_gtm.html") %>
-    <% } %>
-        <script src="https://kit.fontawesome.com/9d53be7224.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <% if (json.project.production && !json.project.embedded) { %>
-      <%= t.include("partials/_gtmNoScript.html") %>
-    <% } %>
-    <%= t.include("partials/_nav.html") %>
+ 
     <responsive-child>
        
       <header class="top">
