@@ -1,22 +1,35 @@
 var paywall = require("./lib/paywall");
 setTimeout(() => paywall(12169135), 5000);
 
+const $ = require('jquery');
+
+require("component-responsive-frame/child");
+
 var catList = document.querySelectorAll(".filter-buttons");
 var searchBox = document.querySelector(".filters .search");
 var header = document.querySelector(".filters");
 var sticky = header.offsetTop;
 var clearSearch = document.querySelector(".clear-search");
 var allEventsButton = document.querySelector(".all-events");
+var visualArtsSection = document.getElementById("visual-arts-section");
+var culturalSection = document.getElementById("cultural-section");
+var historicalSection = document.getElementById("historical-section");
+var otherSection = document.getElementById("other-section");
+
 
 var eventGrid = document.querySelector(".event-grid");
 var events = document.querySelectorAll(".event");
 var resultBox = document.querySelector(".no-results");
 
-var show = ['festivals', 'lights', 'markets', 'parties', 'runs', 'special-events'];
+var show = ['seattle','north', 'south', 'east', 'west'];
 var result; 
 
+
+
+
+
 function filterByCategory(cat){
-  if(show.length == 6){
+  if(show.length == 5){
     show = [];
   }
   if (show.indexOf(cat) > -1){
@@ -41,7 +54,7 @@ function combineFilters(){
     if(searchText.length == 0){
       for(var z = 0; z<events.length; z++){
         if(show.indexOf(events[z].dataset.category) > -1){
-          events[z].style.display="inline";
+          events[z].style.display="block";
           result += 1;
         }
         else{
@@ -54,7 +67,7 @@ function combineFilters(){
       for( var a = 0; a<events.length; a++){
         var eventText = events[a].innerText.toLowerCase();
         if ((eventText.search(searchText) > -1) && (show.indexOf(events[a].dataset.category) > -1)){
-          events[a].style.display="inline";
+          events[a].style.display="block";
           result =+ 1;
         }
         else{
@@ -72,14 +85,25 @@ function combineFilters(){
   }   
 }
 
+
+
 function noResults(){
   if (result==0){
-    resultBox.style.display="block";  
+    resultBox.style.display="block"; 
+    visualArtsSection.style.display="none";
+    culturalSection.style.display="none";
+    historicalSection.style.display="none";
+    otherSection.style.display="none";
   }
   else{
-    resultBox.style.display="none"; 
+    resultBox.style.display="none";
+   visualArtsSection.style.display="block";
+    culturalSection.style.display="block";
+    historicalSection.style.display="block";
+    otherSection.style.display="block";
   }
 }
+
 
 function fixNav(){
   if(window.pageYOffset > sticky) {
@@ -90,6 +114,7 @@ function fixNav(){
   }
 }
 
+
 function clearSearchBox(){
   searchBox.value = "";
   clearSearch.style.display="none";
@@ -98,7 +123,7 @@ function clearSearchBox(){
 
 function allEvents(){
   clearSearchBox();
-  show = ['festivals', 'lights', 'markets', 'parties', 'runs', 'special-events'];
+  show = ['seattle','north', 'south', 'east', 'west'];
   if (this.classList.length == 1){
     this.classList.add("checked");
   }
@@ -110,7 +135,7 @@ function allEvents(){
     catList[x].classList.remove("checked");
   }
   for(var i = 0; i<events.length; i++){
-    events[i].style.display="inline";
+    events[i].style.display="block";
   }  
 }
 
@@ -143,9 +168,134 @@ function searchListener(){
 }
 
 
+/*
+function selectedCategory(eventType, category) {
+    if ()
+}
+
+*/
+
 clearSearch.addEventListener("click", clearSearchBox);
 allEventsButton.addEventListener("click", allEvents);
 searchBox.addEventListener("keyup", searchListener);
 window.onscroll = function() {fixNav()};
 detectIE();
+
+
+
+if ($(window).width() < 700) {
+   $('.desktop').hide();
+   $('.mobile').show();
+
+   document.querySelectorAll('.box').forEach(el => {
+      var boxNumber = el.dataset.num;
+      var conSet = el.parentNode.dataset.set;
+      var findExpand = document.querySelector(`.expandContainer[data-set="${conSet}"]`);
+      var theRightExpand = findExpand.querySelector(`.expand[data-num="${boxNumber}"]`);
+      el.after(theRightExpand);
+  });
+} else {
+  $('.desktop').show();
+  $('.mobile').hide();
+}
+
+
+
+$( ".box" ).click(function() {
+  var number = $(this).data("num");
+  var set = $(this).closest('.container').data("set");
+  var expandCon = $(this).closest('.container');
+
+    
+    
+  if ( $(this).hasClass("selected") ) {
+    expandCon.find(`.expand[data-num="${number}"]`).hide();
+    $(this).removeClass('selected');
+    $(this).find('.chevs').removeClass('selected');
+  } else {
+    $(this).addClass('selected');
+    $(this).find('.chevs').addClass('selected');
+    expandCon.find(`.expand[data-num="${number}"]`).show();
+  }
+});
+
+$( ".collapse" ).click(function() {
+  var number = $(this).closest('.expand').data("num");
+  var expandCon = $(this).closest('.container');
+
+
+  expandCon.find(`.expand[data-num="${number}"]`).hide();
+  expandCon.find(`.box[data-num="${number}"]`).removeClass('selected');
+  expandCon.find(`.box[data-num="${number}"] .chevs`).removeClass('selected');
+
+  $('html, body').animate({
+    scrollTop: expandCon.find(`.box[data-num="${number}"]`).offset().top - 20 //#DIV_ID is an example. Use the id of your destination on the page
+  }, 'fast');
+
+});
+
+
+
+
+
+var img = document.createElement("img");
+img.src = "assets/people-1.png";
+img.classList.add("people-watch")
+
+var parents = document.getElementsByClassName("event")
+
+for (var i = 0, ii = parents.length; i < ii; i++) {
+    var parent = parents[i]
+     if (i % 5 === 0) {
+            parent.classList.add("people-image");
+            parent.appendChild(img.cloneNode(true));
+        }
+}
+
+
+/*
+var addimages;
+addimages = document.getElementsByClassName("people-image");
+
+for (var i = 0, ii = addimages.length; i < ii; i++) {
+    var addimage = addimages[i];
+    addimage.appendChild(img);
+        
+}
+
+*/
+/*
+var container_block;
+
+var img = document.createElement("img");
+img.src = "http://www.google.com/intl/en_com/images/logo_plain.png";
+ 
+container_block = document.getElementsByClassName("people-image");
+container_block[0].appendChild(img);
+
+
+/*
+
+
+
+/*
+var container_block ;
+
+var img = document.createElement("img");
+img.src = "http://www.google.com/intl/en_com/images/logo_plain.png";
+ 
+container_block = document.getElementById( 'imageadd' );
+container_block.appendChild( img );
+
+*/
+
+
+
+
+
+
+
+
+
+
 
