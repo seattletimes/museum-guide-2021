@@ -1,12 +1,35 @@
 @import "seattletimes";
 
+
+
+/*-- Start intro styles --*/
+
+
+// .section-header {
+//   position: relative;
+// }
+
+// .header-arts {
+//     background: rgb(229,214,255);
+// background: linear-gradient(180deg, rgba(229,214,255,1) 0%, rgba(87,37,170,1) 100%);
+// }
+
 #mgtitle {
   border: 70px solid;
-  padding: 50px;
-  border-image: url("./assets/frame-border.png") 15% round; 
+  padding: 30px;
+  border-image: url("./assets/frame-border.png") 18% repeat;
+  background-image: url("./assets/title-background.png");
+  background-position: center;
+  background-clip: border-box;
+  background-repeat: no-repeat;
   max-width: 630px;
-  margin: 10% auto 0;
-  @media @mobile, @tablet{
+  margin: 3% auto 1%;
+  @media @tablet{
+    padding: 20px;
+    margin: 5% auto 0;
+    
+  }
+  @media @mobile{
     padding: 20px;
     margin: 30px auto;
   }
@@ -15,14 +38,14 @@
 #intro {
   margin: 0 auto;
   padding: 15px;
-  // background-color: red;
+  background-color: #fbeadf;
   padding-bottom: 10px;
 }
 
 #frames {
   height: 100%;
   max-width: 630px;
-  margin: 15% auto 5%;
+  margin: 20% auto 5%;
   @media @mobile{
     margin: 0 auto;
 
@@ -62,17 +85,27 @@ body {
 }
 
 h1 {
-  font-size: 68px;
+  font-size: 60px;
   text-align: center;
   margin-bottom: 0px;
   padding-bottom: 40px;
-  font-family: 'Yeseva One', cursive;
-  color: #12562a;
-  animation: neon 1s ease-in-out infinite alternate;
-  letter-spacing: 2px;
+  font-family: @df-sans;
+  color: black;
   @media @mobile {
-    font-size: 35px;
+    font-size: 40px;
   }
+}
+
+h2 {
+  text-align: center;
+}
+
+h2.subhed {
+  max-width: 630px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+
 }
 
 .graphic-hed {
@@ -88,31 +121,9 @@ h1 {
   text-align: center;
 }
 
-ul {
-    padding-inline-start: 0px;
-}
 
-/*-- Animation Keyframes for h1 glow --*/
-@keyframes neon {
-  from {
-    text-shadow:
-    0 0 10px rgba(105, 158, 78, 0.92),
-    0 0 20px rgba(96, 172, 98, 0.541),
-    0 0 12px rgba(21, 231, 74, 0.52),
-    0 0 21px #7dff7b,
-    0 0 50px rgba(38, 194, 24, 0.78),
-    0 0 65px rgba(7, 243, 38, 0.92);
-  }
-  to {
-    text-shadow:
-    0 0 6px rgba(120, 168, 97, 0.92),
-    0 0 30px rgba(45, 102, 48, 0.541),
-    0 0 40px rgba(21, 231, 74, 0.52),
-    0 0 21px #7dff7b,
-    0 0 50px rgba(43, 224, 27, 0.78),
-    0 0 60px rgba(58, 219, 80, 0.92);
-  }
-}
+/*-- End intro styles --*/
+
 
 /*-- Head content --*/
 header.top {
