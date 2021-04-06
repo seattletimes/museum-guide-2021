@@ -1,11 +1,11 @@
 {
-  "name": "winter-events-2019",
+  "name": "museum-guide-2021",
   "description": "",
   "version": "0.0.1",
-  "author": "Miranda",
+  "author": "Stephanie",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seattletimes/winter-events-2019.git"
+    "url": "https://github.com/seattletimes/museum-guide-2021.git"
   },
   "dependencies": {
     "archieml": "^0.4.2",

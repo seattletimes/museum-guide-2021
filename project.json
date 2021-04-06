@@ -2,7 +2,7 @@
   "s3": {
     "stage": {
       "bucket": "projects-staging.seattletimes.com",
-      "path": ""
+      "path": "utterly-faded"
     },
     "live": {
       "bucket": "projects.seattletimes.com",
@@ -10,7 +10,7 @@
     }
   },
   "author": "",
-  "title": "",
+  "title": "Your guide to the most intriguing exhibits in the Seattle area this spring",
   "description": "",
   "url": "",
   "post_id": "",

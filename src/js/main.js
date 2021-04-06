@@ -19,7 +19,6 @@ var otherSection = document.getElementById("other-section");
 
 var eventGrid = document.querySelector(".event-grid");
 var events = document.querySelectorAll(".event");
-var resultBox = document.querySelector(".no-results");
 
 var show = ['seattle','north', 'south', 'east', 'west'];
 var result; 
@@ -89,14 +88,12 @@ function combineFilters(){
 
 function noResults(){
   if (result==0){
-    resultBox.style.display="block"; 
     visualArtsSection.style.display="none";
     culturalSection.style.display="none";
     historicalSection.style.display="none";
     otherSection.style.display="none";
   }
   else{
-    resultBox.style.display="none";
    visualArtsSection.style.display="block";
     culturalSection.style.display="block";
     historicalSection.style.display="block";
