@@ -37,20 +37,19 @@
 
                             <div id="intro">
 
-                                <h1 id="mgtitle">XXX Museum & Gallery Bang Hed</h1>
+                                <h1 id="mgtitle">Sparking curiosity</h1>
 
                                 <h2 class="subhed">Your guide to the most intriguing exhibits in the Seattle area this spring</h2>
 
                                 <div class="chatter">
                                     <div class="byline-pubdate">
                                         <p class="byline">By Seattle Times staff</p>
-                                        <p class="pub-date"></p>Published Nov. 17, 2019</p>
+                                        <p class="pub-date"></p>Published April XX, 2021</p>
                                     </div>
-                                    <p>The holiday season is here — and with it, an abundance of events and activities are coming to the Seattle area. Whether you want to shop for gifts at a holiday market, take the kids to see Santa or hum along to cheery
-                                        holiday music, there’s no shortage of ways to have festive fun in the coming weeks. Use this guide to help decide where to go and what to do before, after or on the holidays. In case of cancellations or schedule
-                                        changes, always check times and dates before you go.</p>
-                                    <p style="font-style:italic; font-size:16px;">Correction: A previous version of this calendar listed the address for the Dec. 21 Northwest Firelight Chorale Concert as University Congregational Church, 4515 Sixth Ave. N.E. This post has been updated to reflect
-                                        the correct address as University Congregational Church, 4515 Sixteenth Ave. N.E.</p>
+                                
+                                <% json.intro.forEach(function(item, i) { %> 
+                                    <%= item.intro %>
+                                        <% }) %>
                                 </div>
 
                                 <div>
@@ -167,7 +166,7 @@
                           <div class="expand-container" data-set="1">
                     
                     <div class="expand" data-num="<%= i %>">
-                              <p><%= item.vignette %></p>
+                              <%= item.vignette %>
                         <p class="author">– <%= item.author %></p>
                             </div>
                     
@@ -247,7 +246,7 @@
                          <div class="expand-container" data-set="1">
                     
                     <div class="expand" data-num="<%= i %>">
-                              <p><%= item.vignette %></p>
+                              <%= item.vignette %>
                             <p class="author">– <%= item.author %></p>
                             </div>
                     
@@ -316,7 +315,7 @@
                          <div class="expand-container" data-set="1">
                     
                     <div class="expand" data-num="<%= i %>">
-                              <p><%= item.vignette %></p>
+                              <%= item.vignette %>
                         <p class="author">– <%= item.author %></p>
                             </div>
                     
@@ -390,7 +389,7 @@
                          <div class="expand-container" data-set="1">
                     
                     <div class="expand" data-num="<%= i %>">
-                              <p><%= item.vignette %></p>
+                              <%= item.vignette %>
                         <p class="author">– <%= item.author %></p>
                             </div>
                     
@@ -413,6 +412,10 @@
                           <div class="cutline">
                     Photo above: <%= item.cutline %> (<%= item.photocredit %>)
                     </div>
+                              
+                              </div>
+                    <% }) %>
+                      </div>
                     </main>
 
                     <%= t.include("partials/_dontMiss.html", grunt.data.json) %>
