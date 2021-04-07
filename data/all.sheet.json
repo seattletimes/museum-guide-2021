@@ -1,6 +1,7 @@
 [
   {
     "event": "Cascadia Art Museum",
+    "TrevWork (combined exhibits and dates)": "“Dreaming Forms: The Art of Leo Kenney”;  “Stolen Moments: The Photography of Shedrich Williames”; all current exhibits run through May 23",
     "exhibitname": "“Dreaming Forms: The Art of Leo Kenney”;  “Stolen Moments: The Photography of Shedrich Williames”",
     "dates": "All current exhibits run through May 23",
     "category": "Visual Arts",
@@ -19,6 +20,7 @@
   },
   {
     "event": "Frye Art Museum",
+    "TrevWork (combined exhibits and dates)": "“(Don’t Be Absurd) Alice in Parts” through April 25; “Unsettling Femininity” through May 30; “Art on the Mind” through Nov. 14",
     "exhibitname": "“(Don’t Be Absurd) Alice in Parts”; “Unsettling Femininity”; “Art on the Mind” ",
     "dates": "“(Don’t Be Absurd) Alice in Parts” through April 25; “Unsettling Femininity” through May 30; “Art on the Mind” through Nov. 14",
     "category": "Visual Arts",
@@ -37,6 +39,7 @@
   },
   {
     "event": "Greg Kucera Gallery",
+    "TrevWork (combined exhibits and dates)": "Exhibits of Jacob Lawrence’s and Joey Veltkamp’s works, through April 17",
     "exhibitname": "Jacob Lawrence and Joey Veltkamp",
     "dates": "Jacob Lawrence and Joey Veltkamp run through April 17 ",
     "category": "Visual Arts",
@@ -55,6 +58,7 @@
   },
   {
     "event": "MadArt\n\n",
+    "TrevWork (combined exhibits and dates)": "“Parable of Gravity,” through April 17  ",
     "exhibitname": "“Parable of Gravity” ",
     "dates": "“Parable of Gravity” through April 17",
     "category": "Visual Arts",
@@ -73,11 +77,13 @@
   },
   {
     "event": "Martyr Sauce",
+    "TrevWork (combined exhibits and dates)": "New space opening May 6, 2021; upcoming exhibit featuring muralist Kenji Stoll, dates and title forthcoming",
     "dates": "New space opening May 6, 2021",
     "category": "Visual Arts",
     "price": "$5",
     "location": "108 S. Jackson St., Seattle",
     "website_online": "martyrsauce.com/",
+    "phone": "contact@martyrsauce.com",
     "hours": "Thursday-Saturday by appointment",
     "vignette": "With her colorful, larger-than-life installations, Tariqa Waters — artist, curator and founder of the gallery Martyr Sauce — is always one to watch. And that’s about to get a whole lot easier now that Martyr Sauce is relaunching in a new space this May. The new space is above ground (as opposed to the original, very cool but underground space in Pioneer Square) and features large windows which Waters says she’ll take full advantage of by curating and creating large enticing installations that you’ll be able to enjoy from the street. (The original Martyr Sauce space will have new programming, too, after the pandemic eases.) In the new space, Waters will commission artists in collaborative works that she calls “transformative and immersive experiences through public engagement.” First up is Tacoma-based visual artist and muralist Kenji Stoll. “You won’t have to enter the space,” said Waters. “You can soak it up from the street and when you come inside, it’s a treat.”\n\n",
     "author": "Crystal Paul ",
@@ -89,6 +95,7 @@
   },
   {
     "event": "Museum of Glass",
+    "TrevWork (combined exhibits and dates)": "“Transparency,” through summer; “René Lalique: Art Deco Gems from the Steven and Roslyn Shulman Collection,” through fall; “Counterparts,” as of this writing, does not have a closing date ",
     "exhibitname": "“Transparency”; “René Lalique: Art Deco Gems from the Steven and Roslyn Shulman Collection”; “Counterparts”",
     "dates": "“Transparency” shows through summer; “René Lalique” through fall; “Counterparts,” as of this writing, does not have a closing date ",
     "category": "Visual Arts",
@@ -107,6 +114,7 @@
   },
   {
     "event": "Seattle Art Museum",
+    "TrevWork (combined exhibits and dates)": "“Jacob Lawrence: The American Struggle,” through May 23; “Barbara Earl Thomas: The Geography of Innocence,” through Nov. 14; “Dawn Cerny: Les Choses,” April 9 through Sept. 26; “Monet at Étretat,” June 25 through Oct. 17",
     "exhibitname": "“Jacob Lawrence: The American Struggle”; “Barbara Earl Thomas: The Geography of Innocence”; “Dawn Cerny: Les Choses”; “Monet at Étretat”",
     "dates": "“The American Struggle” through May 23; “The Geography of Innocence” through Nov. 14; “Les Choses,” April 9 through Sept. 26; “Monet at Étretat,” June 25 through Oct. 17",
     "category": "Visual Arts",
@@ -125,6 +133,7 @@
   },
   {
     "event": "Tacoma Art Museum",
+    "TrevWork (combined exhibits and dates)": "“Immigrant Artists”; “Painting Deconstructed”; as of this writing, neither exhibition has a closing date",
     "exhibitname": "“Immigrant Artists”; “Painting Deconstructed”",
     "dates": "“Immigrant Artists” and “Painting Deconstructed,” as of this writing, do not have closing dates",
     "category": "Visual Arts",
@@ -143,6 +152,7 @@
   },
   {
     "event": "Wa Na Wari",
+    "TrevWork (combined exhibits and dates)": "Exhibits of Carletta Carrington Wilson’s, Lisa Myers Bulmash’s, Mia Imani’s, Shoccara Marcus’s and Kyle Yearwood’s works, through July 18",
     "exhibitname": "Carletta Carrington Wilson; Lisa Myers Bulmash; Mia Imani; Shoccara Marcus; Kyle Yearwood  ",
     "dates": "Carletta Carrington Wilson, Lisa Myers Bulmash, Mia Imani, Shoccara Marcus and Kyle Yearwood exhibits through July 18",
     "category": "Visual Arts",
@@ -161,7 +171,8 @@
   },
   {
     "event": "Foothills Historical Museum",
-    "dates": "Reopening planned for May 1",
+    "TrevWork (combined exhibits and dates)": "Reopening planned for early May",
+    "dates": "Reopening planned for early May",
     "category": "History",
     "price": "Free",
     "location": "130 N. River Ave., Buckley",
@@ -170,11 +181,14 @@
     "hours": "Sunday 1-4 p.m., Tuesday-Thursday noon-4 p.m.",
     "vignette": "The Foothills Historical Museum in downtown Buckley, Pierce County, was started by veterinarian Jess Rose and his wife Maxine in 1981. Now run by their daughters Martha Olsen and Ann Gibson, plus an additional staff of a little over a dozen volunteers (including their cousin Nancy Stratton and Olsen’s husband Walt), the museum is dedicated to telling the stories of how people from small towns across the Carbon River Valley have spent their lives and celebrating the regional logging, mining and farming history.\n\nYou can view period rooms including a schoolroom, barber shop, general store, butcher shop, doctor’s office and more spread across three gallery areas. The museum is also home to thousands of historical photographs, a complete collection of the Buckley Banner newspaper from 1892-1970, and the Buckley/White River High School annual yearbooks from 1903-present. Volunteers will work with anyone looking to research their family history or answer general history questions about the area. Across the street from the main museum is a collection of relocated buildings including a lookout tower, saw shop and bunkhouse from the Scott Paper Company’s logging camp, a blacksmith shop, and a Washington state forestry guard station.\n\n ",
     "author": "Jackie Varriano",
+    "photocredit": "Amanda Snyder / The Seattle Times",
     "region": "South",
+    "cutline": "Foothills Historical Museum in Buckley, Pierce County, will reopen on May 1 — it’s been closed for the past year due to the pandemic. ",
     "safety": "Masks and social distancing required, some outdoor buildings may be closed"
   },
   {
     "event": "Museum of History & Industry (MOHAI)",
+    "TrevWork (combined exhibits and dates)": "“Stand Up Seattle: The Democracy Project,” through July 5 ",
     "exhibitname": "“Stand Up Seattle: The Democracy Project” ",
     "dates": "“Stand Up Seattle: The Democracy Project” through July 5",
     "category": "History",
@@ -192,6 +206,7 @@
   },
   {
     "event": "Washington State History Museum",
+    "TrevWork (combined exhibits and dates)": "“Crossing Boundaries: Portraits of a Transgender West,” May 29 through Dec. 12",
     "exhibitname": "“Crossing Boundaries: Portraits of a Transgender West”",
     "dates": "“Crossing Boundaries: Portraits of a Transgender West,” May 29 through Dec. 12",
     "category": "History",
@@ -209,6 +224,7 @@
   },
   {
     "event": "National Nordic Museum",
+    "TrevWork (combined exhibits and dates)": "“Among Forests and Lakes: Landscape Masterpieces from the Finnish National Gallery,” May 6 through Oct. 17",
     "exhibitname": "“Among Forests and Lakes: Landscape Masterpieces from the Finnish National Gallery”",
     "dates": "“Among Forests and Lakes: Landscape Masterpieces from the Finnish National Gallery,” May 6 through Oct. 17",
     "category": "Cultural",
@@ -226,6 +242,7 @@
   },
   {
     "event": "Suquamish Museum ",
+    "TrevWork (combined exhibits and dates)": "“Chief Seattle Days,” April 9 through January 2022",
     "exhibitname": "“Chief Seattle Days”",
     "dates": "“Chief Seattle Days,” April 9 through January 2022",
     "category": "Cultural",
@@ -243,6 +260,7 @@
   },
   {
     "event": "Wing Luke Museum",
+    "TrevWork (combined exhibits and dates)": "“Where Beauty Lies,” through Sept. 19",
     "exhibitname": "“Where Beauty Lies”",
     "dates": "“Where Beauty Lies,” through Sept. 19",
     "category": "Cultural",
@@ -260,6 +278,7 @@
   },
   {
     "event": "Burke Museum of Natural History and Culture",
+    "TrevWork (combined exhibits and dates)": "n/a",
     "category": "Other",
     "price": "$14-$22",
     "location": "4300 15th Ave. N.E., Seattle",
@@ -275,6 +294,7 @@
   },
   {
     "event": "MoPOP",
+    "TrevWork (combined exhibits and dates)": "“Pearl Jam: Home and Away”",
     "exhibitname": "“Pearl Jam: Home and Away”",
     "category": "Other",
     "price": "$21-$30",
@@ -291,6 +311,7 @@
   },
   {
     "event": "The Museum of Flight",
+    "TrevWork (combined exhibits and dates)": "“Untold Stories: World War II at 75”",
     "exhibitname": "“Untold Stories: World War II at 75”",
     "category": "Other",
     "price": "$17-$25",
@@ -307,6 +328,7 @@
   },
   {
     "event": "Washington State Ski and Snowboard Museum ",
+    "TrevWork (combined exhibits and dates)": "n/a",
     "category": "Other",
     "price": "Free",
     "location": "10 Pass Life Way, Snoqualmie Pass",

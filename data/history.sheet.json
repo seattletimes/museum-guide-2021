@@ -1,7 +1,7 @@
 [
   {
     "event": "Foothills Historical Museum",
-    "dates": "Reopening planned for May 1",
+    "exhibitname": "Reopening planned for early May",
     "category": "History",
     "price": "Free",
     "location": "130 N. River Ave., Buckley",
@@ -11,12 +11,12 @@
     "vignette": "<p>The Foothills Historical Museum in downtown Buckley, Pierce County, was started by veterinarian Jess Rose and his wife Maxine in 1981. Now run by their daughters Martha Olsen and Ann Gibson, plus an additional staff of a little over a dozen volunteers (including their cousin Nancy Stratton and Olsen’s husband Walt), the museum is dedicated to telling the stories of how people from small towns across the Carbon River Valley have spent their lives and celebrating the regional logging, mining and farming history.</p>\n\n<p>You can view period rooms including a schoolroom, barber shop, general store, butcher shop, doctor’s office and more spread across three gallery areas. The museum is also home to thousands of historical photographs, a complete collection of the Buckley Banner newspaper from 1892-1970, and the Buckley/White River High School annual yearbooks from 1903-present. Volunteers will work with anyone looking to research their family history or answer general history questions about the area. Across the street from the main museum is a collection of relocated buildings including a lookout tower, saw shop and bunkhouse from the Scott Paper Company’s logging camp, a blacksmith shop, and a Washington state forestry guard station.</p>\n\n ",
     "author": "Jackie Varriano",
     "region": "South",
+    "cutline": "Foothills Historical Museum in Buckley, Pierce County, will reopen on May 1 — it’s been closed for the past year due to the pandemic. ",
     "safety": "Masks and social distancing required, some outdoor buildings may be closed"
   },
   {
     "event": "Museum of History & Industry (MOHAI)",
-    "exhibitname": "“Stand Up Seattle: The Democracy Project” ",
-    "dates": "“Stand Up Seattle: The Democracy Project” through July 5",
+    "exhibitname": "“Stand Up Seattle: The Democracy Project,” through July 5 ",
     "category": "History",
     "price": "$17-$22",
     "location": "860 Terry Ave., Seattle",
@@ -33,8 +33,7 @@
   },
   {
     "event": "Washington State History Museum",
-    "exhibitname": "“Crossing Boundaries: Portraits of a Transgender West”",
-    "dates": "“Crossing Boundaries: Portraits of a Transgender West,” May 29 through Dec. 12",
+    "exhibitname": "“Crossing Boundaries: Portraits of a Transgender West,” May 29 through Dec. 12",
     "category": "History",
     "price": "$11-$14",
     "location": "1911 Pacific Ave., Tacoma",
@@ -46,7 +45,7 @@
     "photocredit": "Peter Boag / Washington State History Museum",
     "region": "South",
     "photo": "assets/wastatehistory.jpg",
-    "cutline": "Mrs. Nash died in 1878 at Fort Lincoln in Dakota Territory. She was Mexican/Mexican American, a trans woman and worked as a laundress for the famed Seventh Cavalry, so knew the Custers, according to Peter Boag, curator and Washington State University history professor. Her story will be featured in the “Crossing Boundaries: Portraits of a Transgender West” exhibition at Washington State History Museum. ",
+    "cutline": "Jack Garland “Babe Bean,” who was born Elvira Virginia Mugarietta in San Francisco, 1869, was a Mexican American trans man, according to Peter Boag, curator and Washington State University history professor. His story will be featured in the “Crossing Boundaries: Portraits of a Transgender West” exhibition at Washington State History Museum.",
     "safety": "Masks or face coverings are required; social distancing, reduced occupancy and one-way gallery paths"
   }
 ]
