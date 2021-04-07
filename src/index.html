@@ -130,32 +130,8 @@
                                 </div>
                             </div>
 
-                            <div id="democontainer"></div>
-                                <div class="background-container-1" id="visual-arts-section">
-                                    <% json.visualarts.forEach(function(item, i) { %>
-                                     <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
-                                         <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.region %>">
-                                        <div class="event-header">
-                                            <p class="museum-name">
-                                                <a href="<%= item.website_online %>" target="_blank">
-                                                    <%= item.event %>
-                                                </a>
-                                            </p>
-                                            <p class="dates"> <span class="name"><%= item.exhibitname %></span>
-                                            </p>
-                                            <p class="hours"></p>
-                                        </div>
 
-                                        <div class="expand-container" data-set="1">
-                                            <div class="expand" data-num="<%= i %>">
-                                                <%= item.vignette %>
-                                                    <p class="author">–
-                                                        <%= item.author %>
-                                                    </p>
-                                            </div>
-                                         </div>
-
-                                            <div id="democontainer"></div>
+                                
 
                                             <div class="background-container-1" id="visual-arts-section">
 
@@ -214,38 +190,11 @@
                                                             Photo above:
                                                             <%= item.cutline %> (<%= item.photocredit %>)
                                                         </div>
-
-
-
-
-                                        <div class="chevs chevs-festivals">
-                                            <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
-                                            <p class="close">Close <i class="fas fa-chevron-up"></i></p>
-                                        </div>
-
-                                        <div class="info">
-                                            <p class="phone-address">
-                                                <i class="fas fa-calendar-alt"></i>
-                                                <%= item.hours %><br>
-                                                <i class="fas fa-money-bill-wave"></i>
-                                                <%= item.price %><br>
-                                                <i class="fas fa-phone-alt"></i>
-                                                <%= item.phone %> <br>
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <%= item.location %> <br>
-                                                <i class="fas fa-people-arrows"></i>
-                                                <%= item.safety %><br>
-                                        </div>
-
-                                        <div class="cutline">
-                                            Photo above:
-                                            <%= item.cutline %> (
-                                                <%= item.photocredit %>)
-                                        </div>
-
-                                    </div>
+                                                                </div>
                                     <% }) %>
-                                </div>
+                                
+                                                                </div>
+                                                            
 
                                 <div class="ad">
                                     <zeus-ad id='zeus_body2a' width="100%;"></zeus-ad>
@@ -265,10 +214,7 @@
 
                                 <div class="background-container-2" id="cultural-section">
 
-                                            <div>
-                                                            
-                                                            
-                                            </div>
+                                           
                                     <% json.cultural.forEach(function(item, i) { %>
 
                                         <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
@@ -318,8 +264,7 @@
 
                                             <div class="cutline">
                                                 Photo above:
-                                                <%= item.cutline %> (
-                                                    <%= item.photocredit %>)
+                                                <%= item.cutline %> (<%= item.photocredit %>)
                                             </div>
 
                                         </div>
