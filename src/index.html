@@ -37,10 +37,12 @@
             <% } %>
                 <responsive-child>
                     <%= t.include("partials/_nav.html") %>
+                        
+                        
                         <header class="top">
-
+                                
                             <div id="intro">
-
+                                
                                 <h1 id="mgtitle">SPARKING CURIOSITY</h1>
 
                                 <h2 class="subhed">Your guide to intriguing exhibits in the Seattle area this spring</h2>
@@ -55,6 +57,8 @@
                                         <%= item.intro %>
                                             <% }) %>
                                 </div>
+                                            
+                                            <zeus-ad id=‘zeus_top’ width=“100%;“></zeus-ad>
 
                                 <div>
                                     <div id="frames">
@@ -206,8 +210,7 @@
 
                                                         <div class="cutline">
                                                             Photo above:
-                                                            <%= item.cutline %> (
-                                                                <%= item.photocredit %>)
+                                                            <%= item.cutline %> (<%= item.photocredit %>)
                                                         </div>
 
 
@@ -224,7 +227,10 @@
                                             </div>
 
 
-
+                                            <div>
+                                                            
+                                                            
+                                            </div>
 
 
                                             <div class="section-header header-cultural" id="cultural">
@@ -488,9 +494,8 @@
                             <%= t.include("partials/_navBottom.html") %>
 
 
-                                <script src="https://seattle-times.zeustechnology.com/main.js" async></script>
-
-                                <script src="https://www.seattletimes.com/wp-content/plugins/st-advertising/dist/st-projects-bundle.js" async></script>
+                                <script src=“https://seattle-times.zeustechnology.com/main.js” async></script>
+                                <script src=“https://www.seattletimes.com/wp-content/plugins/st-advertising/dist/st-projects-bundle.js” async></script>
 
                                 <script src="app.js" async></script>
                                 <% if (json.project.production) { %>
