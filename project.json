@@ -6,7 +6,7 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": "entertainment/life/seattle-museum-guide-2021/"
+      "path": "2021/seattle-museum-guide/"
     }
   },
   "author": "",
