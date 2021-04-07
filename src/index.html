@@ -46,10 +46,10 @@
                                         <p class="byline">By Seattle Times staff</p>
                                         <p class="pub-date"></p>Published April XX, 2021</p>
                                     </div>
-                                
-                                <% json.intro.forEach(function(item, i) { %> 
-                                    <%= item.intro %>
-                                        <% }) %>
+
+                                    <% json.intro.forEach(function(item, i) { %>
+                                        <%= item.intro %>
+                                            <% }) %>
                                 </div>
 
                                 <div>
@@ -120,317 +120,368 @@
               </nav>
               
               -->
-              
-         <!-- End filters -->   
-           
-          <div class="event-grid">
-          <div class="grid-container">
-              
-            <% var cat = {Seattle: "seattle", North: "north", South: "south", East: "east", West: "west"} %>
-                
-                <div class="container" data-set="1">
-                    
-                    <div class="section-header header-arts" id="arts">
-                        
-                        <div class="header-container">
-                            
-                            <img class="section-header-image section-image-arts" src="assets/frame-3.png" alt="" >
-                        <div class="section-card">
-                        <div class="section-name">
-                            Visual <br>Arts
-                       </div>
-                        
-                            </div>
-                        
-                        </div>
-                        </div>
-                    
-                    <div id="democontainer"></div>
-                    
-                  <div class="background-container-1" id="visual-arts-section">
-                      
-                      <% json.visualarts.forEach(function(item, i) { %>
-                      
-                <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>" >
-                    
-                  <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.region %>">
-                    
-                    
-                  <div class="event-header">
-                    <p class="museum-name"><a href="<%= item.website_online %>" target="_blank"> <%= item.event %></a></p>
-                     <p class="dates"> <span class="name"><%= item.exhibitname %></span> | <span class="dates-2"><%= item.dates %></span>
-                    </p>
-                         <p class = "hours"></p>
-                  </div>
-                         
-                          <div class="expand-container" data-set="1">
-                    
-                    <div class="expand" data-num="<%= i %>">
-                              <%= item.vignette %>
-                        <p class="author">– <%= item.author %></p>
-                            </div>
-                    
-                          </div>
-                  
-                  <div class="chevs chevs-festivals">
-                    <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
-                    <p class="close">Close <i class="fas fa-chevron-up"></i></p>
-              </div>
-                      
-                      
-               
-                  <div class="info">
-                      <p class="phone-address"><i class="fas fa-money-bill-wave"></i> <%= item.price %><br>
-                      <i class="fas fa-phone-alt"></i> <%= item.phone %> <br>
-                    <i class="fas fa-map-marker-alt"></i> <%= item.location %> <br>
-                    <i class="fas fa-people-arrows"></i> <%= item.safety %><br>
-                  </div>
-                      
-                        
-                        <div class="cutline">
-                    Photo above: <%= item.cutline %> (<%= item.photocredit %>)
-                    </div>
-                     
-                        
-                        
-                    
-                
-                          
-                          
-                </div>
-                    
-                   
-                    
-                    <% }) %>
-                      </div>
-               
-                    
-                    
-                    
-                    
-                    <div class="section-header header-cultural" id="cultural">
-                        
-                        <div class="header-container">
-                            
-                            <img class="section-header-image section-image-cultural" src="assets/frame-1.png" alt="" >
-                        <div class="section-card">
-                        <div class="section-name">
-                            Cultural
-                       </div>
-                        
-                            </div>
-                        
-                        
-                        
-                        </div>
-                        </div>
-                    
-                  
-                  <div class="background-container-2" id="cultural-section">
-                      
-                      <% json.cultural.forEach(function(item, i) { %>
-                      
-                <div  class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
-                    
-                  <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.region %>">
-                    
-                    
-                  <div class="event-header">
-                    <p class="museum-name"><a href="<%= item.website_online %>" target="_blank"> <%= item.event %></a></p>
-                     <p class="dates"> <%= item.exhibitname %> <span class="name"><%= item.dates %></span>
-                    </p>
-                         <p class = "hours"></p>
-                  </div>
-                         
-                         
-                         <div class="expand-container" data-set="1">
-                    
-                    <div class="expand" data-num="<%= i %>">
-                              <%= item.vignette %>
-                            <p class="author">– <%= item.author %></p>
-                            </div>
-                    
-                          </div>
-                  
-                  <div class="chevs chevs-lights">
-                    <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
-                    <p class="close">Close <i class="fas fa-chevron-up"></i></p>
-              </div>
-                      
-                      
-               
-                  <div class="info">
-                      <p class="phone-address"><i class="fas fa-money-bill-wave"></i> <%= item.price %><br>
-                      <i class="fas fa-phone-alt"></i> <%= item.phone %> <br>
-                    <i class="fas fa-map-marker-alt"></i> <%= item.location %> <br>
-                    <i class="fas fa-people-arrows"></i> <%= item.safety %><br>
-                  </div>
-                      
-                          <div class="cutline">
-                    Photo above: <%= item.cutline %> (<%= item.photocredit %>)
-                    </div>
-                          
-                      
-                    
-                
-                </div>
-                    <% }) %>
-                      </div>
-               
-                    
-                 
-                    <!-- HISTORICAL SECTION -->
-                    
-                    <div class="section-header header-historical" id="historical">
-                        
-                        <div class="header-container">
-                            
-                            <img class="section-header-image section-image-historical" src="assets/frame-4.png" alt="" >
-                        <div class="section-card">
-                        <div class="section-name">
-                            Historical
-                       </div>
-                       
-                            </div>
-                        
-                        </div>
-                        </div>
-                    
-                  
-                  <div class="background-container-3" id="historical-section">
-                      <% json.history.forEach(function(item, i) { %>
-                      
-                <div  class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
-                    
-                  <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.region %>">
-                    
-                    
-                  <div class="event-header">
-                    <p class="museum-name"><a href="<%= item.website_online %>" target="_blank"> <%= item.event %></a></p>
-                     <p class="dates"> <%= item.exhibitname %> <span class="name"><%= item.dates %></span>
-                    </p>
-                         <p class = "hours"></p>
-                  </div>
-                         
-                         <div class="expand-container" data-set="1">
-                    
-                    <div class="expand" data-num="<%= i %>">
-                              <%= item.vignette %>
-                        <p class="author">– <%= item.author %></p>
-                            </div>
-                    
-                          </div>
-                  
-                  <div class="chevs chevs-markets">
-                    <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
-                    <p class="close">Close <i class="fas fa-chevron-up"></i></p>
-              </div>
-                      
-                       
-               
-                  <div class="info">
-                      <p class="phone-address"><i class="fas fa-money-bill-wave"></i> <%= item.price %><br>
-                      <i class="fas fa-phone-alt"></i> <%= item.phone %> <br>
-                    <i class="fas fa-map-marker-alt"></i> <%= item.location %> <br>
-                    <i class="fas fa-people-arrows"></i> <%= item.safety %><br>
-                  </div>
-                          
-                          
-                          <div class="cutline">
-                    Photo above: <%= item.cutline %> (<%= item.photocredit %>)
-                    </div>
-                      
-                     
-                    
-                
-                </div>
-                    <% }) %>
-                      </div>
-             
-                    
-                
-                  
-                    
-                    <!-- OTHER SECTION -->
-                    
-                    <div class="section-header header-other" id="other">
-                        
-                        <div class="header-container">
-                            
-                            <img class="section-header-image section-image-other" src="assets/frame-2.png" alt="" >
-                        <div class="section-card">
-                        <div class="section-name">
-                            Other
-                       </div>
-                        
-                            </div>
-                        
-                        </div>
-                        </div>
-                    
-                    
-                  <div class="background-container-4" id="other-section">
-                      
-                      <% json.other.forEach(function(item, i) { %>
-                      
-                <div  class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
-                    
-                  <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.category %>">
-                    
-                    
-                  <div class="event-header">
-                    <p class="museum-name"><a href="<%= item.website_online %>" target="_blank"> <%= item.event %></a></p>
-                     <p class="dates"> <%= item.exhibitname %> <span class="name"><%= item.dates %></span>
-                    </p>
-                         <p class = "hours"></p>
-                  </div>
-                  
-                  
-                         <div class="expand-container" data-set="1">
-                    
-                    <div class="expand" data-num="<%= i %>">
-                              <%= item.vignette %>
-                        <p class="author">– <%= item.author %></p>
-                            </div>
-                    
-                          </div>
-                         
-                         
-               <div class="chevs chevs-parties">
-                    <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
-                    <p class="close">Close <i class="fas fa-chevron-up"></i></p>
-              </div>
-                        
-                  <div class="info">
-                      <p class="phone-address"><i class="fas fa-money-bill-wave"></i> <%= item.price %><br>
-                      <i class="fas fa-phone-alt"></i> <%= item.phone %> <br>
-                    <i class="fas fa-map-marker-alt"></i> <%= item.location %> <br>
-                    <i class="fas fa-people-arrows"></i> <%= item.safety %><br>
-                  </div>
-                      
-                          
-                          <div class="cutline">
-                    Photo above: <%= item.cutline %> (<%= item.photocredit %>)
-                    </div>
-                              
-                              </div>
-                    <% }) %>
-                      </div>
-                    </main>
 
-                    <%= t.include("partials/_dontMiss.html", grunt.data.json) %>
-                        <%= t.include("partials/_navBottom.html") %>
+                            <!-- End filters -->
+
+                            <div class="event-grid">
+                                <div class="grid-container">
+
+                                    <% var cat = {Seattle: "seattle", North: "north", South: "south", East: "east", West: "west"} %>
+
+                                        <div class="container" data-set="1">
+
+                                            <div class="section-header header-arts" id="arts">
+
+                                                <div class="header-container">
+
+                                                    <img class="section-header-image section-image-arts" src="assets/frame-3.png" alt="">
+                                                    <div class="section-card">
+                                                        <div class="section-name">
+                                                            Visual <br>Arts
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div id="democontainer"></div>
+
+                                            <div class="background-container-1" id="visual-arts-section">
+
+                                                <% json.visualarts.forEach(function(item, i) { %>
+
+                                                    <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
+
+                                                        <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.region %>">
 
 
-                            <script src="https://seattle-times.zeustechnology.com/main.js" async></script>
+                                                        <div class="event-header">
+                                                            <p class="museum-name">
+                                                                <a href="<%= item.website_online %>" target="_blank">
+                                                                    <%= item.event %>
+                                                                </a>
+                                                            </p>
+                                                            <p class="dates"> <span class="name"><%= item.exhibitname %></span> | <span class="dates-2"><%= item.dates %></span>
+                                                            </p>
+                                                            <p class="hours"></p>
+                                                        </div>
 
-                            <script src="https://www.seattletimes.com/wp-content/plugins/st-advertising/dist/st-projects-bundle.js" async></script>
+                                                        <div class="expand-container" data-set="1">
 
-                            <script src="app.js" async></script>
-                            <% if (json.project.production) { %>
-                                <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
-                                    <%= t.include("partials/_workHere.html") %>
-                                        <% } %>
+                                                            <div class="expand" data-num="<%= i %>">
+                                                                <%= item.vignette %>
+                                                                    <p class="author">–
+                                                                        <%= item.author %>
+                                                                    </p>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="chevs chevs-festivals">
+                                                            <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
+                                                            <p class="close">Close <i class="fas fa-chevron-up"></i></p>
+                                                        </div>
+
+
+
+                                                        <div class="info">
+                                                            <p class="phone-address"><i class="fas fa-money-bill-wave"></i>
+                                                                <%= item.price %><br>
+                                                                    <i class="fas fa-phone-alt"></i>
+                                                                    <%= item.phone %> <br>
+                                                                        <i class="fas fa-map-marker-alt"></i>
+                                                                        <%= item.location %> <br>
+                                                                            <i class="fas fa-people-arrows"></i>
+                                                                            <%= item.safety %><br>
+                                                        </div>
+
+
+                                                        <div class="cutline">
+                                                            Photo above:
+                                                            <%= item.cutline %> (
+                                                                <%= item.photocredit %>)
+                                                        </div>
+
+
+
+
+
+
+
+                                                    </div>
+
+
+
+                                                    <% }) %>
+                                            </div>
+
+
+
+
+
+                                            <div class="section-header header-cultural" id="cultural">
+
+                                                <div class="header-container">
+
+                                                    <img class="section-header-image section-image-cultural" src="assets/frame-1.png" alt="">
+                                                    <div class="section-card">
+                                                        <div class="section-name">
+                                                            Cultural
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="background-container-2" id="cultural-section">
+
+                                                <% json.cultural.forEach(function(item, i) { %>
+
+                                                    <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
+
+                                                        <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.region %>">
+
+
+                                                        <div class="event-header">
+                                                            <p class="museum-name">
+                                                                <a href="<%= item.website_online %>" target="_blank">
+                                                                    <%= item.event %>
+                                                                </a>
+                                                            </p>
+                                                            <p class="dates">
+                                                                <%= item.exhibitname %> <span class="name"><%= item.dates %></span>
+                                                            </p>
+                                                            <p class="hours"></p>
+                                                        </div>
+
+
+                                                        <div class="expand-container" data-set="1">
+
+                                                            <div class="expand" data-num="<%= i %>">
+                                                                <%= item.vignette %>
+                                                                    <p class="author">–
+                                                                        <%= item.author %>
+                                                                    </p>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="chevs chevs-lights">
+                                                            <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
+                                                            <p class="close">Close <i class="fas fa-chevron-up"></i></p>
+                                                        </div>
+
+
+
+                                                        <div class="info">
+                                                            <p class="phone-address"><i class="fas fa-money-bill-wave"></i>
+                                                                <%= item.price %><br>
+                                                                    <i class="fas fa-phone-alt"></i>
+                                                                    <%= item.phone %> <br>
+                                                                        <i class="fas fa-map-marker-alt"></i>
+                                                                        <%= item.location %> <br>
+                                                                            <i class="fas fa-people-arrows"></i>
+                                                                            <%= item.safety %><br>
+                                                        </div>
+
+                                                        <div class="cutline">
+                                                            Photo above:
+                                                            <%= item.cutline %> (
+                                                                <%= item.photocredit %>)
+                                                        </div>
+
+
+
+
+                                                    </div>
+                                                    <% }) %>
+                                            </div>
+
+
+
+                                            <!-- HISTORICAL SECTION -->
+
+                                            <div class="section-header header-historical" id="historical">
+
+                                                <div class="header-container">
+
+                                                    <img class="section-header-image section-image-historical" src="assets/frame-4.png" alt="">
+                                                    <div class="section-card">
+                                                        <div class="section-name">
+                                                            Historical
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="background-container-3" id="historical-section">
+                                                <% json.history.forEach(function(item, i) { %>
+
+                                                    <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
+
+                                                        <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.region %>">
+
+
+                                                        <div class="event-header">
+                                                            <p class="museum-name">
+                                                                <a href="<%= item.website_online %>" target="_blank">
+                                                                    <%= item.event %>
+                                                                </a>
+                                                            </p>
+                                                            <p class="dates">
+                                                                <%= item.exhibitname %> <span class="name"><%= item.dates %></span>
+                                                            </p>
+                                                            <p class="hours"></p>
+                                                        </div>
+
+                                                        <div class="expand-container" data-set="1">
+
+                                                            <div class="expand" data-num="<%= i %>">
+                                                                <%= item.vignette %>
+                                                                    <p class="author">–
+                                                                        <%= item.author %>
+                                                                    </p>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="chevs chevs-markets">
+                                                            <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
+                                                            <p class="close">Close <i class="fas fa-chevron-up"></i></p>
+                                                        </div>
+
+
+
+                                                        <div class="info">
+                                                            <p class="phone-address"><i class="fas fa-money-bill-wave"></i>
+                                                                <%= item.price %><br>
+                                                                    <i class="fas fa-phone-alt"></i>
+                                                                    <%= item.phone %> <br>
+                                                                        <i class="fas fa-map-marker-alt"></i>
+                                                                        <%= item.location %> <br>
+                                                                            <i class="fas fa-people-arrows"></i>
+                                                                            <%= item.safety %><br>
+                                                        </div>
+
+
+                                                        <div class="cutline">
+                                                            Photo above:
+                                                            <%= item.cutline %> (
+                                                                <%= item.photocredit %>)
+                                                        </div>
+
+
+
+
+                                                    </div>
+                                                    <% }) %>
+                                            </div>
+
+
+
+
+
+                                            <!-- OTHER SECTION -->
+
+                                            <div class="section-header header-other" id="other">
+
+                                                <div class="header-container">
+
+                                                    <img class="section-header-image section-image-other" src="assets/frame-2.png" alt="">
+                                                    <div class="section-card">
+                                                        <div class="section-name">
+                                                            Other
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="background-container-4" id="other-section">
+
+                                                <% json.other.forEach(function(item, i) { %>
+
+                                                    <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
+
+                                                        <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.category %>">
+
+
+                                                        <div class="event-header">
+                                                            <p class="museum-name">
+                                                                <a href="<%= item.website_online %>" target="_blank">
+                                                                    <%= item.event %>
+                                                                </a>
+                                                            </p>
+                                                            <p class="dates">
+                                                                <%= item.exhibitname %> <span class="name"><%= item.dates %></span>
+                                                            </p>
+                                                            <p class="hours"></p>
+                                                        </div>
+
+
+                                                        <div class="expand-container" data-set="1">
+
+                                                            <div class="expand" data-num="<%= i %>">
+                                                                <%= item.vignette %>
+                                                                    <p class="author">–
+                                                                        <%= item.author %>
+                                                                    </p>
+                                                            </div>
+
+                                                        </div>
+
+
+                                                        <div class="chevs chevs-parties">
+                                                            <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
+                                                            <p class="close">Close <i class="fas fa-chevron-up"></i></p>
+                                                        </div>
+
+                                                        <div class="info">
+                                                            <p class="phone-address"><i class="fas fa-money-bill-wave"></i>
+                                                                <%= item.price %><br>
+                                                                    <i class="fas fa-phone-alt"></i>
+                                                                    <%= item.phone %> <br>
+                                                                        <i class="fas fa-map-marker-alt"></i>
+                                                                        <%= item.location %> <br>
+                                                                            <i class="fas fa-people-arrows"></i>
+                                                                            <%= item.safety %><br>
+                                                        </div>
+
+
+                                                        <div class="cutline">
+                                                            Photo above:
+                                                            <%= item.cutline %> (
+                                                                <%= item.photocredit %>)
+                                                        </div>
+
+                                                    </div>
+                                                    <% }) %>
+                                            </div>
+                        </main>
+
+                        <%= t.include("partials/_dontMiss.html", grunt.data.json) %>
+                            <%= t.include("partials/_navBottom.html") %>
+
+
+                                <script src="https://seattle-times.zeustechnology.com/main.js" async></script>
+
+                                <script src="https://www.seattletimes.com/wp-content/plugins/st-advertising/dist/st-projects-bundle.js" async></script>
+
+                                <script src="app.js" async></script>
+                                <% if (json.project.production) { %>
+                                    <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
+                                        <%= t.include("partials/_workHere.html") %>
+                                            <% } %>
 
 
 </body>
