@@ -15,19 +15,18 @@
 // }
 
 #mgtitle {
-    font-family: Syne;
   border: 70px solid;
-  padding: 30px;
+  padding: 20px;
   border-image: url("./assets/frame-border.png") 18% repeat;
   background-image: url("./assets/title-background.png");
   background-position: center;
   background-clip: border-box;
   background-repeat: no-repeat;
-  background-size: 120%;
-  max-width: 630px;
+  background-size: 140%;
+  max-width: 900px;
   margin: 3% auto 1%;
   @media @tablet{
-    padding: 20px;
+    padding: 40px auto;
     margin: 5% auto 0;
     
   }
@@ -47,7 +46,7 @@
 #frames {
   height: 100%;
   max-width: 800px;
-  margin: 10% auto 5%;
+  margin: 0 auto;
   @media @mobile{
     margin: 0 auto;
 
@@ -56,18 +55,19 @@
 }
 
 #visitors {
-  width: 450px;
+  width: 650px;
   height: 100%;
   margin: 0 auto;
-  bottom: 5%;
+  bottom: -2%;
   position: sticky;
   margin-top: -70px;
-  @media @mobile{
+  @media @mobile, @tablet{
     width: 100%;
-    bottom: 2%;
+    bottom: -2%;
 
   }
 }
+
 
 #visitors.img {
   width: 100%;
@@ -87,25 +87,29 @@ body {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 80px;
   text-align: center;
   margin-bottom: 0px;
-  padding-bottom: 40px;
-  font-family: @df-sans;
+  font-family: Syne;
   color: white;
-  @media @mobile {
+  @media @tablet{
+    font-size: 60px;
+  }
+  @media @mobile{
     font-size: 40px;
   }
 }
 
 h2.subhed {
-  max-width: 630px;
+  max-width: 400px;
+  color: white;
   margin: 0 auto;
   padding: 20px 0;
   text-align: center;
+  font-weight: 600;
+  
+  }  
 
-
-}
 
 
 /*-- Start SVG styles --*/
