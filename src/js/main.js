@@ -16,7 +16,6 @@ var culturalSection = document.getElementById("cultural-section");
 var historicalSection = document.getElementById("historical-section");
 var otherSection = document.getElementById("other-section");
 
-
 var eventGrid = document.querySelector(".event-grid");
 var events = document.querySelectorAll(".event");
 
@@ -39,7 +38,6 @@ function filterByCategory(cat){
   }
   combineFilters();
 }
-
 
 function combineFilters(){
   result = 0;
@@ -80,8 +78,6 @@ function combineFilters(){
   }   
 }
 
-
-
 function noResults(){
   if (result==0){
     visualArtsSection.style.display="none";
@@ -97,7 +93,6 @@ function noResults(){
   }
 }
 
-
 function fixNav(){
   if(window.pageYOffset > sticky) {
     header.classList.add("sticky");
@@ -106,7 +101,6 @@ function fixNav(){
     header.classList.remove("sticky");
   }
 }
-
 
 function clearSearchBox(){
   searchBox.value = "";
@@ -160,12 +154,10 @@ function searchListener(){
   combineFilters();
 }
 
-
 /*
 function selectedCategory(eventType, category) {
     if ()
 }
-
 */
 
 clearSearch.addEventListener("click", clearSearchBox);
@@ -192,14 +184,10 @@ if ($(window).width() < 700) {
   $('.mobile').hide();
 }
 
-
-
 $( ".box" ).click(function() {
   var number = $(this).data("num");
   var set = $(this).closest('.container').data("set");
   var expandCon = $(this).closest('.container');
-
-    
     
   if ( $(this).hasClass("selected") ) {
     expandCon.find(`.expand[data-num="${number}"]`).hide();
@@ -208,14 +196,13 @@ $( ".box" ).click(function() {
   } else {
     $(this).addClass('selected');
     $(this).find('.chevs').addClass('selected');
-    expandCon.find(`.expand[data-num="${number}"]`).show();
+    expandCon.find(`.expand[data-num="${number}"]`).show()
   }
 });
 
 $( ".collapse" ).click(function() {
   var number = $(this).closest('.expand').data("num");
   var expandCon = $(this).closest('.container');
-
 
   expandCon.find(`.expand[data-num="${number}"]`).hide();
   expandCon.find(`.box[data-num="${number}"]`).removeClass('selected');
