@@ -194,13 +194,23 @@
                                                         <%= item.cutline %> (
                                                             <%= item.photocredit %>)
                                                     </div>
+                                                            
+                                                            
+                                                         <% if(item.event == 'Greg Kucera Gallery' || item.event == 'Wa Na Wari'){ %> 
+                                                        
+                                                             <img class="people-watch-1" src="assets/visitors-1.png">
+                                                                 <% } %>
+                                                                     
+                                                                     <% if(item.event == 'Cascadia Art Museum' || item.event == 'Museum of Glass'){ %> 
+                                                        
+                                                             <img class="people-watch-2" src="assets/visitors-2.png">
+                                                                 <% } %>
+                                                            
                                                 </div>
                                                        
-                                                         <% if(item.event == 'Greg Kucera Gallery'){ %> 
+                                                       
                                                         
-                                                             <img class="people-watch" src="assets/visitors-1.png">
-                                                        
-                                                <% }}) %>
+                                                <% }) %>
 
                                         </div>
 
@@ -276,6 +286,12 @@
                                                         <%= item.cutline %> (
                                                             <%= item.photocredit %>)
                                                     </div>
+                                                            
+                                                            
+                                                             <% if(item.event == 'National Nordic Museum'){ %> 
+                                                        
+                                                             <img class="people-watch-2" src="assets/visitors-2.png">
+                                                                 <% } %>
 
                                                 </div>
                                                 <% }) %>
@@ -358,7 +374,10 @@
                                                             <%= item.photocredit %>)
                                                     </div>
 
-
+                                                        <% if(item.event == 'Foothills Historical Museum'){ %> 
+                                                        
+                                                             <img class="people-watch-1" src="assets/visitors-1.png">
+                                                                 <% } %>
 
 
                                                 </div>
@@ -436,6 +455,18 @@
                                                         <%= item.cutline %> (
                                                             <%= item.photocredit %>)
                                                     </div>
+                                                            
+                                                            
+                                                              <% if(item.event == 'The Museum of Flight'){ %> 
+                                                        
+                                                             <img class="people-watch-1" src="assets/visitors-1.png">
+                                                                 <% } %>
+                                                            
+                                                            
+                                                            <% if(item.event == 'Burke Museum of Natural History and Culture'){ %> 
+                                                        
+                                                             <img class="people-watch-2" src="assets/visitors-2.png">
+                                                                 <% } %>
                                                 </div>
                                                 <% }) %>
 
