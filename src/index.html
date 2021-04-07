@@ -24,7 +24,11 @@
                     <% } %>
 
                         <script src="https://kit.fontawesome.com/9d53be7224.js" crossorigin="anonymous"></script>
+
+
 </head>
+
+
 
 <body>
 
@@ -37,14 +41,14 @@
 
                             <div id="intro">
 
-                                <h1 id="mgtitle">Sparking curiosity</h1>
+                                <h1 id="mgtitle">SPARKING CURIOSITY</h1>
 
-                                <h2 class="subhed">Your guide to the most intriguing exhibits in the Seattle area this spring</h2>
+                                <h2 class="subhed">Your guide to intriguing exhibits in the Seattle area this spring</h2>
 
                                 <div class="chatter">
                                     <div class="byline-pubdate">
                                         <p class="byline">By Seattle Times staff</p>
-                                        <p class="pub-date"></p>Published April XX, 2021</p>
+                                        <p class="pub-date"></p>Published April 9, 2021</p>
                                     </div>
 
                                     <% json.intro.forEach(function(item, i) { %>
@@ -76,7 +80,7 @@
                         <main>
                             <div class="filters">
                                 <div class="filter-group">
-                                    <h2 class="nav-header">Choose locations</h2>
+                                    <h2 class="nav-header">Choose location(s)</h2>
                                     <% var cats = [
             { data: "seattle", label: "Seattle" },
              { data: "north", label: "North" },
@@ -162,7 +166,7 @@
                                                                     <%= item.event %>
                                                                 </a>
                                                             </p>
-                                                            <p class="dates"> <span class="name"><%= item.exhibitname %></span> | <span class="dates-2"><%= item.dates %></span>
+                                                            <p class="dates"> <span class="name"><%= item.exhibitname %></span>
                                                             </p>
                                                             <p class="hours"></p>
                                                         </div>
@@ -186,14 +190,17 @@
 
 
                                                         <div class="info">
-                                                            <p class="phone-address"><i class="fas fa-money-bill-wave"></i>
-                                                                <%= item.price %><br>
-                                                                    <i class="fas fa-phone-alt"></i>
-                                                                    <%= item.phone %> <br>
-                                                                        <i class="fas fa-map-marker-alt"></i>
-                                                                        <%= item.location %> <br>
-                                                                            <i class="fas fa-people-arrows"></i>
-                                                                            <%= item.safety %><br>
+                                                            <p class="phone-address">
+                                                                <i class="fas fa-calendar-alt"></i>
+                                                                <%= item.hours %><br>
+                                                                    <i class="fas fa-money-bill-wave"></i>
+                                                                    <%= item.price %><br>
+                                                                        <i class="fas fa-phone-alt"></i>
+                                                                        <%= item.phone %> <br>
+                                                                            <i class="fas fa-map-marker-alt"></i>
+                                                                            <%= item.location %> <br>
+                                                                                <i class="fas fa-people-arrows"></i>
+                                                                                <%= item.safety %><br>
                                                         </div>
 
 
@@ -254,7 +261,7 @@
                                                                 </a>
                                                             </p>
                                                             <p class="dates">
-                                                                <%= item.exhibitname %> <span class="name"><%= item.dates %></span>
+                                                                <%= item.exhibitname %>
                                                             </p>
                                                             <p class="hours"></p>
                                                         </div>
@@ -279,14 +286,17 @@
 
 
                                                         <div class="info">
-                                                            <p class="phone-address"><i class="fas fa-money-bill-wave"></i>
-                                                                <%= item.price %><br>
-                                                                    <i class="fas fa-phone-alt"></i>
-                                                                    <%= item.phone %> <br>
-                                                                        <i class="fas fa-map-marker-alt"></i>
-                                                                        <%= item.location %> <br>
-                                                                            <i class="fas fa-people-arrows"></i>
-                                                                            <%= item.safety %><br>
+                                                            <p class="phone-address">
+                                                                <i class="fas fa-calendar-alt"></i>
+                                                                <%= item.hours %><br>
+                                                                    <i class="fas fa-money-bill-wave"></i>
+                                                                    <%= item.price %><br>
+                                                                        <i class="fas fa-phone-alt"></i>
+                                                                        <%= item.phone %> <br>
+                                                                            <i class="fas fa-map-marker-alt"></i>
+                                                                            <%= item.location %> <br>
+                                                                                <i class="fas fa-people-arrows"></i>
+                                                                                <%= item.safety %><br>
                                                         </div>
 
                                                         <div class="cutline">
@@ -310,7 +320,7 @@
 
                                                 <div class="header-container">
 
-                                                    <img class="section-header-image section-image-historical" src="assets/frame-history" alt="">
+                                                    <img class="section-header-image section-image-historical" src="assets/frame-history.png" alt="">
                                                     <div class="section-card">
                                                         <div class="section-name">
                                                             Historical
@@ -337,7 +347,7 @@
                                                                 </a>
                                                             </p>
                                                             <p class="dates">
-                                                                <%= item.exhibitname %> <span class="name"><%= item.dates %></span>
+                                                                <%= item.exhibitname %>
                                                             </p>
                                                             <p class="hours"></p>
                                                         </div>
@@ -361,14 +371,17 @@
 
 
                                                         <div class="info">
-                                                            <p class="phone-address"><i class="fas fa-money-bill-wave"></i>
-                                                                <%= item.price %><br>
-                                                                    <i class="fas fa-phone-alt"></i>
-                                                                    <%= item.phone %> <br>
-                                                                        <i class="fas fa-map-marker-alt"></i>
-                                                                        <%= item.location %> <br>
-                                                                            <i class="fas fa-people-arrows"></i>
-                                                                            <%= item.safety %><br>
+                                                            <p class="phone-address">
+                                                                <i class="fas fa-calendar-alt"></i>
+                                                                <%= item.hours %><br>
+                                                                    <i class="fas fa-money-bill-wave"></i>
+                                                                    <%= item.price %><br>
+                                                                        <i class="fas fa-phone-alt"></i>
+                                                                        <%= item.phone %> <br>
+                                                                            <i class="fas fa-map-marker-alt"></i>
+                                                                            <%= item.location %> <br>
+                                                                                <i class="fas fa-people-arrows"></i>
+                                                                                <%= item.safety %><br>
                                                         </div>
 
 
@@ -395,7 +408,7 @@
 
                                                 <div class="header-container">
 
-                                                    <img class="section-header-image section-image-other" src="assets/frame-other-1.png" alt="">
+                                                    <img class="section-header-image section-image-other" src="assets/frame-other.png" alt="">
                                                     <div class="section-card">
                                                         <div class="section-name">
                                                             Other
@@ -423,7 +436,7 @@
                                                                 </a>
                                                             </p>
                                                             <p class="dates">
-                                                                <%= item.exhibitname %> <span class="name"><%= item.dates %></span>
+                                                                <%= item.exhibitname %>
                                                             </p>
                                                             <p class="hours"></p>
                                                         </div>
@@ -447,14 +460,16 @@
                                                         </div>
 
                                                         <div class="info">
-                                                            <p class="phone-address"><i class="fas fa-money-bill-wave"></i>
-                                                                <%= item.price %><br>
-                                                                    <i class="fas fa-phone-alt"></i>
-                                                                    <%= item.phone %> <br>
-                                                                        <i class="fas fa-map-marker-alt"></i>
-                                                                        <%= item.location %> <br>
-                                                                            <i class="fas fa-people-arrows"></i>
-                                                                            <%= item.safety %><br>
+                                                            <p class="phone-address"><i class="fas fa-calendar-alt"></i>
+                                                                <%= item.hours %><br>
+                                                                    <i class="fas fa-money-bill-wave"></i>
+                                                                    <%= item.price %><br>
+                                                                        <i class="fas fa-phone-alt"></i>
+                                                                        <%= item.phone %> <br>
+                                                                            <i class="fas fa-map-marker-alt"></i>
+                                                                            <%= item.location %> <br>
+                                                                                <i class="fas fa-people-arrows"></i>
+                                                                                <%= item.safety %><br>
                                                         </div>
 
 
