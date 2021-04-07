@@ -23,10 +23,6 @@ var events = document.querySelectorAll(".event");
 var show = ['seattle','north', 'south', 'east', 'west'];
 var result; 
 
-
-
-
-
 function filterByCategory(cat){
   if(show.length == 5){
     show = [];
@@ -285,14 +281,3 @@ container_block = document.getElementById( 'imageadd' );
 container_block.appendChild( img );
 
 */
-
-
-
-
-
-
-
-
-
-
-
