@@ -1,6 +1,6 @@
 @import "seattletimes";
 
-@import url('https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Literata:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zilla+Slab:ital,wght@0,700;1,700&display=swap');
 
 
 
@@ -17,7 +17,7 @@
 // }
 
 #mgtitle {
-    font-family: Work Sans;
+    font-family: Syne;
   border: 70px solid;
   padding: 30px;
   border-image: url("./assets/frame-border.png") 18% repeat;
@@ -387,7 +387,7 @@ background: linear-gradient(180deg, rgba(155,179,221,1) 0%, rgba(60,53,107,1) 10
 
 
 .section-header-image {
-    box-shadow: 6px 6px 5px;
+   box-shadow: 2px 2px 3px black;
     
     @media @mobile, @tablet {
         position: static;
@@ -471,25 +471,38 @@ background: linear-gradient(180deg, rgba(155,179,221,1) 0%, rgba(60,53,107,1) 10
 
 
 .section-name {
-    font-family: Work Sans;
+    //font-family: Bitter;
+    
+    font-family: Syne;
+  //font-family: Work Sans;
    // font-family: Literata;
    // font-family: Playfair Display;
-//text-transform: uppercase;
-    font-size: 15vw;
+text-transform: uppercase;
+    font-size: 12vw;
     line-height: 90%;
     font-weight: 800;
     letter-spacing: 3px;
-  //font-style: italic;
+ // font-style: italic;
     color: white;
-    text-shadow: 3px 3px 10px black;
+    margin-top: 40px;
     text-align: center;
-    margin-right: 20px;
+    text-shadow: 2px 2px 3px black;
     @media @mobile, @tablet {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 50px;
         }
 
 }
+
+.visual-arts-name {
+    margin-top: 0px;
+    @media @mobile, @tablet {
+        width: 100%;
+        margin-top: 0px;
+        }
+}
+
+
 
 
 .section-description {

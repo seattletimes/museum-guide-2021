@@ -94,7 +94,7 @@
                             <% }) %>
                             </ul>
                         <div class="advanced">
-                            <input type="text" placeholder="Search events" class="search" id="search">
+                            <input type="text" placeholder="Search (i.e. Cascadia Museum)" class="search" id="search">
                             <button class="clear-search" type="reset"><img src="assets/x-icon.svg"></button>
                         </div>
                 </div>
@@ -123,7 +123,7 @@
                             <div class="header-container">
                                 <img class="section-header-image section-image-arts" src="assets/frame-visual-arts.png" alt="">
                                     <div class="section-card">
-                                        <div class="section-name">
+                                        <div class="section-name visual-arts-name">
                                             Visual <br>Arts
                                         </div>
                                     </div>
@@ -205,7 +205,7 @@
                                     <div class="header-container">
                                         <img class="section-header-image section-image-cultural" src="assets/frame-culture.png" alt="">
                                         <div class="section-card">
-                                            <div class="section-name">
+                                            <div class="section-name cultural-name">
                                                 Cultural
                                             </div>
                                         </div>
@@ -283,7 +283,7 @@
 
                                                     <img class="section-header-image section-image-historical" src="assets/frame-history.png" alt="">
                                                     <div class="section-card">
-                                                        <div class="section-name">
+                                                        <div class="section-name historical-name">
                                                             Historical
                                                         </div>
                                                     </div>
@@ -344,8 +344,7 @@
 
                                                         <div class="cutline">
                                                             Photo above:
-                                                            <%= item.cutline %> (
-                                                                <%= item.photocredit %>)
+                                                            <%= item.cutline %> (<%= item.photocredit %>)
                                                         </div>
 
 
@@ -366,7 +365,7 @@
 
                                                     <img class="section-header-image section-image-other" src="assets/frame-other.png" alt="">
                                                     <div class="section-card">
-                                                        <div class="section-name">
+                                                        <div class="section-name other-name">
                                                             Other
                                                         </div>
                                                     </div>
@@ -423,14 +422,28 @@
 
                                                         <div class="cutline">
                                                             Photo above:
-                                                            <%= item.cutline %> (
-                                                                <%= item.photocredit %>)
+                                                            <%= item.cutline %> (<%= item.photocredit %>)
                                                         </div>
                                                     </div>
                                                     <% }) %>
+                                                        
+                                                      
                                             </div>
+                                                            
+        <div class="credits">
+        Illustrations by Jennifer Luxton
+        <div>Design and Development by Jennifer Luxton and Stephanie Hays</div>
+        <div>Project editing by Janet Tu, Angela Gottschalk, Emily Eng and Trevor Lenzmeier</div>
+      </div>
+                                                            
+                                                           
     </main>
+                                                                                
 
+    
+                       <% if (json.project.production && !json.project.embedded) { %>
+                              <%= t.include("partials/_comments.html", grunt.data.json) %> 
+                                                   <% } %>                               
                         <%= t.include("partials/_dontMiss.html", grunt.data.json) %>
                         <div class="ad-white">
                             <zeus-ad id='zeus_bottom' width="100%;"></zeus-ad>
