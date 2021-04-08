@@ -37,9 +37,6 @@
     <responsive-child>
         <%= t.include("partials/_nav.html") %>
             <header class="top">
-                <div class="ad-white">
-                    <zeus-ad id='zeus_top' width="100%;"></zeus-ad>
-                </div>
                 <div id="intro">
                     <div id="mgtitle">
                         <h1>SPARKING CURIOSITY</h1>
@@ -60,9 +57,17 @@
                     <div>
                         <div id="frames">
                             <p class="graphic-hed">Choose a category</p>
-                            <img src="./assets/gallery-frames.svg" />
+
+                            <!-- <img src="./assets/gallery-frames.svg" /> -->
                         </div>
                     </div>
+                    <div class="">
+                        <div class="image">
+                            <img class="background" src="./assets/gallery-frames-background1.png">
+                            <div class="overlay"><%= t.include("assets/gallery-frames.svg") %></div>
+                        </div>
+                    </div>
+
 
                     <div id="visitors">
                         <img src="./assets/visitors.png">
@@ -70,6 +75,9 @@
                 </div>
             </header>
     </responsive-child>
+    <div class="ad-white">
+        <zeus-ad id='zeus_top' width="100%;"></zeus-ad>
+    </div>
 
 <main>
     <responsive-child>
