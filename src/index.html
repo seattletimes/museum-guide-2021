@@ -470,9 +470,9 @@
 
         <script src="app.js" async></script>
 
-        <script>
+        <!-- <script>
             var data = <%= JSON.stringify(json.art_links) %>;
-          </script>
+          </script> -->
 
         <% if (json.project.production) { %>
             <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>

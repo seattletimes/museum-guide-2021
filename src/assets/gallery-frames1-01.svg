@@ -2,11 +2,21 @@
 <!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 800 587.9" style="enable-background:new 0 0 800 587.9;" xml:space="preserve">
-<g id="Frames" class="st-group">
-	<rect id="history" class="st-overlay" x="80.1" y="55.6" width="214.8" height="135.7"/>
-	<rect id="cultural" class="st-overlay" x="1.5" y="249.4" width="293.4" height="231.6"/>
-	<rect id="visual-arts" class="st-overlay" x="326" y="55.6" width="280.8" height="521.5"/>
-	<rect id="other-1" class="st-overlay" x="637.8" y="204.8" width="159.2" height="316.5"/>
-	<rect id="other-2" class="st-overlay" x="637.8" y="55.6" width="133.9" height="89.1"/>
-</g>
+	<g id="Frames" class="st-group">
+		<a xlink:href="http://www.projects.seattletimes.com/2021/seattle-museum-guide/#history">
+		<rect id="history" class="st-overlay" x="80.1" y="55.6" width="214.8" height="135.7"/><a>
+	</g>
+	<g id="Frames" class="st-group">
+		<a xlink:href="http://www.projects.seattletimes.com/2021/seattle-museum-guide/#cultural">
+		<rect id="cultural" class="st-overlay" x="1.5" y="249.4" width="293.4" height="231.6"/><a>
+	</g>
+	<g id="Frames" class="st-group">
+		<a xlink:href="http://www.projects.seattletimes.com/2021/seattle-museum-guide/#visual-arts">
+		<rect id="visual-arts" class="st-overlay" x="326" y="55.6" width="280.8" height="521.5"/><a>
+	</g>
+	<g id="Frames" class="st-group">
+		<a xlink:href="http://www.projects.seattletimes.com/2021/seattle-museum-guide/#other">
+		<rect id="other-1" class="st-overlay" x="637.8" y="204.8" width="159.2" height="316.5"/>
+		<rect id="other-2" class="st-overlay" x="637.8" y="55.6" width="133.9" height="89.1"/><a>
+	</g>
 </svg>
