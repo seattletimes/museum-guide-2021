@@ -36,6 +36,9 @@
 
     <responsive-child>
         <%= t.include("partials/_nav.html") %>
+
+            <!-- HEADER -->
+
             <header class="top">
                 <div id="intro">
                     <div id="mgtitle">
@@ -56,7 +59,7 @@
 
                     <div>
                         <div>
-                            <p class="graphic-hed">Choose a category</p>
+                            <p class="graphic-hed" id="choose-category">Choose a category</p>
                         </div>
                     </div>
                     <div>
@@ -76,6 +79,7 @@
                 </div>
             </header>
     </responsive-child>
+
     <div class="ad-white">
         <zeus-ad id='zeus_top' width="100%;"></zeus-ad>
     </div>
@@ -102,9 +106,9 @@
                 <li>
                     <button type="button" class="filter-buttons" data-category="<%= cat.data %>">
                         <span class="cat-label"><%= cat.label %></span>
-                    </button>
-                </li>
-                <% }) %>
+                        </button>
+                    </li>
+                    <% }) %>
                 </ul>
                 <div class="advanced">
                     <input type="text" placeholder="Search (i.e. Cascadia Museum)" class="search" id="search">
@@ -112,23 +116,14 @@
                 </div>
             </div>
             <div class="number-locs">Displaying <span>19</span> locations</div>
-            <h2 class="nav-ender"><a href="#"><i class="fas fa-arrow-circle-up"></i></a></h2>
+            <h2 class="nav-ender"><a href="#choose-category"><i class="fas fa-arrow-circle-up"></i></a></h2>
         </div>
 
-<!-- <nav class="nav-bar">
-<ul class="sections">
-    <li><a href="#arts">Visual Arts</a></li>
-    <li><a href="#cultural">Cultural</a></li>
-    <li><a href="#historical">Historical</a></li>
-    <li><a href="#other">Other</a></li>
-    </ul>
-</nav>
--->
+
         <!-- End filters -->
         <div class="event-grid">
             <div class="grid-container">
                 <% var cat = {Seattle: "seattle", North: "north", South: "south", East: "east", West: "west"} %>
-
                     <div class="container" data-set="1">
 
 
@@ -150,11 +145,12 @@
                             <% json.visualarts.forEach(function(item, i) { %>
 
                                 <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
+
                                     <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.region %>">
 
                                     <div class="event-header">
                                         <p class="museum-name">
-                                            <a href="<%= item.website_online %>" target="_blank">
+                                            <a href="<%= item.website_online %>" target="_blank" class="visual-arts-link">
                                                 <%= item.event %>
                                             </a>
                                         </p>
@@ -163,6 +159,7 @@
                                         <p class="hours"></p>
                                     </div>
 
+<<<<<<< HEAD
                                         <div class="expand" data-num="<%= i %>">
                                             <%= item.vignette %>
                                                 <p class="author">–
@@ -170,6 +167,13 @@
                                                 </p>
                                         </div>
 
+=======
+                                    <div class="expand" data-num="<%= i %>">
+                                        <%= item.vignette %>
+                                            <p class="author">– <%= item.author %></p>
+                                    </div>
+
+>>>>>>> 7edc41469eaacfc48a92f7514fa7d58ef212aee8
 
                                     <div class="chevs chevs-festivals">
                                         <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
@@ -243,7 +247,7 @@
 
                                                     <div class="event-header">
                                                         <p class="museum-name">
-                                                            <a href="<%= item.website_online %>" target="_blank">
+                                                            <a href="<%= item.website_online %>" target="_blank" class="cultural-link">
                                                                 <%= item.event %>
                                                             </a>
                                                         </p>
@@ -325,7 +329,7 @@
 
                                     <div class="event-header">
                                         <p class="museum-name">
-                                            <a href="<%= item.website_online %>" target="_blank">
+                                            <a href="<%= item.website_online %>" target="_blank" class="historical-link">
                                                 <%= item.event %>
                                             </a>
                                         </p>
@@ -403,7 +407,7 @@
 
                                 <div class="event-header">
                                     <p class="museum-name">
-                                        <a href="<%= item.website_online %>" target="_blank">
+                                        <a href="<%= item.website_online %>" target="_blank" class="other-link">
                                             <%= item.event %>
                                         </a>
                                     </p>
@@ -460,7 +464,7 @@
 
                         <div class="credits">
                             Illustrations by Jennifer Luxton
-                            <div>Design and development by Jennifer Luxton and Stephanie Hays</div>
+                            <div>Design and development by Jennifer Luxton, Stephanie Hays and Lauren Flannery</div>
                             <div>Project editing by Janet Tu, Angela Gottschalk, Emily M. Eng and Trevor Lenzmeier</div>
                         </div>
 </main>
