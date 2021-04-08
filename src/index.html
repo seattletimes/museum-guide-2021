@@ -151,28 +151,7 @@
                                         <p class="hours"></p>
                                     </div>
 
-                                                    <div class="cutline">
-                                                        Photo above:
-                                                        <%= item.cutline %> (
-                                                            <%= item.photocredit %>)
-                                                    </div>
-                                                            
-                                                            
-                                                         <% if(item.event == 'Greg Kucera Gallery' || item.event == 'Wa Na Wari'){ %> 
-                                                        
-                                                             <img class="people-watch-1" src="assets/visitors-1.png">
-                                                                 <% } %>
-                                                                     
-                                                                     <% if(item.event == 'Cascadia Art Museum' || item.event == 'Museum of Glass'){ %> 
-                                                        
-                                                             <img class="people-watch-2" src="assets/visitors-2.png">
-                                                                 <% } %>
-                                                            
-                                                </div>
-                                                       
-                                                       
-                                                        
-                                                <% }) %>
+                                            
 
                                         <div class="expand" data-num="<%= i %>">
                                             <%= item.vignette %>
@@ -180,7 +159,7 @@
                                                     <%= item.author %>
                                                 </p>
                                         </div>
-                                    </div>
+                                
 
                                     <div class="chevs chevs-festivals">
                                         <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
@@ -206,16 +185,25 @@
                                         <%= item.cutline %> (
                                         <%= item.photocredit %>)
                                     </div>
-                                </div>
-                                <% if(item.event == 'Greg Kucera Gallery'){ %> 
-                                    <img class="people-watch" src="assets/visitors-1.png">  
-                                <% }}) %>
-                        </div>
+                                            
+                                            
+                                <% if(item.event == 'National Nordic Museum'){ %> 
+                                                        
+                                                             <img class="people-watch-2" src="assets/visitors-2.png">
+                                                                 <% } %>
 
+                                                </div>
+                                                <% }) %>
+                                        </div>
+
+                                        
+                                        
                         <div class="ad">
                             <zeus-ad id='zeus_body2a' width="100%;"></zeus-ad>
                         </div>
 
+                                        
+                                        
                                         <div class="background-container-2" id="cultural-section">
 
 
