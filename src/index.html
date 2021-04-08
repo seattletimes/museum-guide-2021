@@ -129,6 +129,9 @@
 
                     <div class="container" data-set="1">
 
+                        
+                        <!-- VISUAL ARTS -->
+                        
                         <div class="section-header header-arts" id="arts">
                             <a name="visual-arts"></a> 
                             <div class="header-container">
@@ -159,15 +162,13 @@
                                         <p class="hours"></p>
                                     </div>
 
-                                    <div class="expand-container" data-set="1">
-
                                         <div class="expand" data-num="<%= i %>">
                                             <%= item.vignette %>
                                                 <p class="author">–
                                                     <%= item.author %>
                                                 </p>
                                         </div>
-                                    </div>
+                                
 
                                     <div class="chevs chevs-festivals">
                                         <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
@@ -193,19 +194,29 @@
                                         <%= item.cutline %> (
                                         <%= item.photocredit %>)
                                     </div>
-                                </div>
-                                <% if(item.event == 'Greg Kucera Gallery'){ %> 
-                                    <img class="people-watch" src="assets/visitors-1.png">  
-                                <% }}) %>
-                        </div>
-
+                                            
+                                            
+                                <% if(item.event == 'National Nordic Museum'){ %> 
+                                                        
+                                                             <img class="people-watch-2" src="assets/visitors-2.png">
+                                                                 <% } %>
+                                                </div>
+                                                <% }) %>
+                                        </div>
+    
                         <div class="ad">
                             <zeus-ad id='zeus_body2a' width="100%;"></zeus-ad>
                         </div>
 
-                        <div class="section-header header-cultural" id="cultural">
-                            <a name="cultural"></a> 
+                             
+                                     <!-- CULTURAL -->
+                                    
+                                    
+                                   <div class="section-header header-cultural" id="cultural">
+                            <a name="visual-arts"></a>  
+                                    
                             <div class="header-container">
+
                                 <img class="section-header-image section-image-cultural" src="assets/frame-culture.png" alt="">
                                 <div class="section-card">
                                     <div class="section-name cultural-name">
@@ -214,67 +225,81 @@
                                 </div>
                             </div>
                         </div>
+                                 
+                                
+                                        <div class="background-container-2" id="cultural-section">
 
-                        <div class="background-container-2" id="cultural-section">
 
-                            <% json.cultural.forEach(function(item, i) { %>
+                                            <% json.cultural.forEach(function(item, i) { %>
 
-                                <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
+                                                <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
 
-                                    <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.region %>">
+                                                    <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.region %>">
 
-                                    <div class="event-header">
-                                        <p class="museum-name">
-                                            <a href="<%= item.website_online %>" target="_blank">
-                                                <%= item.event %>
-                                            </a>
-                                        </p>
-                                        <p class="dates">
-                                            <%= item.exhibitname %>
-                                        </p>
-                                        <p class="hours"></p>
-                                    </div>
+                                                    <div class="event-header">
+                                                        <p class="museum-name">
+                                                            <a href="<%= item.website_online %>" target="_blank">
+                                                                <%= item.event %>
+                                                            </a>
+                                                        </p>
+                                                        <p class="dates">
+                                                            <%= item.exhibitname %>
+                                                        </p>
+                                                        <p class="hours"></p>
+                                                    </div>
 
-                                    <div class="expand-container" data-set="1">
-                                        <div class="expand" data-num="<%= i %>">
-                                            <%= item.vignette %>
-                                                <p class="author">–
-                                                    <%= item.author %>
-                                                </p>
+                                                    <div class="expand-container" data-set="1">
+
+                                                        <div class="expand" data-num="<%= i %>">
+                                                            <%= item.vignette %>
+                                                                <p class="author">–
+                                                                    <%= item.author %>
+                                                                </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="chevs chevs-lights">
+                                                        <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
+                                                        <p class="close">Close <i class="fas fa-chevron-up"></i></p>
+                                                    </div>
+
+                                                    <div class="info">
+                                                        <p class="phone-address">
+                                                            <i class="fas fa-calendar-alt"></i>
+                                                            <%= item.hours %><br>
+                                                                <i class="fas fa-money-bill-wave"></i>
+                                                                <%= item.price %><br>
+                                                                    <i class="fas fa-phone-alt"></i>
+                                                                    <%= item.phone %> <br>
+                                                                        <i class="fas fa-map-marker-alt"></i>
+                                                                        <%= item.location %> <br>
+                                                                            <i class="fas fa-people-arrows"></i>
+                                                                            <%= item.safety %><br>
+                                                    </div>
+
+                                                    <div class="cutline">
+                                                        Photo above:
+                                                        <%= item.cutline %> (
+                                                            <%= item.photocredit %>)
+                                                    </div>
+                                                            
+                                                            
+                                                             <% if(item.event == 'National Nordic Museum'){ %> 
+                                                        
+                                                             <img class="people-watch-2" src="assets/visitors-2.png">
+                                                                 <% } %>
+
+                                                </div>
+                                                <% }) %>
                                         </div>
-                                    </div>
 
-                                    <div class="chevs chevs-lights">
-                                        <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
-                                        <p class="close">Close <i class="fas fa-chevron-up"></i></p>
-                                    </div>
-
-                                    <div class="info">
-                                        <p class="phone-address">
-                                            <i class="fas fa-calendar-alt"></i>
-                                            <%= item.hours %><br>
-                                            <i class="fas fa-money-bill-wave"></i>
-                                            <%= item.price %><br>
-                                            <i class="fas fa-phone-alt"></i>
-                                            <%= item.phone %> <br>
-                                            <i class="fas fa-map-marker-alt"></i>
-                                            <%= item.location %> <br>
-                                            <i class="fas fa-people-arrows"></i>
-                                            <%= item.safety %><br>
-                                    </div>
-
-                                    <div class="cutline">
-                                        Photo above:
-                                        <%= item.cutline %> (
-                                        <%= item.photocredit %>)
-                                    </div>
-                                </div>
-                            <% }) %>
-                        </div>
+                        
 
                         <div class="ad">
                             <zeus-ad id='zeus_middle' width="100%;"></zeus-ad>
                         </div>
+                                                                 
+                                                                 
 <!-- HISTORICAL SECTION -->
                         <a name="history"></a> 
                         <div class="section-header header-historical" id="historical">
@@ -295,6 +320,10 @@
 
                                 <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
 
+                                                        <% if(item.event == 'Foothills Historical Museum'){ %> 
+                                                        
+                                                             <img class="people-watch-1" src="assets/visitors-1.png">
+                                                                 <% } %>
                                     <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.region %>">
 
                                     <div class="event-header">
@@ -351,10 +380,9 @@
                             <zeus-ad id='zeus_body5a' width="100%;"></zeus-ad>
                         </div>
 
-<!-- OTHER SECTION -->
-                        <a name="other"></a> 
-                        <div class="section-header header-other" id="other">
-
+            <!-- OTHER -->
+                <a name="other"></a> 
+                        <div class="section-header header-other" id="historical">
                             <div class="header-container">
                                 <img class="section-header-image section-image-other" src="assets/frame-other-2.png" alt="">
                                 <div class="section-card">

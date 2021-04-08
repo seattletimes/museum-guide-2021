@@ -214,51 +214,8 @@ $( ".collapse" ).click(function() {
 
 });
 
-var img = document.createElement("img");
-img.src = "assets/people-1.png";
-img.classList.add("people-watch")
-
-var parents = document.getElementsByClassName("event")
-
-for (var i = 0, ii = parents.length; i < ii; i++) {
-    var parent = parents[i]
-     if (i % 5 === 0) {
-            parent.classList.add("people-image");
-            parent.appendChild(img.cloneNode(true));
-        }
-}
 
 
-/*
-var addimages;
-addimages = document.getElementsByClassName("people-image");
-
-for (var i = 0, ii = addimages.length; i < ii; i++) {
-    var addimage = addimages[i];
-    addimage.appendChild(img);
-        
-}
-
-*/
-/*
-var container_block;
-
-var img = document.createElement("img");
-img.src = "http://www.google.com/intl/en_com/images/logo_plain.png";
- 
-container_block = document.getElementsByClassName("people-image");
-container_block[0].appendChild(img);
 
 
-/*
 
-/*
-var container_block ;
-
-var img = document.createElement("img");
-img.src = "http://www.google.com/intl/en_com/images/logo_plain.png";
- 
-container_block = document.getElementById( 'imageadd' );
-container_block.appendChild( img );
-
-*/
