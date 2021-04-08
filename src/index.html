@@ -37,9 +37,6 @@
     <responsive-child>
         <%= t.include("partials/_nav.html") %>
             <header class="top">
-                <div class="ad-white">
-                    <zeus-ad id='zeus_top' width="100%;"></zeus-ad>
-                </div>
                 <div id="intro">
                     <div id="mgtitle">
                         <h1>SPARKING CURIOSITY</h1>
@@ -60,9 +57,17 @@
                     <div>
                         <div id="frames">
                             <p class="graphic-hed">Choose a category</p>
-                            <img src="./assets/gallery-frames.svg" />
+
+                            <!-- <img src="./assets/gallery-frames.svg" /> -->
                         </div>
                     </div>
+                    <div class="">
+                        <div class="image">
+                            <img class="background" src="./assets/gallery-frames-background1.png">
+                            <div class="overlay"><%= t.include("assets/gallery-frames1-01.svg") %></div>
+                        </div>
+                    </div>
+
 
                     <div id="visitors">
                         <img src="./assets/visitors.png">
@@ -70,6 +75,9 @@
                 </div>
             </header>
     </responsive-child>
+    <div class="ad-white">
+        <zeus-ad id='zeus_top' width="100%;"></zeus-ad>
+    </div>
 
 <main>
     <responsive-child>
@@ -460,23 +468,29 @@
 
                         <div class="credits">
                             Illustrations by Jennifer Luxton
-                            <div>Design and Development by Jennifer Luxton and Stephanie Hays</div>
-                            <div>Project editing by Janet Tu, Angela Gottschalk, Emily Eng and Trevor Lenzmeier</div>
+                            <div>Design and development by Jennifer Luxton and Stephanie Hays</div>
+                            <div>Project editing by Janet Tu, Angela Gottschalk, Emily M. Eng and Trevor Lenzmeier</div>
                         </div>
 </main>
-        <% if (json.project.production && !json.project.embedded) { %>
+        <div class="comments">
             <%= t.include("partials/_comments.html", grunt.data.json) %>
-        <% } %>
+        </div>
         <%= t.include("partials/_dontMiss.html", grunt.data.json) %>
         <div class="ad-white">
             <zeus-ad id='zeus_bottom' width="100%;"></zeus-ad>
         </div>
         <%= t.include("partials/_navBottom.html") %>
+        
         <script src="https://seattle-times.zeustechnology.com/main.js" async></script>
 
         <script src="https://www.seattletimes.com/wp-content/plugins/st-advertising/dist/st-projects-bundle.js" async></script>
 
         <script src="app.js" async></script>
+
+        <!-- <script>
+            var data = <%= JSON.stringify(json.art_links) %>;
+          </script> -->
+
         <% if (json.project.production) { %>
             <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
             <%= t.include("partials/_workHere.html") %>
