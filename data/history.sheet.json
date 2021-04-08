@@ -1,7 +1,7 @@
 [
   {
     "event": "Foothills Historical Museum",
-    "undefined": "Reopening planned for early May",
+    "exhibitname": "Reopening planned for early May",
     "dates": "Reopening planned for early May",
     "category": "History",
     "price": "Free",
@@ -19,8 +19,8 @@
   },
   {
     "event": "Museum of History & Industry (MOHAI)",
-    "undefined": "“Stand Up Seattle: The Democracy Project,” through July 5 ",
-    "exhibitname": "“Stand Up Seattle: The Democracy Project” ",
+    "exhibitname": "“Stand Up Seattle: The Democracy Project,” through July 5 ",
+    "undefined": "“Stand Up Seattle: The Democracy Project” ",
     "dates": "“Stand Up Seattle: The Democracy Project” through July 5",
     "category": "History",
     "price": "$17-$22",
@@ -38,8 +38,8 @@
   },
   {
     "event": "Washington State History Museum",
-    "undefined": "“Crossing Boundaries: Portraits of a Transgender West,” May 29 through Dec. 12",
-    "exhibitname": "“Crossing Boundaries: Portraits of a Transgender West”",
+    "exhibitname": "“Crossing Boundaries: Portraits of a Transgender West,” May 29 through Dec. 12",
+    "undefined": "“Crossing Boundaries: Portraits of a Transgender West”",
     "dates": "“Crossing Boundaries: Portraits of a Transgender West,” May 29 through Dec. 12",
     "category": "History",
     "price": "$11-$14",
