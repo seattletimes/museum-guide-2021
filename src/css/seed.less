@@ -959,3 +959,48 @@ background: linear-gradient(180deg, rgba(214,229,255,1) 0%, rgba(155,179,221,1) 
     height: 100%;
   }
 }
+
+.info {
+  .flex(0 0 340px);
+  font-size: 17px;
+  padding-right: 20px;
+
+  .title {
+    font-weight: bold;
+    font-size: 22px;
+    color: darken(#DD492D, 20%);
+  }
+  .text {
+    font-size: 16px;
+  }
+}
+
+.st-overlay {
+  fill: #000000;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.goto {
+  .flex(1);
+  text-align: center;
+  width:auto;
+  padding: 4px 0px;
+  // border: 2px solid white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 10px;
+  &.disabled {
+    color: @df-dark-gray;
+  }
+}
+.goto:not(.disabled):hover {
+  background-color: black;
+  color: white;
+}
+
+.clear {
+  clear:both;
+  display: block;
+}
