@@ -1,8 +1,8 @@
 [
   {
     "event": "Cascadia Art Museum",
-    "TrevWork (combined exhibits and dates)": "“Dreaming Forms: The Art of Leo Kenney”;  “Stolen Moments: The Photography of Shedrich Williames”; all current exhibits run through May 23",
-    "exhibitname": "“Dreaming Forms: The Art of Leo Kenney”;  “Stolen Moments: The Photography of Shedrich Williames”",
+    "exhibitname": "“Dreaming Forms: The Art of Leo Kenney”;  “Stolen Moments: The Photography of Shedrich Williames”; all current exhibits run through May 23",
+    "undefined": "“Dreaming Forms: The Art of Leo Kenney”;  “Stolen Moments: The Photography of Shedrich Williames”",
     "dates": "All current exhibits run through May 23",
     "category": "Visual Arts",
     "price": "$10 adults, $7 seniors, free for youth under 18 and students",
@@ -21,8 +21,8 @@
   },
   {
     "event": "Frye Art Museum",
-    "TrevWork (combined exhibits and dates)": "“(Don’t Be Absurd) Alice in Parts” through April 25; “Unsettling Femininity” through May 30; “Art on the Mind” through Nov. 14",
-    "exhibitname": "“(Don’t Be Absurd) Alice in Parts”; “Unsettling Femininity”; “Art on the Mind” ",
+    "exhibitname": "“(Don’t Be Absurd) Alice in Parts” through April 25; “Unsettling Femininity” through May 30; “Art on the Mind” through Nov. 14",
+    "undefined": "“(Don’t Be Absurd) Alice in Parts”; “Unsettling Femininity”; “Art on the Mind” ",
     "dates": "“(Don’t Be Absurd) Alice in Parts” through April 25; “Unsettling Femininity” through May 30; “Art on the Mind” through Nov. 14",
     "category": "Visual Arts",
     "price": "Free (timed ticket required)",
@@ -40,8 +40,8 @@
   },
   {
     "event": "Greg Kucera Gallery",
-    "TrevWork (combined exhibits and dates)": "Exhibits of Jacob Lawrence’s and Joey Veltkamp’s works, through April 17",
-    "exhibitname": "Jacob Lawrence and Joey Veltkamp",
+    "exhibitname": "Exhibits of Jacob Lawrence’s and Joey Veltkamp’s works, through April 17",
+    "undefined": "Jacob Lawrence and Joey Veltkamp",
     "dates": "Jacob Lawrence and Joey Veltkamp run through April 17 ",
     "category": "Visual Arts",
     "price": "Free ",
@@ -53,14 +53,14 @@
     "author": "Brendan Kiley",
     "photocredit": "Courtesy of Greg Kucera Gallery",
     "region": "Seattle",
-    "photo": "assets/kucera.jpg",
+    "photo": "assets/kucera2.jpg",
     "cutline": "The quilts and fabric art of Joey Veltkamp, currently hanging at Greg Kucera Gallery, include a series of meditations on American flags — some waving in celebration and some in distress.",
     "safety": "Masks and physical distancing required"
   },
   {
     "event": "MadArt\n\n",
-    "TrevWork (combined exhibits and dates)": "“Parable of Gravity,” through April 17  ",
-    "exhibitname": "“Parable of Gravity” ",
+    "exhibitname": "“Parable of Gravity,” through April 17  ",
+    "undefined": "“Parable of Gravity” ",
     "dates": "“Parable of Gravity” through April 17",
     "category": "Visual Arts",
     "price": "Free (timed tickets required)",
@@ -78,7 +78,7 @@
   },
   {
     "event": "Martyr Sauce",
-    "TrevWork (combined exhibits and dates)": "New space opening May 6, 2021; upcoming exhibit featuring muralist Kenji Stoll, dates and title forthcoming",
+    "exhibitname": "New space opening May 6, 2021; upcoming exhibit featuring muralist Kenji Stoll, dates and title forthcoming",
     "dates": "New space opening May 6, 2021",
     "category": "Visual Arts",
     "price": "$5",
@@ -96,8 +96,8 @@
   },
   {
     "event": "Museum of Glass",
-    "TrevWork (combined exhibits and dates)": "“Transparency,” through summer; “René Lalique: Art Deco Gems from the Steven and Roslyn Shulman Collection,” through fall; “Counterparts,” as of this writing, does not have a closing date ",
-    "exhibitname": "“Transparency”; “René Lalique: Art Deco Gems from the Steven and Roslyn Shulman Collection”; “Counterparts”",
+    "exhibitname": "“Transparency,” through summer; “René Lalique: Art Deco Gems from the Steven and Roslyn Shulman Collection,” through fall; “Counterparts,” as of this writing, does not have a closing date ",
+    "undefined": "“Transparency”; “René Lalique: Art Deco Gems from the Steven and Roslyn Shulman Collection”; “Counterparts”",
     "dates": "“Transparency” shows through summer; “René Lalique” through fall; “Counterparts,” as of this writing, does not have a closing date ",
     "category": "Visual Arts",
     "price": "$17 adults, $14 seniors/students/military, $5 12 and under; ",
@@ -115,8 +115,8 @@
   },
   {
     "event": "Seattle Art Museum",
-    "TrevWork (combined exhibits and dates)": "“Jacob Lawrence: The American Struggle,” through May 23; “Barbara Earl Thomas: The Geography of Innocence,” through Jan. 2, 2022; “Dawn Cerny: Les Choses,” April 9 through Sept. 26; “Monet at Étretat,” June 25 through Oct. 17",
-    "exhibitname": "“Jacob Lawrence: The American Struggle”; “Barbara Earl Thomas: The Geography of Innocence”; “Dawn Cerny: Les Choses”; “Monet at Étretat”",
+    "exhibitname": "“Jacob Lawrence: The American Struggle,” through May 23; “Barbara Earl Thomas: The Geography of Innocence,” through Jan. 2, 2022; “Dawn Cerny: Les Choses,” April 9 through Sept. 26; “Monet at Étretat,” June 25 through Oct. 17",
+    "undefined": "“Jacob Lawrence: The American Struggle”; “Barbara Earl Thomas: The Geography of Innocence”; “Dawn Cerny: Les Choses”; “Monet at Étretat”",
     "dates": "“The American Struggle” through May 23; “The Geography of Innocence” through Nov. 14; “Les Choses,” April 9 through Sept. 26; “Monet at Étretat,” June 25 through Oct. 17",
     "category": "Visual Arts",
     "price": "$19.99 adults, $17.99 seniors 65 and over and military, $12.99 teens and students, free for SAM members, children 14 and under, free on first Thursday of each month",
@@ -134,8 +134,8 @@
   },
   {
     "event": "Tacoma Art Museum",
-    "TrevWork (combined exhibits and dates)": "“Immigrant Artists”; “Painting Deconstructed”; as of this writing, neither exhibition has a closing date",
-    "exhibitname": "“Immigrant Artists”; “Painting Deconstructed”",
+    "exhibitname": "“Immigrant Artists”; “Painting Deconstructed”; as of this writing, neither exhibition has a closing date",
+    "undefined": "“Immigrant Artists”; “Painting Deconstructed”",
     "dates": "“Immigrant Artists” and “Painting Deconstructed,” as of this writing, do not have closing dates",
     "category": "Visual Arts",
     "price": "$18 adults, $15 students/seniors, free for military and children 5 and under",
@@ -153,8 +153,8 @@
   },
   {
     "event": "Wa Na Wari",
-    "TrevWork (combined exhibits and dates)": "Exhibits of Carletta Carrington Wilson’s, Lisa Myers Bulmash’s, Mia Imani’s, Shoccara Marcus’s and Kyle Yearwood’s works, through July 18",
-    "exhibitname": "Carletta Carrington Wilson; Lisa Myers Bulmash; Mia Imani; Shoccara Marcus; Kyle Yearwood  ",
+    "exhibitname": "Exhibits of Carletta Carrington Wilson’s, Lisa Myers Bulmash’s, Mia Imani’s, Shoccara Marcus’s and Kyle Yearwood’s works, through July 18",
+    "undefined": "Carletta Carrington Wilson; Lisa Myers Bulmash; Mia Imani; Shoccara Marcus; Kyle Yearwood  ",
     "dates": "Carletta Carrington Wilson, Lisa Myers Bulmash, Mia Imani, Shoccara Marcus and Kyle Yearwood exhibits through July 18",
     "category": "Visual Arts",
     "price": "Free",
