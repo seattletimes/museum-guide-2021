@@ -24,7 +24,7 @@
         <% } %>
 
     <script src="https://kit.fontawesome.com/9d53be7224.js" crossorigin="anonymous"></script>
-            
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -93,11 +93,11 @@
                     { data: "west", label: "West" },
                 ] %>
                 <ul class="categories">
-                <li>
+                <!-- <li>
                     <button type="button" class="all-events checked" data-category="all-events">
                         <span class="cat-label">All</span>
                     </button>
-                </li>
+                </li> -->
                 <% cats.forEach(function(cat) { %>
                 <li>
                     <button type="button" class="filter-buttons" data-category="<%= cat.data %>">
@@ -111,6 +111,7 @@
                     <button class="clear-search" type="reset"><img src="assets/x-icon.svg"></button>
                 </div>
             </div>
+            <div class="number-locs">Displaying <span>19</span> locations</div>
             <h2 class="nav-ender"><a href="#"><i class="fas fa-arrow-circle-up"></i></a></h2>
         </div>
 
@@ -130,9 +131,9 @@
 
                     <div class="container" data-set="1">
 
-                        
+
                         <!-- VISUAL ARTS -->
-                        <a name="arts"></a> 
+                        <a name="arts"></a>
                         <div class="section-header header-arts" id="arts">
                             <div class="header-container">
                                 <img class="section-header-image section-image-arts" src="assets/frame-visual-arts.png" alt="">
@@ -168,7 +169,7 @@
                                                     <%= item.author %>
                                                 </p>
                                         </div>
-                                
+
 
                                     <div class="chevs chevs-festivals">
                                         <p class="read">Read more <i class="fas fa-chevron-down"></i></p>
@@ -193,32 +194,32 @@
                                         Photo above:
                                         <%= item.cutline %> (<%= item.photocredit %>)
                                     </div>
-                                            
-                                            
-                                <% if(item.event == 'Greg Kucera Gallery' || item.event == 'Wa Na Wari'){ %> 
-                                                        
+
+
+                                <% if(item.event == 'Greg Kucera Gallery' || item.event == 'Wa Na Wari'){ %>
+
                                                              <img class="people-watch-1" src="assets/visitors-1.png">
                                                                  <% } %>
-                                                                     
-                                                                     
-                                                                     <% if(item.event == 'Museum of Glass' || item.event == 'Cascadia Art Museum'){ %> 
-                                                        
+
+
+                                                                     <% if(item.event == 'Museum of Glass' || item.event == 'Cascadia Art Museum'){ %>
+
                                                              <img class="people-watch-2" src="assets/visitors-2.png">
                                                                  <% } %>
                                                 </div>
                                                 <% }) %>
                                         </div>
-    
+
                         <div class="ad">
                             <zeus-ad id='zeus_body2a' width="100%;"></zeus-ad>
                         </div>
 
-                             
+
                                      <!-- CULTURAL -->
-                                    
-                                <a name="cult"></a>  
+
+                                <a name="cult"></a>
                                    <div class="section-header header-cultural" id="cultural">
-                                    
+
                             <div class="header-container">
 
                                 <img class="section-header-image section-image-cultural" src="assets/frame-culture.png" alt="">
@@ -229,8 +230,8 @@
                                 </div>
                             </div>
                         </div>
-                                 
-                                
+
+
                                         <div class="background-container-2" id="cultural-section">
 
 
@@ -285,10 +286,10 @@
                                                         Photo above:
                                                         <%= item.cutline %> (<%= item.photocredit %>)
                                                     </div>
-                                                            
-                                                            
-                                                             <% if(item.event == 'National Nordic Museum'){ %> 
-                                                        
+
+
+                                                             <% if(item.event == 'National Nordic Museum'){ %>
+
                                                              <img class="people-watch-2" src="assets/visitors-2.png">
                                                                  <% } %>
                                                 </div>
@@ -297,10 +298,10 @@
 
                         <div class="ad">
                             <zeus-ad id='zeus_middle' width="100%;"></zeus-ad>
-                        </div>                                    
-                                                                 
+                        </div>
+
 <!-- HISTORICAL SECTION -->
-                        <a name="hist"></a> 
+                        <a name="hist"></a>
                         <div class="section-header header-historical" id="historical">
 
                             <div class="header-container">
@@ -319,7 +320,7 @@
 
                                 <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
 
-                                                        
+
                                     <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.region %>">
 
                                     <div class="event-header">
@@ -367,8 +368,8 @@
                                         Photo above:
                                         <%= item.cutline %> (<%= item.photocredit %>)
                                     </div>
-                                            <% if(item.event == 'Foothills Historical Museum'){ %> 
-                                                        
+                                            <% if(item.event == 'Foothills Historical Museum'){ %>
+
                                                              <img class="people-watch-1" src="assets/visitors-1.png">
                                                                  <% } %>
                                 </div>
@@ -380,7 +381,7 @@
                         </div>
 
             <!-- OTHER -->
-                <a name="other"></a> 
+                <a name="other"></a>
                         <div class="section-header header-other" id="historical">
                             <div class="header-container">
                                 <img class="section-header-image section-image-other" src="assets/frame-other-2.png" alt="">
@@ -443,14 +444,14 @@
                                     Photo above:
                                     <%= item.cutline %> (<%= item.photocredit %>)
                                 </div>
-                                        
-                                        <% if(item.event == 'The Museum of Flight'){ %> 
-                                                        
+
+                                        <% if(item.event == 'The Museum of Flight'){ %>
+
                                                              <img class="people-watch-1" src="assets/visitors-1.png">
                                                                  <% } %>
-                                                                     
-                                                                     <% if(item.event == 'Burke Museum of Natural History and Culture'){ %> 
-                                                        
+
+                                                                     <% if(item.event == 'Burke Museum of Natural History and Culture'){ %>
+
                                                              <img class="people-watch-2" src="assets/visitors-2.png">
                                                                  <% } %>
                             </div>
@@ -471,7 +472,7 @@
             <zeus-ad id='zeus_bottom' width="100%;"></zeus-ad>
         </div>
         <%= t.include("partials/_navBottom.html") %>
-        
+
         <script src="https://seattle-times.zeustechnology.com/main.js" async></script>
 
         <script src="https://www.seattletimes.com/wp-content/plugins/st-advertising/dist/st-projects-bundle.js" async></script>

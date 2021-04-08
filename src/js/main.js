@@ -5,12 +5,14 @@ const $ = require('jquery');
 
 require("component-responsive-frame/child");
 
+var numberOfEvents = document.querySelector(".number-locs span");
+
 var catList = document.querySelectorAll(".filter-buttons");
 var searchBox = document.querySelector(".filters .search");
 var header = document.querySelector(".filters");
 var sticky = header.offsetTop;
 var clearSearch = document.querySelector(".clear-search");
-var allEventsButton = document.querySelector(".all-events");
+// var allEventsButton = document.querySelector(".all-events");
 var visualArtsSection = document.getElementById("visual-arts-section");
 var culturalSection = document.getElementById("cultural-section");
 var historicalSection = document.getElementById("historical-section");
@@ -23,27 +25,32 @@ var show = ['seattle','north', 'south', 'east', 'west'];
 var result;
 
 function filterByCategory(cat){
+
   if(show.length == 5){
     show = [];
   }
   if (show.indexOf(cat) > -1){
     var indexCat = show.indexOf(cat);
     show.splice(indexCat, 1);
+
   }
   else {
     show.push(cat);
+
   }
-  if(show.length > 0){
-    allEventsButton.classList.remove("checked");
-  }
+  // if(show.length > 0){
+  //   allEventsButton.classList.remove("checked");
+  // }
   combineFilters();
 }
 
 function combineFilters(){
+
   result = 0;
   var searchText = searchBox.value.toLowerCase();
 
   if(show.length > 0){
+   console.log(show);
     if(searchText.length == 0){
       for(var z = 0; z<events.length; z++){
         if(show.indexOf(events[z].dataset.category) > -1){
@@ -69,13 +76,28 @@ function combineFilters(){
       }
       noResults();
     }
+  } else{
+    // for(var i = 0; i<events.length; i++){
+    //   events[i].style.display="none";
+    // }
+    // noResults();
+    allEvents();
+    console.log(show);
   }
-  else{
-    for(var i = 0; i<events.length; i++){
-      events[i].style.display="none";
+
+
+  // how many are displayed?
+  var countVisibleNumber = 0;
+
+  for(var i = 0; i<events.length; i++){
+    if (events[i].style.display==="block"){
+      countVisibleNumber += 1;
     }
-    noResults();
   }
+
+  numberOfEvents.innerHTML = "";
+  numberOfEvents.innerHTML = countVisibleNumber;
+  console.log(countVisibleNumber);
 }
 
 function noResults(){
@@ -109,14 +131,17 @@ function clearSearchBox(){
 }
 
 function allEvents(){
-  clearSearchBox();
+  if (searchBox.value != "") {
+    clearSearchBox();
+  }
+  // clearSearchBox();
   show = ['seattle','north', 'south', 'east', 'west'];
-  if (this.classList.length == 1){
-    this.classList.add("checked");
-  }
-  else{
-    this.classList.remove("checked");
-  }
+  // if (this.classList.length == 1){
+  //   this.classList.add("checked");
+  // }
+  // else{
+  //   this.classList.remove("checked");
+  // }
 
   for(var x = 0; x < catList.length; x++){
     catList[x].classList.remove("checked");
@@ -161,7 +186,7 @@ function selectedCategory(eventType, category) {
 */
 
 clearSearch.addEventListener("click", clearSearchBox);
-allEventsButton.addEventListener("click", allEvents);
+// allEventsButton.addEventListener("click", allEvents);
 searchBox.addEventListener("keyup", searchListener);
 window.onscroll = function() {fixNav()};
 detectIE();
