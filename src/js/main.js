@@ -20,7 +20,7 @@ var eventGrid = document.querySelector(".event-grid");
 var events = document.querySelectorAll(".event");
 
 var show = ['seattle','north', 'south', 'east', 'west'];
-var result; 
+var result;
 
 function filterByCategory(cat){
   if(show.length == 5){
@@ -69,13 +69,13 @@ function combineFilters(){
       }
       noResults();
     }
-  } 
+  }
   else{
     for(var i = 0; i<events.length; i++){
       events[i].style.display="none";
-    } 
+    }
     noResults();
-  }   
+  }
 }
 
 function noResults(){
@@ -96,7 +96,7 @@ function noResults(){
 function fixNav(){
   if(window.pageYOffset > sticky) {
     header.classList.add("sticky");
-    } 
+    }
   else{
     header.classList.remove("sticky");
   }
@@ -116,14 +116,14 @@ function allEvents(){
   }
   else{
     this.classList.remove("checked");
-  }  
+  }
 
   for(var x = 0; x < catList.length; x++){
     catList[x].classList.remove("checked");
   }
   for(var i = 0; i<events.length; i++){
     events[i].style.display="block";
-  }  
+  }
 }
 
 function detectIE() {
@@ -166,27 +166,27 @@ searchBox.addEventListener("keyup", searchListener);
 window.onscroll = function() {fixNav()};
 detectIE();
 
-if ($(window).width() < 700) {
-   $('.desktop').hide();
-   $('.mobile').show();
-
-   document.querySelectorAll('.box').forEach(el => {
-      var boxNumber = el.dataset.num;
-      var conSet = el.parentNode.dataset.set;
-      var findExpand = document.querySelector(`.expandContainer[data-set="${conSet}"]`);
-      var theRightExpand = findExpand.querySelector(`.expand[data-num="${boxNumber}"]`);
-      el.after(theRightExpand);
-  });
-} else {
+// if ($(window).width() < 700) {
+//    $('.desktop').hide();
+//    $('.mobile').show();
+//
+//    document.querySelectorAll('.box').forEach(el => {
+//       var boxNumber = el.dataset.num;
+//       var conSet = el.parentNode.dataset.set;
+//       var findExpand = document.querySelector(`.expandContainer[data-set="${conSet}"]`);
+//       var theRightExpand = findExpand.querySelector(`.expand[data-num="${boxNumber}"]`);
+//       el.after(theRightExpand);
+//   });
+// } else {
   $('.desktop').show();
   $('.mobile').hide();
-}
+// }
 
 $( ".box" ).click(function() {
   var number = $(this).data("num");
   var set = $(this).closest('.container').data("set");
   var expandCon = $(this).closest('.container');
-    
+
   if ( $(this).hasClass("selected") ) {
     expandCon.find(`.expand[data-num="${number}"]`).hide();
     $(this).removeClass('selected');
