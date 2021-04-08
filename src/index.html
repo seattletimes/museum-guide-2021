@@ -110,13 +110,16 @@
                     </li>
                     <% }) %>
                 </ul>
-                <div class="advanced">
+                
+                    <div class="number-locs">Displaying <span>19</span> locations</div>
+            </div>
+            <div class="nav-bar-second">
+                    <div class="advanced">
                     <input type="text" placeholder="Search (i.e. Cascadia Museum)" class="search" id="search">
                     <button class="clear-search" type="reset"><img src="assets/x-icon.svg"></button>
                 </div>
-            </div>
-            <div class="number-locs">Displaying <span>19</span> locations</div>
             <h2 class="nav-ender"><a href="#choose-category"><i class="fas fa-arrow-circle-up"></i></a></h2>
+                </div>
         </div>
 
 
@@ -168,10 +171,7 @@
                                         </div>
 
 
-                                    <div class="expand" data-num="<%= i %>">
-                                        <%= item.vignette %>
-                                            <p class="author">– <%= item.author %></p>
-                                    </div>
+                                    
 
 
 

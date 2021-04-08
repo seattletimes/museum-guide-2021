@@ -171,7 +171,6 @@ header.top {
 
 /*-- Filter Menu --*/
 
-
 .sticky{
   position: fixed;
   z-index: 1; //for ie11
@@ -184,6 +183,7 @@ header.top {
 .sticky + .filters {
   padding-top: 102px;
 }
+
 
 .filters {
     display: flex;
@@ -215,6 +215,7 @@ height: 55px;
 
         @media @mobile, @tablet {
         display: block;
+            margin-bottom: -20px;
     }
     }
 
@@ -229,13 +230,28 @@ height: 55px;
 
       @media @mobile, @tablet {
           margin-top: 10px;
-          margin-left: 12px;
+          margin-left: 0px;
           margin-bottom: -15px;
           text-align: left;
       }
   }
 
+
+.nav-bar-second {
+    display: flex;
+    align-items: center;
+    
+    @media @mobile, @tablet {
+          margin-top: -35px;
+          margin-right: 10px;
+          margin-left: 0px;
+          text-align: left;
+          font-size: 25px;
+      }
+}
+
 .nav-ender {
+   
     color: white;
     font-size: 20px;
     text-align: center;
@@ -246,13 +262,7 @@ height: 55px;
           color: white;
       }
 
-      @media @mobile, @tablet {
-          margin-top: -35px;
-          margin-right: 10px;
-          margin-left: 10px;
-          text-align: left;
-          font-size: 25px;
-      }
+     
   }
 
    .search {
@@ -265,6 +275,15 @@ height: 55px;
 
    .number-locs {
      color: white;
+    font-size: 16px;
+    text-align: center;
+       margin-left: 10px;
+        line-height: 100%;
+       
+       @media @tablet, @mobile {
+           margin-left: 0px;
+           text-align: left;
+       }
    }
 
   .advanced {
@@ -276,7 +295,8 @@ height: 55px;
       height: 30px;
       border: 1px solid black;
     @media @mobile, @tablet{
-      width: 300px;
+      width: 250px;
+        margin-left: 0px;
 
     }
 
@@ -298,7 +318,7 @@ height: 55px;
     list-style-type: none;
     display: flex;
     text-align: center;
-margin-left: 10px;
+padding-inline-start: 10px;
 
       @media @tablet, @mobile {
           margin-bottom: 5px;
@@ -347,6 +367,8 @@ margin-left: 10px;
 /* end filter nav*/
 
 /*start header sections*/
+
+
 
 
 .section-header {
@@ -718,7 +740,7 @@ background: linear-gradient(180deg, rgba(214,229,255,1) 0%, rgba(155,179,221,1) 
         top: 65%;
 
          @media @mobile, @tablet{
-        display: none;;
+        display: none;
 
         }
     }
