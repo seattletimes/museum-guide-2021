@@ -451,13 +451,13 @@
 
                         <div class="credits">
                             Illustrations by Jennifer Luxton
-                            <div>Design and Development by Jennifer Luxton and Stephanie Hays</div>
-                            <div>Project editing by Janet Tu, Angela Gottschalk, Emily Eng and Trevor Lenzmeier</div>
+                            <div>Design and development by Jennifer Luxton and Stephanie Hays</div>
+                            <div>Project editing by Janet Tu, Angela Gottschalk, Emily M. Eng and Trevor Lenzmeier</div>
                         </div>
 </main>
-        <% if (json.project.production && !json.project.embedded) { %>
+        <div class="comments">
             <%= t.include("partials/_comments.html", grunt.data.json) %>
-        <% } %>
+        </div>
         <%= t.include("partials/_dontMiss.html", grunt.data.json) %>
         <div class="ad-white">
             <zeus-ad id='zeus_bottom' width="100%;"></zeus-ad>
