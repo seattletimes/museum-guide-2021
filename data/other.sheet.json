@@ -1,10 +1,11 @@
 [
   {
     "event": "Burke Museum of Natural History and Culture",
+    "undefined": "n/a",
     "category": "Other",
     "price": "$14-$22",
     "location": "4300 15th Ave. N.E., Seattle",
-    "website_online": "https://www.burkemuseum.org/",
+    "website_online": "burkemuseum.org",
     "phone": "206-543-7907",
     "hours": "Tuesday-Sunday, 10 a.m.-5 p.m.",
     "vignette": "<p>If you missed the hoopla in 2019, the 122-year-old Burke Museum got a new home — a museum turned inside-out with its labs, where bones are extracted from sediment and baskets are vacuumed of dust, visible to the public. Natural history museums are often about the dead, but the new Burke has also recommitted to the living with exhibitions about ecology, culture and politics that affect Indigenous people and natural resources.</p>\n\n<p>Which isn’t to say the Burke doesn’t have plenty of artifacts: tiny fossils (including fossilized pollen), skeletons (dinosaurs, whales) and enormous libraries of objects (clothing, sculptures, tools) and creatures (spiders, flowers, birds, mammals). A good natural history museum is a reminder that everything has its place in the flood of time: that dandelion, that pigeon, that cup you just threw in the bin. After a walk through the Burke, you may pop out the exit door and find the world a little more alive than it was when you went in.</p>",
@@ -17,11 +18,12 @@
   },
   {
     "event": "MoPOP",
+    "undefined": "“Pearl Jam: Home and Away,” as of this writing, does not have a closing date; also of note: “Body of Work: Tattoo Culture,” through May 31; “Minecraft: The Exhibition,” through April 18 ",
     "exhibitname": "“Pearl Jam: Home and Away”",
     "category": "Other",
     "price": "$21-$30",
     "location": "325 Fifth Ave. N., Seattle",
-    "website_online": "http://mopop.org/",
+    "website_online": "mopop.org",
     "phone": "206-770-2700",
     "hours": "Thursday-Monday, 10 a.m.-6 p.m.",
     "vignette": "<p>Partnering with Pearl Jam archivist and videographer Kevin Shuss, “Pearl Jam: Home and Away” culls 200-plus artifacts, focusing on tour items and other memorabilia from the Seattle rock legends’ warehouse. It’s an intimate walk through Pearl Jam’s 30-year journey from its fabled precursor bands to the Rock & Roll Hall of Fame, with all the smashed guitar fragments, original lyric sheets and Jeff Ament’s colorful headwear choices along the way. Peep the old Seattle fliers that now read like fantasy lineups or the signs from defunct RKCNDY and Off Ramp clubs where PJ played its earliest gigs. If there’s a centerpiece to a collection this rich, it’s easily the towering bronze statue of Andrew Wood that Ament commissioned of his fallen Mother Love Bone mate, a heartfelt tribute made by local sculptor Mark Walker.</p>\n\n",
@@ -34,11 +36,12 @@
   },
   {
     "event": "The Museum of Flight",
+    "undefined": "“Untold Stories: World War II at 75”",
     "exhibitname": "“Untold Stories: World War II at 75”",
     "category": "Other",
     "price": "$17-$25",
     "location": "9404 E. Marginal Way, Seattle",
-    "website_online": "https://museumofflight.org/",
+    "website_online": "museumofflight.org",
     "phone": "206-764-5700",
     "hours": "Thursday-Sunday, 10 a.m.-5 p.m.",
     "vignette": "<p>Aircraft enthusiasts can walk through aviation history at this museum at Boeing Field. Get a look at classic airliners built right here in Jet City and fighter planes used in both world wars, or learn about the people behind historical photos, missions and aviation technology in the commemorative “Untold Stories: World War II at 75” exhibit, which, according to MOHAI, offers the first enhancement in 16 years to the museum’s gallery of World War II fighter aircrafts and artifacts.</p>\n\n",
@@ -46,15 +49,16 @@
     "photocredit": "Courtesy of the Museum of Flight",
     "region": "Seattle",
     "photo": "assets/flight.jpg",
-    "cutline": "The Museum of Flight’s Aviation Pavilion, located at Boeing Field. ",
+    "cutline": "The Museum of Flight’s Aviation Pavilion, located at Boeing Field.",
     "safety": "Reduced capacity, timed entry, snugly fitting masks required, advance tickets recommended"
   },
   {
     "event": "Washington State Ski and Snowboard Museum ",
+    "undefined": "n/a",
     "category": "Other",
     "price": "Free",
     "location": "10 Pass Life Way, Snoqualmie Pass",
-    "website_online": "https://www.wsssm.org/",
+    "website_online": "wsssm.org",
     "phone": "425-434-0827",
     "hours": "Saturday-Sunday, noon-5 p.m.",
     "vignette": "<p>Opened in 2015, the Washington State Ski & Snowboard Museum documents a rich local history of winter sports, from the state’s 39 Olympians to ski areas and gear. The museum is appropriately located right on Snoqualmie Pass, in between Dru Bru Brewery and Commonwealth Restaurant, so it’s easy to tack on after a day of skiing or snowboarding. For those not ready to visit in person, WSSSM now offers a free online series of talks; past speakers include Ski Patrol Rescue Team’s Chris Martin (and his working avalanche rescue dog Anna) and Deb Armstrong, who won gold in the giant slalom at the 1984 Winter Olympics in Sarajevo, Bosnia and Herzegovina (then Yugoslavia). Speaking of which: The museum is currently hosting a collection of memorabilia from Washington’s many Olympic and Paralympic athletes, including Armstrong’s medal.</p>\n\n<p>You also don’t have to drive to the pass to see WSSSM’s offerings: In Seattle, you can see a mini-exhibit inside the Yurts at Canlis, and, starting in April, the museum will team up with the National Nordic Museum to host a joint exhibition on the history of ski jumping among early Nordic immigrants to America.</p>",
@@ -62,7 +66,7 @@
     "photocredit": "Washington State Ski & Snowboard Museum",
     "region": "East",
     "photo": "assets/ski.jpg",
-    "cutline": "At Snoqualmie Pass, the Washington State Ski & Snowboard Museum documents the state’s history of winter sports. ",
+    "cutline": "At Snoqualmie Pass, the Washington State Ski & Snowboard Museum documents the state’s history of winter sports.",
     "safety": "50% capacity limit, masks required"
   }
 ]

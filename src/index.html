@@ -195,12 +195,17 @@
 
                                     <div class="cutline">
                                         Photo above:
-                                        <%= item.cutline %> (
-                                        <%= item.photocredit %>)
+                                        <%= item.cutline %> (<%= item.photocredit %>)
                                     </div>
                                             
                                             
-                                <% if(item.event == 'National Nordic Museum'){ %> 
+                                <% if(item.event == 'Greg Kucera Gallery' || item.event == 'Wa Na Wari'){ %> 
+                                                        
+                                                             <img class="people-watch-1" src="assets/visitors-1.png">
+                                                                 <% } %>
+                                                                     
+                                                                     
+                                                                     <% if(item.event == 'Museum of Glass' || item.event == 'Cascadia Art Museum'){ %> 
                                                         
                                                              <img class="people-watch-2" src="assets/visitors-2.png">
                                                                  <% } %>
@@ -217,7 +222,7 @@
                                     
                                     
                                    <div class="section-header header-cultural" id="cultural">
-                            <a name="visual-arts"></a>  
+                            <a name="cultural"></a>  
                                     
                             <div class="header-container">
 
@@ -283,8 +288,7 @@
 
                                                     <div class="cutline">
                                                         Photo above:
-                                                        <%= item.cutline %> (
-                                                            <%= item.photocredit %>)
+                                                        <%= item.cutline %> (<%= item.photocredit %>)
                                                     </div>
                                                             
                                                             
@@ -324,10 +328,7 @@
 
                                 <div class="box event <%= item.region %>" data-category="<%= cat[item.region] %>" data-num="<%= i %>">
 
-                                                        <% if(item.event == 'Foothills Historical Museum'){ %> 
                                                         
-                                                             <img class="people-watch-1" src="assets/visitors-1.png">
-                                                                 <% } %>
                                     <img class="item-icon" src="<%= item.photo %>" alt="" title="<%= item.region %>">
 
                                     <div class="event-header">
@@ -373,9 +374,12 @@
 
                                     <div class="cutline">
                                         Photo above:
-                                        <%= item.cutline %> (
-                                        <%= item.photocredit %>)
+                                        <%= item.cutline %> (<%= item.photocredit %>)
                                     </div>
+                                            <% if(item.event == 'Foothills Historical Museum'){ %> 
+                                                        
+                                                             <img class="people-watch-1" src="assets/visitors-1.png">
+                                                                 <% } %>
                                 </div>
                             <% }) %>
                         </div>
@@ -446,22 +450,31 @@
 
                                 <div class="cutline">
                                     Photo above:
-                                    <%= item.cutline %> (
-                                    <%= item.photocredit %>)
+                                    <%= item.cutline %> (<%= item.photocredit %>)
                                 </div>
+                                        
+                                        <% if(item.event == 'The Museum of Flight'){ %> 
+                                                        
+                                                             <img class="people-watch-1" src="assets/visitors-1.png">
+                                                                 <% } %>
+                                                                     
+                                                                     <% if(item.event == 'Burke Museum of Natural History and Culture'){ %> 
+                                                        
+                                                             <img class="people-watch-2" src="assets/visitors-2.png">
+                                                                 <% } %>
                             </div>
                             <% }) %>
                         </div>
 
                         <div class="credits">
                             Illustrations by Jennifer Luxton
-                            <div>Design and Development by Jennifer Luxton and Stephanie Hays</div>
-                            <div>Project editing by Janet Tu, Angela Gottschalk, Emily Eng and Trevor Lenzmeier</div>
+                            <div>Design and development by Jennifer Luxton and Stephanie Hays</div>
+                            <div>Project editing by Janet Tu, Angela Gottschalk, Emily M. Eng and Trevor Lenzmeier</div>
                         </div>
 </main>
-        <% if (json.project.production && !json.project.embedded) { %>
+        <div class="comments">
             <%= t.include("partials/_comments.html", grunt.data.json) %>
-        <% } %>
+        </div>
         <%= t.include("partials/_dontMiss.html", grunt.data.json) %>
         <div class="ad-white">
             <zeus-ad id='zeus_bottom' width="100%;"></zeus-ad>

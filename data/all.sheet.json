@@ -14,6 +14,7 @@
     "author": "Moira Macdonald",
     "photocredit": "University of Washington Libraries, Special Collections",
     "region": "North",
+    "photo": "assets/cascadia2.jpg",
     "cutline": "Shedrich Williames’ “Self Portrait” is part of the “Stolen Moments: The Photography of Shedrich Williames” exhibit at Cascadia Art Museum. ",
     "safety": "Masks and physical distancing required, no more than 50 patrons at a time",
     "TREV NOTES": "Exhibit names seem kinda problematic, many museums have far too many exhibitions to name"
@@ -33,7 +34,7 @@
     "author": "Moira Macdonald",
     "photocredit": "Jueqian Fang",
     "region": "Seattle",
-    "photo": "assets/burke.jpg",
+    "photo": "assets/frye.jpg",
     "cutline": "Installation view of Anastacia-Reneé’s “(Don’t be Absurd) Alice in Parts” at Frye Art Museum. ",
     "safety": "Timed tickets, masks and physical distancing required, coat check/cafe/shop closed, temperature checks and symptom screenings on entry"
   },
@@ -123,7 +124,7 @@
     "website_online": "seattleartmuseum.org",
     "phone": "206-654-3100",
     "hours": "Friday-Sunday 10 a.m.-5 p.m., First Free Thursday 10 a.m.-5p.m.",
-    "vignette": "If you need an injection of art appreciation posthaste, Seattle Art Museum has a wealth of fantastic shows on view, from celebrated artists with ties to Seattle. “Jacob Lawrence: The American Struggle” is frequently sold-out, and for good reason. For the first time since 1958, the exhibition reunites Lawrence’s iconic series “Struggle: From the History of the American People,” and its quasi-abstract epic of American history told through the eyes of folks previously pushed to the margins. Also on view is Barbara Earl Thomas’ stunning “The Geography of Innocence.” Through cut-paper portraits and an immersive installation, the show invites viewers to reflect on childhood, race, violence, hope, ritual and their own lives and potential for change. \n\nIn June, “Monet at Étretat” presents a chance to immerse yourself in the impressionist’s French coastal town without stepping on a plane; and sculptures from Dawn Cerny in the exhibition “Les Choses” examine “the gap between our ideal homes and the lived reality of our overgrown, patched-up, and slightly worn habitats,” something that couldn’t be more timely after a year spent getting intimately acquainted with our own slightly worn habitats.\n(SAM’s Seattle Asian Art Museum reopens to the public on May 28, and to SAM members on May 7. Its Olympic Sculpture Park is open, though the PACCAR Pavilion at the park remains closed.)",
+    "vignette": "If you need an injection of art appreciation posthaste, Seattle Art Museum has a wealth of fantastic shows on view, from celebrated artists with ties to Seattle. “Jacob Lawrence: The American Struggle” is frequently sold-out, and for good reason. For the first time since 1958, the exhibition reunites Lawrence’s iconic series “Struggle: From the History of the American People,” and its quasi-abstract epic of American history told through the eyes of folks previously pushed to the margins. Also on view is Barbara Earl Thomas’ stunning “The Geography of Innocence.” Through cut-paper portraits and an immersive installation, the show invites viewers to reflect on childhood, race, violence, hope, ritual and their own lives and potential for change. \n\nIn June, “Monet at Étretat” presents a chance to immerse yourself in the impressionist’s French coastal town without stepping on a plane; and sculptures from Dawn Cerny in the exhibition “Les Choses” examine “the gap between our ideal homes and the lived reality of our overgrown, patched-up, and slightly worn habitats,” something that couldn’t be more timely after a year spent getting intimately acquainted with our own slightly worn habitats.\n(SAM’s Asian Art Museum reopens to the public on May 28, and to SAM members on May 7. Its Olympic Sculpture Park is open, though the PACCAR Pavilion at the park remains closed.)",
     "author": "Megan Burbank",
     "photocredit": "Courtesy of Seattle Art Museum",
     "region": "Seattle",
@@ -183,6 +184,7 @@
     "author": "Jackie Varriano",
     "photocredit": "Amanda Snyder / The Seattle Times",
     "region": "South",
+    "photo": "assets/foothills.jpg",
     "cutline": "Foothills Historical Museum in Buckley, Pierce County, will reopen on May 1 — it’s been closed for the past year due to the pandemic. ",
     "safety": "Masks and social distancing required, some outdoor buildings may be closed"
   },
@@ -201,6 +203,7 @@
     "author": "Brendan Kiley",
     "photocredit": "Courtesy of MOHAI ",
     "region": "Seattle",
+    "photo": "assets/mohai.jpg",
     "cutline": "The Museum of History and Industry has interactive exhibits and millions of artifacts from Puget Sound history. ",
     "safety": "Timed tickets, masks and physical distancing required"
   },
@@ -219,6 +222,7 @@
     "author": "Crystal Paul ",
     "photocredit": "Peter Boag / Washington State History Museum",
     "region": "South",
+    "photo": "assets/wastatehistory.jpg",
     "cutline": "Jack Garland “Babe Bean,” who was born Elvira Virginia Mugarietta in San Francisco, 1869, was a Mexican American trans man, according to Peter Boag, curator and Washington State University history professor. His story will be featured in the “Crossing Boundaries: Portraits of a Transgender West” exhibition at Washington State History Museum.",
     "safety": "Masks or face coverings are required; social distancing, reduced occupancy and one-way gallery paths"
   },
@@ -237,6 +241,7 @@
     "author": "Megan Burbank",
     "photocredit": "Marja Helander and Mauri Lähdesm",
     "region": "Seattle",
+    "photo": "assets/nordic.jpg",
     "cutline": "A still from Marja Helander’s 2017 short film “Birds in the Earth,” which interrogates ideas of ownership in the land of Finland’s Sami people through ballet. Helander’s work will be on view at the National Nordic Museum as part of its upcoming exhibition featuring work from the Finnish National Gallery.",
     "safety": "Face coverings required for everyone age 2 and up; advance tickets must be purchased online in advance; coat check closed"
   },
@@ -255,6 +260,7 @@
     "author": "Crystal Paul ",
     "photocredit": "Courtesy of Suquamish Museum Archives",
     "region": "West",
+    "photo": "assets/suquamish2.jpg",
     "cutline": "Chief Seattle Days circa 1920s, with Lucy Snyder Mulholland (center) and Amelia Sneatlum (right). ",
     "safety": "Masks and social distancing required, temperature check and questionnaire, and contact information must be provided for contact tracing"
   },
@@ -273,6 +279,7 @@
     "author": "Crystal Paul ",
     "photocredit": "Courtesy of Wing Luke Museum",
     "region": "Seattle",
+    "photo": "assets/wingluke.jpg",
     "cutline": "“Where Beauty Lies,” an exhibit at the Wing Luke Museum, looks at beauty standards and racist and misogynist stereotypes around Asian American beauty. ",
     "safety": "All guests 18 and older are required to sign a waiver of liability relating to the coronavirus/COVID-19"
   },
@@ -289,6 +296,7 @@
     "author": "Brendan Kiley",
     "photocredit": "Alan Berner / The Seattle Times",
     "region": "Seattle ",
+    "photo": "assets/burke.jpg",
     "cutline": "The Burke Museum has lots of interesting artifacts, including this composite skull of a plant-eating animal from 66 million years ago. Here, Peter Bateman, with his wife Leslie in the background, checks out a Triceratops exhibit at the museum.",
     "safety": "Timed tickets, masks and physical distancing required"
   },
@@ -306,6 +314,7 @@
     "author": "Michael Rietmulder",
     "photocredit": "Michael Rietmulder / The Seattle Times",
     "region": "Seattle ",
+    "photo": "assets/mopop.jpg",
     "cutline": "MoPOP’s “Pearl Jam: Home and Away” exhibit culls 200-plus artifacts, focusing on tour items and other memorabilia from the Seattle rock legends’ warehouse.",
     "safety": "Reduced capacity, masks required for guests ages 3 and up, advance tickets and social distancing required, timed admittance"
   },
@@ -323,6 +332,7 @@
     "author": "Michael Rietmulder",
     "photocredit": "Courtesy of the Museum of Flight",
     "region": "Seattle ",
+    "photo": "assets/flight.jpg",
     "cutline": "The Museum of Flight’s Aviation Pavilion, located at Boeing Field. ",
     "safety": "Reduced capacity, timed entry, snugly fitting masks required, advance tickets recommended"
   },
@@ -339,6 +349,7 @@
     "author": "Megan Burbank",
     "photocredit": "Washington State Ski & Snowboard Museum",
     "region": "East",
+    "photo": "assets/ski.jpg",
     "cutline": "At Snoqualmie Pass, the Washington State Ski & Snowboard Museum documents the state’s history of winter sports. ",
     "safety": "50% capacity limit, masks required"
   }
