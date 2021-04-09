@@ -49,7 +49,7 @@
                     <div class="chatter">
                         <div class="byline-pubdate">
                             <p class="byline">By Seattle Times staff</p>
-                            <p class="pub-date"></p>Published April 9, 2021</p>
+                            <p class="pub-date"></p>Published April 10, 2021</p>
                         </div>
 
                         <% json.intro.forEach(function(item, i) { %>
@@ -103,11 +103,7 @@
                     { data: "west", label: "West" },
                 ] %>
                 <ul class="categories">
-                <!-- <li>
-                    <button type="button" class="all-events checked" data-category="all-events">
-                        <span class="cat-label">All</span>
-                    </button>
-                </li> -->
+               
                 <% cats.forEach(function(cat) { %>
                 <li>
                     <button type="button" class="filter-buttons" data-category="<%= cat.data %>">
@@ -489,9 +485,7 @@
 
         <script src="app.js" async></script>
 
-        <!-- <script>
-            var data = <%= JSON.stringify(json.art_links) %>;
-          </script> -->
+       
 
         <% if (json.project.production) { %>
             <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>

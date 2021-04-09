@@ -1,5 +1,5 @@
 var paywall = require("./lib/paywall");
-setTimeout(() => paywall(12169135), 5000);
+setTimeout(() => paywall(13294912), 5000);
 
 const $ = require('jquery');
 
@@ -39,9 +39,7 @@ function filterByCategory(cat){
     show.push(cat);
 
   }
-  // if(show.length > 0){
-  //   allEventsButton.classList.remove("checked");
-  // }
+ 
   combineFilters();
 }
 
