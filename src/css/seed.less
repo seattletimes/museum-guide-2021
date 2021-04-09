@@ -43,6 +43,7 @@
     padding-left: 0px;
     padding-right: 0px;
   background-color: #fbeadf;
+    
 }
 
 
@@ -75,6 +76,8 @@ hr {
 #floor {
   position: sticky;
   bottom: 0px;
+    z-index: 2;
+    width: 100%;
 }
 
 body {
@@ -164,6 +167,11 @@ header.top {
         margin: 0;
       }
     }
+      
+      @media @tablet, @mobile {
+          padding-left: 20px;
+          padding-right: 20px;
+      }
   }
 }
 
@@ -1035,6 +1043,9 @@ background: linear-gradient(180deg, rgba(214,229,255,1) 0%, rgba(155,179,221,1) 
   margin: auto;
 }
 
-html,body{
+
+.image {
     overflow-x: hidden;
 }
+
+

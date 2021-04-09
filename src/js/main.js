@@ -18,6 +18,7 @@ var culturalSection = document.getElementById("cultural-section");
 var historicalSection = document.getElementById("historical-section");
 var otherSection = document.getElementById("other-section");
 
+
 var eventGrid = document.querySelector(".event-grid");
 var events = document.querySelectorAll(".event");
 
@@ -123,6 +124,11 @@ function fixNav(){
     header.classList.remove("sticky");
   }
 }
+
+
+
+
+
 
 function clearSearchBox(){
   searchBox.value = "";
